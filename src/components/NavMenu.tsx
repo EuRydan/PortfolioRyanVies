@@ -1,30 +1,26 @@
 export default function NavMenu() {
   return (
-    <nav className="w-full border-b border-gray-200 bg-[#FCFBF8] text-sm uppercase tracking-widest text-black flex items-stretch h-16 font-sans">
-      {/* Esquerda: Linkedin */}
-      <div className="flex items-center px-6 border-r border-gray-200 hover:bg-gray-100 transition-colors">
-        <a href="#" className="font-semibold text-xs">
+    <nav className="w-full text-xs font-semibold uppercase tracking-[0.15em] text-black flex items-center justify-between px-10 py-8 font-sans">
+      {/* Esquerda: Linkedin e Nome */}
+      <div className="flex items-center gap-16">
+        <a href="#" className="hover:opacity-60 transition-opacity">
           Linkedin
         </a>
-      </div>
-
-      {/* Centro/Esquerda: Nome e Marca */}
-      <div className="flex items-center px-6 font-semibold flex-1 text-xs">
         <span>Ryan Ferreira | ViesLab.md</span>
       </div>
 
       {/* Direita: Links */}
-      <div className="hidden md:flex items-center divide-x divide-gray-200 border-l border-gray-200 text-xs font-semibold">
-        <a href="#" className="px-6 h-full flex items-center hover:bg-gray-100 transition-colors">
+      <div className="hidden md:flex items-center gap-12">
+        <a href="#" className="hover:opacity-60 transition-opacity">
           Trabalhos
         </a>
-        <a href="#" className="px-6 h-full flex items-center hover:bg-gray-100 transition-colors">
+        <a href="#" className="hover:opacity-60 transition-opacity">
           Sobre
         </a>
-        <a href="#" className="px-6 h-full flex items-center hover:bg-gray-100 transition-colors">
+        <a href="#" className="hover:opacity-60 transition-opacity">
           Curriculo
         </a>
-        <a href="#" className="px-6 h-full flex items-center hover:bg-gray-100 transition-colors">
+        <a href="#" className="hover:opacity-60 transition-opacity">
           Contato
         </a>
       </div>
