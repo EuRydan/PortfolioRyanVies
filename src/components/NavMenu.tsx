@@ -8,9 +8,22 @@ export default function NavMenu() {
 
       {/* Centro: Links */}
       <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-12">
-        <a href="#" className="hover:opacity-60 transition-opacity">
-          Trabalhos
-        </a>
+        <div className="relative group">
+          <a href="#" className="hover:opacity-60 transition-opacity">
+            Trabalhos
+          </a>
+          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 hidden group-hover:flex flex-col items-start bg-white border border-black/10 shadow-md min-w-[120px] z-50">
+            {["/Design", "/Branding", "/Ux", "/Web", "/Dev"].map((skill) => (
+              <a
+                key={skill}
+                href="#"
+                className="w-full px-4 py-2 hover:bg-black hover:text-white transition-colors whitespace-nowrap"
+              >
+                {skill}
+              </a>
+            ))}
+          </div>
+        </div>
         <a href="#" className="hover:opacity-60 transition-opacity">
           Sobre
         </a>
