@@ -47,3 +47,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Scroll-driven parallax — Chrome/Edge 115+; graceful no-op elsewhere */
+@supports (animation-timeline: scroll()) {
+  @keyframes hero-up {
+    from { transform: translateY(0) scale(1);    opacity: 1;   }
+    to   { transform: translateY(-18%) scale(0.97); opacity: 0.15; }
+  }
+
+  .hero-parallax {
+    animation: hero-up linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 70vh;
+  }
+}
