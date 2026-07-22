@@ -25,6 +25,8 @@ export const metadata: Metadata = {
 };
 
 
+import { Header } from "@/components/layout/Header";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,6 +38,7 @@ export default function RootLayout({
         className="font-sans bg-white text-zinc-900 antialiased selection:bg-black selection:text-white"
         suppressHydrationWarning
       >
+        <Header />
         {children}
       </body>
     </html>
