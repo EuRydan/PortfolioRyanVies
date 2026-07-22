@@ -21,7 +21,7 @@ const serviceOptions = [
 
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
-  const [showTooltip, setShowTooltip] = useState(true);
+  const [tooltipState, setTooltipState] = useState<'hidden' | 'typing' | 'text'>('hidden');
   const [step, setStep] = useState(0);
   const [inputValue, setInputValue] = useState("");
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
@@ -41,9 +41,29 @@ export function ChatWidget() {
     scrollToBottom();
   }, [messages, isOpen, step, selectedServices]);
 
+  useEffect(() => {
+    const initialDelay = setTimeout(() => {
+      setTooltipState('typing');
+      
+      const typingTimer = setTimeout(() => {
+        setTooltipState('text');
+        
+        const closeTimer = setTimeout(() => {
+          setTooltipState('hidden');
+        }, 6000);
+        
+        return () => clearTimeout(closeTimer);
+      }, 2000);
+      
+      return () => clearTimeout(typingTimer);
+    }, 2000);
+    
+    return () => clearTimeout(initialDelay);
+  }, []);
+
   const handleOpen = () => {
     setIsOpen(true);
-    setShowTooltip(false);
+    setTooltipState('hidden');
   };
 
   const handleSimQueroReceber = () => {
@@ -320,10 +340,20 @@ export function ChatWidget() {
       <div className={`flex items-center gap-4 transition-all duration-300 absolute bottom-0 right-0 ${isOpen ? "opacity-0 pointer-events-none translate-y-4" : "opacity-100 translate-y-0"}`}>
         
         {/* Tooltip */}
-        {showTooltip && (
-          <div className="hidden md:block bg-white text-zinc-800 px-5 py-4 rounded-2xl shadow-xl text-sm font-medium relative cursor-pointer" onClick={handleOpen}>
-            Oi! Gostaria de receber <br/>
-            uma <strong className="font-bold">proposta personalizada para <br/> seu negócio?</strong> 🤗
+        {tooltipState !== 'hidden' && (
+          <div className="hidden md:block bg-white text-zinc-800 px-5 py-4 rounded-2xl shadow-xl text-sm font-medium relative cursor-pointer min-w-[60px] min-h-[40px] flex items-center justify-center transition-all duration-300" onClick={handleOpen}>
+            {tooltipState === 'typing' ? (
+              <div className="flex gap-1.5 items-center justify-center py-1 px-2">
+                <span className="w-1.5 h-1.5 bg-zinc-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></span>
+                <span className="w-1.5 h-1.5 bg-zinc-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></span>
+                <span className="w-1.5 h-1.5 bg-zinc-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></span>
+              </div>
+            ) : (
+              <>
+                Oi! Gostaria de receber <br/>
+                uma <strong className="font-bold">proposta personalizada para <br/> seu negócio?</strong> 🤗
+              </>
+            )}
             <div className="absolute top-1/2 -right-2 -translate-y-1/2 w-4 h-4 bg-white rotate-45"></div>
           </div>
         )}
