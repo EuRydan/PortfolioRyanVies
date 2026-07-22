@@ -8,11 +8,11 @@ const menuVariants = {
   initial: { x: "100%" },
   animate: {
     x: "0%",
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {
     x: "100%",
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
 };
 
@@ -32,15 +32,17 @@ const linkContainerVariants = {
 };
 
 const linkVariants = {
-  initial: { y: 40, opacity: 0 },
+  initial: { y: "100%", opacity: 0, rotateZ: 3 },
   animate: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+    rotateZ: 0,
+    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {
-    y: 20,
+    y: "20%",
     opacity: 0,
+    rotateZ: 0,
     transition: { duration: 0.4 },
   },
 };
@@ -104,7 +106,7 @@ export function Header() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50"
+              className="fixed inset-0 bg-black/60 z-50"
               onClick={() => setIsDrawerOpen(false)}
             />
 
@@ -167,7 +169,7 @@ export function Header() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  transition={{ delay: 0.6, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ delay: 0.4, duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
                   className="pb-8 md:pb-12 mt-auto flex items-center justify-start gap-5"
                 >
                   <a href="#" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-[#d75310] transition-colors" aria-label="LinkedIn">
