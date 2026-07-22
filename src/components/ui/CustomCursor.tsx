@@ -45,7 +45,7 @@ export function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-12 h-12 bg-[#d75310]/30 rounded-full pointer-events-none z-[9999] flex items-center justify-center"
+      className="hidden md:flex fixed top-0 left-0 w-12 h-12 bg-[#d75310]/30 rounded-full pointer-events-none z-[9999] items-center justify-center"
       style={{
         x: smoothX,
         y: smoothY,
