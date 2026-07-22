@@ -109,7 +109,7 @@ export default function Home() {
                   <img 
                     src="/memvor.webp" 
                     alt="Capa do projeto Memvor" 
-                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -130,7 +130,7 @@ export default function Home() {
                   <img 
                     src="/teainter.gif" 
                     alt="Capa do projeto Teainter" 
-                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -151,7 +151,7 @@ export default function Home() {
                   <img 
                     src="/banner-korre-club.png" 
                     alt="Capa do projeto Korre Club" 
-                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -172,7 +172,7 @@ export default function Home() {
                   <img 
                     src="/level-up.webp" 
                     alt="Capa do projeto Level Up" 
-                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -193,7 +193,7 @@ export default function Home() {
                   <img 
                     src="/voxis.png" 
                     alt="Capa do projeto Voxis" 
-                    className="absolute inset-0 w-full h-full object-cover scale-[1.15] grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="absolute inset-0 w-full h-full object-cover scale-[1.15] md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -214,7 +214,7 @@ export default function Home() {
                   <img 
                     src="/winners.png" 
                     alt="Capa do projeto Winners" 
-                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
