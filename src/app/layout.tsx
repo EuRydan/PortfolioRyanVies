@@ -21,13 +21,13 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || "https://ryanferreira.com"),
+  metadataBase: new URL(process.env.SITE_URL || "https://www.viesstudios.com.br"),
   title: {
-    default: "RYAN FERREIRA",
-    template: "%s · RYAN FERREIRA",
+    default: "Viés Studios",
+    template: "%s · Viés Studios",
   },
   description:
-    "Designer brasileiro com 7+ anos criando marcas e produtos digitais, do design ao código.",
+    "Laboratório criativo focado em design estratégico e experiências digitais memoráveis. Transformamos ideias em produtos digitais e marcas com alto impacto visual e estratégico.",
 };
 
 
