@@ -1,78 +1,63 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 export function CustomCursor() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [text, setText] = useState<string | null>(null);
+  const [isHovering, setIsHovering] = useState(false);
+  
+  // Valores de movimento de alta performance (sem re-renderizar o React)
+  const cursorX = useMotionValue(-100);
+  const cursorY = useMotionValue(-100);
+
+  const springConfig = { damping: 25, stiffness: 300, mass: 0.2 };
+  const smoothX = useSpring(cursorX, springConfig);
+  const smoothY = useSpring(cursorY, springConfig);
 
   useEffect(() => {
-    // 1. Oculta o cursor nativo no CSS apenas se for dispositivo com mouse (fine pointer)
-    const mq = window.matchMedia("(pointer: fine)");
-    if (!mq.matches) {
-      if (ref.current) ref.current.style.display = "none";
-      return;
-    }
-
-    document.documentElement.classList.add("custom-cursor");
-    
-    const move = (e: MouseEvent) => {
-      if (ref.current) {
-        // Revela o cursor apenas no primeiro movimento de mouse
-        if (ref.current.style.opacity === "0") {
-          ref.current.style.opacity = "1";
-        }
-        ref.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
-      }
+    const updateMousePosition = (e: MouseEvent) => {
+      cursorX.set(e.clientX);
+      cursorY.set(e.clientY);
     };
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      
-      const linkOrButton = target.closest("a, button");
-      const caseCover = target.closest("[data-cursor-text]");
-
-      if (caseCover) {
-        const cursorText = caseCover.getAttribute("data-cursor-text");
-        setText(cursorText);
-        if (ref.current) {
-          ref.current.classList.remove("is-hovering");
-          ref.current.classList.add("has-text");
-        }
-      } else if (linkOrButton) {
-        setText(null);
-        if (ref.current) {
-          ref.current.classList.remove("has-text");
-          ref.current.classList.add("is-hovering");
-        }
+      // Define quais elementos ativam o cursor
+      if (
+        target.closest("a") || 
+        target.closest("button") || 
+        target.closest(".group")
+      ) {
+        setIsHovering(true);
       } else {
-        setText(null);
-        if (ref.current) {
-          ref.current.classList.remove("is-hovering");
-          ref.current.classList.remove("has-text");
-        }
+        setIsHovering(false);
       }
     };
 
-    // Usando mousemove para garantir compatibilidade 100% no desktop
-    window.addEventListener("mousemove", move, { passive: true });
-    window.addEventListener("mouseover", handleMouseOver, { passive: true });
+    window.addEventListener("mousemove", updateMousePosition);
+    window.addEventListener("mouseover", handleMouseOver);
 
     return () => {
-      window.removeEventListener("mousemove", move);
+      window.removeEventListener("mousemove", updateMousePosition);
       window.removeEventListener("mouseover", handleMouseOver);
-      document.documentElement.classList.remove("custom-cursor");
     };
-  }, []);
+  }, [cursorX, cursorY]);
 
   return (
-    <div 
-      ref={ref} 
-      className="cursor-dot" 
-      style={{ opacity: 0 }} 
-      aria-hidden="true" 
-    >
-      {text && <span className="cursor-text">{text}</span>}
-    </div>
+    <motion.div
+      className="fixed top-0 left-0 w-12 h-12 bg-[#d75310]/30 rounded-full pointer-events-none z-[9999] flex items-center justify-center"
+      style={{
+        x: smoothX,
+        y: smoothY,
+        translateX: "-50%",
+        translateY: "-50%",
+      }}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{
+        scale: isHovering ? 1 : 0,
+        opacity: isHovering ? 1 : 0,
+      }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
+    />
   );
 }

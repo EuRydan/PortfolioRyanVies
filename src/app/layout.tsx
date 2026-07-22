@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
@@ -11,6 +11,12 @@ const geist = Geist({
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -26,6 +32,9 @@ export const metadata: Metadata = {
 
 
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { CustomCursor } from "@/components/ui/CustomCursor";
+import { ChatWidget } from "@/components/ui/ChatWidget";
 
 export default function RootLayout({
   children,
@@ -33,13 +42,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${geist.variable} ${geistMono.variable}`}>
+    <html lang="pt-BR" className={`${geist.variable} ${geistMono.variable} ${manrope.variable}`}>
       <body
-        className="font-sans bg-white text-zinc-900 antialiased selection:bg-black selection:text-white"
+        className="font-sans bg-zinc-900 text-zinc-100 antialiased selection:bg-[#d75310] selection:text-white flex flex-col min-h-screen"
         suppressHydrationWarning
       >
+        <CustomCursor />
         <Header />
-        {children}
+        <div className="flex-grow">
+          {children}
+        </div>
+        <Footer />
+        <ChatWidget />
       </body>
     </html>
   );
