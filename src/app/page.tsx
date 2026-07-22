@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Text Overlay (Absolute para acompanhar o scroll) */}
       <section className="absolute top-0 left-0 right-0 w-full h-[592px] pointer-events-none z-10">
-        <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-12 h-full flex flex-col justify-center relative pointer-events-auto">
+        <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24 h-full flex flex-col justify-center relative pointer-events-auto">
           <AnimatedSection>
             <h1 
               className="text-[60px] sm:text-[90px] lg:text-[120px] font-extrabold leading-[0.85] text-white uppercase mix-blend-difference"
@@ -42,8 +42,8 @@ export default function Home() {
       {/* Content Layer that slides over the Hero */}
       <div className="relative z-10 w-full bg-zinc-900">
         {/* Quem Somos Section */}
-        <section className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-12 pt-12 md:pt-16 lg:pt-20 pb-16 lg:pb-24">
-          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:gap-6">
+        <section className="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24 py-20 md:py-32 lg:py-40">
+          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="col-span-4 md:col-span-3 lg:col-span-4">
               <AnimatedSection>
                 <h2 
@@ -65,7 +65,7 @@ export default function Home() {
                 </p>
               </AnimatedSection>
               
-              <AnimatedSection delay={0.2} className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-6 border-t border-zinc-800 pt-12 md:pt-16">
+              <AnimatedSection delay={0.2} className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12 lg:gap-16 border-t border-zinc-800 pt-16 md:pt-24">
                 <div className="col-span-2">
                   <h3 className="text-4xl sm:text-5xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>7+</h3>
                   <p className="text-zinc-400 text-sm sm:text-base">Anos de experiência</p>
@@ -88,7 +88,7 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-12 pt-12 pb-24 md:pt-16 md:pb-32 lg:pt-16 lg:pb-40">
+        <section className="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24 py-20 md:py-32 lg:py-40">
           <AnimatedSection className="flex flex-col items-center justify-center mb-16 md:mb-24">
             <h2 
               className="text-xs sm:text-sm uppercase tracking-[0.3em] text-zinc-400 font-semibold text-center" 
@@ -99,7 +99,7 @@ export default function Home() {
           </AnimatedSection>
           
           {/* Grid de Projetos (3 colunas no Desktop) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
             
             {/* Projeto 1 */}
             <AnimatedSection delay={0.1}>
@@ -235,8 +235,8 @@ export default function Home() {
         </section>
 
         {/* O Que Fazemos Section */}
-        <section className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-12 pt-12 pb-24 md:pt-16 md:pb-32 lg:pt-16 lg:pb-40 border-t border-zinc-800/50">
-          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:gap-6">
+        <section className="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24 py-20 md:py-32 lg:py-40 border-t border-zinc-800/50">
+          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             
             {/* Left Column: Title */}
             <div className="col-span-4 md:col-span-3 lg:col-span-4">

@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-zinc-950 pt-16 pb-8">
-      <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-12">
+    <footer className="w-full bg-zinc-950 pt-24 md:pt-32 pb-12 md:pb-16">
+      <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24">
         <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-6 lg:gap-6 mb-16">
           {/* Logo & Descrição */}
           <div className="col-span-4 md:col-span-4 lg:col-span-4 flex flex-col">

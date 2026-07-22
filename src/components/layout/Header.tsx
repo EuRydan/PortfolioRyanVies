@@ -36,7 +36,7 @@ export function Header() {
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="max-w-[1600px] mx-auto flex items-center justify-between px-5 md:px-8 lg:px-12 py-8 bg-transparent">
+        <div className="max-w-[1600px] mx-auto flex items-center justify-between px-6 md:px-12 lg:px-24 py-8 bg-transparent">
           <Link href="/" className="mix-blend-difference">
             <img src="/logo%20vies.svg" alt="vieslab.md logo" className="h-8 sm:h-12 w-auto" />
           </Link>
@@ -67,7 +67,7 @@ export function Header() {
           isDrawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-end p-6 md:p-8">
+        <div className="flex justify-end p-6 md:p-12">
           <button 
             onClick={() => setIsDrawerOpen(false)}
             className="p-2 text-zinc-400 hover:text-[#d75310] transition-colors"
@@ -79,7 +79,7 @@ export function Header() {
           </button>
         </div>
         
-        <div className="flex flex-col flex-1 w-full px-10 sm:px-16 md:px-20">
+        <div className="flex flex-col flex-1 w-full px-10 sm:px-16 md:px-24">
           <nav className="flex flex-col justify-center items-start gap-6 md:gap-8 flex-1 overflow-y-auto">
             <Link href="/" className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
               Início

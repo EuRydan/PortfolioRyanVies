@@ -1,6 +1,6 @@
 export default function FaleConosco() {
   return (
-    <main className="min-h-screen pt-32 pb-16 px-5 md:px-8 lg:px-12 max-w-[1600px] mx-auto flex flex-col justify-center items-center">
+    <main className="min-h-screen pt-32 pb-16 px-6 md:px-12 lg:px-24 max-w-[1600px] mx-auto flex flex-col justify-center items-center">
       <h1 className="text-4xl md:text-6xl font-bold text-white uppercase tracking-widest" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
         Fale Conosco
       </h1>
