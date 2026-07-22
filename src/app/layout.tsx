@@ -28,6 +28,28 @@ export const metadata: Metadata = {
   },
   description:
     "Laboratório criativo focado em design estratégico e experiências digitais memoráveis. Transformamos ideias em produtos digitais e marcas com alto impacto visual e estratégico.",
+  openGraph: {
+    title: "Viés Studios",
+    description: "Laboratório criativo focado em design estratégico e experiências digitais memoráveis.",
+    url: "https://www.viesstudios.com.br",
+    siteName: "Viés Studios",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Viés Studios",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Viés Studios",
+    description: "Laboratório criativo focado em design estratégico e experiências digitais memoráveis.",
+    images: ["/og-image.png"],
+  },
 };
 
 
