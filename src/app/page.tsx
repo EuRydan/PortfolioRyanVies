@@ -6,39 +6,38 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Hero Wrapper (Sticky para Parallax) */}
-      <div className="sticky top-0 w-full h-[592px] z-0">
-        <section className="relative w-full h-full mx-auto flex overflow-hidden">
-          {/* Video Background */}
-          <div className="absolute inset-0 w-full h-full z-0">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="object-cover w-full h-full rotate-180"
-            >
-              <source src="/7794281-uhd_3840_2160_25fps.mp4" type="video/mp4" />
-            </video>
-          </div>
-
-          {/* Text Overlay Wrapper */}
-          <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-12 h-full flex flex-col justify-center relative z-10">
-            <AnimatedSection>
-              <h1 
-                className="text-[60px] sm:text-[90px] lg:text-[120px] font-extrabold leading-[0.85] text-white uppercase mix-blend-difference"
-                style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
-              >
-                WE<br/>
-                ARE<br/>
-                VIES
-              </h1>
-            </AnimatedSection>
-          </div>
-
-          <ScrollArrow />
-        </section>
+      {/* Video Background (Sticky para Parallax) */}
+      <div className="sticky top-0 w-full h-[592px] z-0 overflow-hidden">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="object-cover w-full h-full rotate-180"
+        >
+          <source src="/7794281-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+        </video>
       </div>
+
+      {/* Text Overlay (Absolute para acompanhar o scroll) */}
+      <section className="absolute top-0 left-0 right-0 w-full h-[592px] pointer-events-none z-10">
+        <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-12 h-full flex flex-col justify-center relative pointer-events-auto">
+          <AnimatedSection>
+            <h1 
+              className="text-[60px] sm:text-[90px] lg:text-[120px] font-extrabold leading-[0.85] text-white uppercase mix-blend-difference"
+              style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+            >
+              WE<br/>
+              ARE<br/>
+              VIES
+            </h1>
+          </AnimatedSection>
+        </div>
+
+        <div className="pointer-events-auto">
+          <ScrollArrow />
+        </div>
+      </section>
 
       {/* Content Layer that slides over the Hero */}
       <div className="relative z-10 w-full bg-zinc-900">
