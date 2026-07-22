@@ -88,10 +88,10 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10 py-20 md:py-32 lg:py-40">
-          <AnimatedSection className="flex flex-col items-center justify-center mb-16 md:mb-24">
+        <section id="portfolio" className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10 py-20 md:py-32 lg:py-40">
+          <AnimatedSection className="flex flex-col items-start justify-start mb-12 md:mb-16">
             <h2 
-              className="text-xs sm:text-sm uppercase tracking-[0.3em] text-zinc-400 font-semibold text-center" 
+              className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
               style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
             >
               Um pouco do portfólio da Viés
