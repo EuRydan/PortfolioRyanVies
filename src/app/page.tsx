@@ -88,7 +88,7 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section id="portfolio" className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10 py-20 md:py-32 lg:py-40">
+        <section id="portfolio" className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10 pt-0 pb-20 md:pb-32 lg:pb-40">
           <AnimatedSection className="flex flex-col items-start justify-start mb-12 md:mb-16">
             <h2 
               className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
