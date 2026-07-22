@@ -71,7 +71,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-zinc-800/50">
           <p className="text-zinc-500 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Vieslab.md. Todos os direitos reservados.
+            © {new Date().getFullYear()} Vies Studios. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
             <Link href="/privacidade" className="text-zinc-500 hover:text-[#d75310] text-sm transition-colors">Política de Privacidade</Link>
