@@ -64,7 +64,7 @@ export function Footer() {
           <div className="col-span-4 md:col-span-4 lg:col-span-2 flex flex-col gap-4">
             <h4 className="text-white font-semibold mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Fale Conosco</h4>
             <a href="mailto:contato@viesstudios.com.br" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">contato@viesstudios.com.br</a>
-            <p className="text-zinc-400 text-sm">São Paulo, SP<br />Brasil</p>
+            <p className="text-zinc-400 text-sm">Rio de Janeiro, RJ<br />Brasil</p>
           </div>
         </div>
 
