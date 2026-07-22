@@ -46,9 +46,10 @@ export function Footer() {
           <div className="col-span-2 md:col-span-2 lg:col-span-2 lg:col-start-7 flex flex-col gap-4">
             <h4 className="text-white font-semibold mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Navegação</h4>
             <Link href="/" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Início</Link>
-            <Link href="/sobre" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Sobre</Link>
-            <Link href="/projetos" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Projetos</Link>
-            <Link href="/contato" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Contato</Link>
+            <Link href="/#quem-somos" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Quem Somos</Link>
+            <Link href="/#portfolio" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Portfólio</Link>
+            <Link href="/#o-que-fazemos" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">O Que Fazemos</Link>
+            <Link href="/fale-conosco" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Fale Conosco</Link>
           </div>
 
           {/* Social */}
