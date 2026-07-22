@@ -8,7 +8,7 @@ export function Footer() {
           {/* Logo & Descrição */}
           <div className="col-span-4 md:col-span-4 lg:col-span-4 flex flex-col">
             <Link href="/" className="mb-8 inline-block text-white hover:text-[#d75310] transition-colors">
-              <svg viewBox="0 0 995.37 370.01" className="h-6 sm:h-8 w-auto fill-current">
+              <svg viewBox="0 0 995.37 370.01" className="w-[83px] h-[28px] fill-current">
                 <g>
                   <path d="M384.7,12.26h69.94l-22.64,217.37-5.03,49.31h2.52l10.57-49.31L485.84,12.26h69.94l-99.12,352.22h-84.53l12.58-352.22Z"/>
                   <path d="M568.86,12.26h69.44l-55.35,352.22h-69.44L568.86,12.26Z"/>

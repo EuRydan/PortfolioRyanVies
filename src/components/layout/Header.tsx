@@ -36,9 +36,9 @@ export function Header() {
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="max-w-[1600px] mx-auto flex items-center justify-between px-6 md:px-12 lg:px-24 py-6 md:py-8 bg-transparent">
+        <div className="max-w-[1600px] mx-auto flex items-center justify-between px-5 md:px-8 lg:px-10 py-6 md:py-8 bg-transparent">
           <Link href="/" className="mix-blend-difference">
-            <img src="/logo%20vies.svg" alt="vieslab.md logo" className="h-5 md:h-7 w-auto" />
+            <img src="/logo%20vies.svg" alt="vieslab.md logo" className="h-[28px] w-[83px] object-contain" />
           </Link>
           
           <button 
