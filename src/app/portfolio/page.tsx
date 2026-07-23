@@ -16,16 +16,15 @@ const projects = [
   { id: 'winners', title: 'Winners', tag: 'ID Visual', img: '/winners.png' },
 ];
 
+import { VideoBanner } from '@/components/ui/VideoBanner';
+
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen bg-zinc-900 pt-32 pb-0">
-      <div className="w-full max-w-[1920px] mx-auto">
-        
-        <AnimatedSection className="mb-12 px-6 md:px-14 lg:px-24">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-            Portfólio
-          </h1>
-        </AnimatedSection>
+    <main className="min-h-screen bg-zinc-900 pb-0">
+      {/* Video Background Banner */}
+      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="Portfólio" />
+
+      <div className="w-full max-w-[1920px] mx-auto mt-12 md:mt-20">
 
         {/* Grid de Projetos de 4 em 4 */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0">

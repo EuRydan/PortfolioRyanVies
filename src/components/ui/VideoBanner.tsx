@@ -30,9 +30,9 @@ export function VideoBanner({ src, playbackRate = 1, title }: VideoBannerProps) 
         <source src={src} type="video/mp4" />
       </video>
       {title && (
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-start w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <h1 
-            className="text-3xl md:text-5xl font-bold text-white tracking-widest uppercase mt-8 md:mt-12"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-widest uppercase mt-8 md:mt-12"
             style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
           >
             {title}
