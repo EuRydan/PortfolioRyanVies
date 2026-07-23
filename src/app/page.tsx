@@ -250,8 +250,9 @@ export default function Home() {
         </section>
 
         {/* O Que Fazemos Section */}
-        <section className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 py-20 md:py-32 lg:py-40 border-t border-zinc-800/50">
-          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
+        <section className="w-full bg-black py-20 md:py-32 lg:py-40">
+          <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+            <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             
             {/* Left Column: Title */}
             <div className="col-span-4 md:col-span-3 lg:col-span-4">
@@ -355,6 +356,7 @@ export default function Home() {
                 <QuoteButton />
               </AnimatedSection>
             </div>
+          </div>
           </div>
         </section>
 
