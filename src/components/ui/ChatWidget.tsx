@@ -352,6 +352,15 @@ export function ChatWidget() {
               <>
                 Oi! Gostaria de receber <br/>
                 uma <strong className="font-bold">proposta personalizada para <br/> seu negócio?</strong> 🤗
+                <button 
+                  onClick={(e) => { e.stopPropagation(); setTooltipState('hidden'); }}
+                  className="absolute -top-2 -left-2 w-5 h-5 bg-zinc-200 hover:bg-zinc-300 rounded-full flex items-center justify-center text-zinc-600 transition-colors"
+                  aria-label="Fechar mensagem"
+                >
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 6L6 18M6 6L18 18" />
+                  </svg>
+                </button>
               </>
             )}
             <div className="absolute top-1/2 -right-2 -translate-y-1/2 w-4 h-4 bg-white rotate-45"></div>
