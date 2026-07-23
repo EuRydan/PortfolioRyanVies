@@ -33,6 +33,12 @@ export default function Home() {
               ARE<br/>
               VIES
             </h1>
+            <p 
+              className="mt-6 sm:mt-8 text-sm sm:text-base lg:text-xl text-white/90 uppercase tracking-[0.2em] font-medium mix-blend-difference"
+              style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+            >
+              Laboratório criativo de design e tecnologia
+            </p>
           </AnimatedSection>
         </div>
 
