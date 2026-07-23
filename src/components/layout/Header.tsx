@@ -105,7 +105,7 @@ export function Header() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="fixed inset-0 bg-black/60 z-50"
+              className="fixed inset-0 bg-black/60 z-[60]"
               onClick={() => setIsDrawerOpen(false)}
             />
 
@@ -115,7 +115,7 @@ export function Header() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed top-0 right-0 h-full w-[85vw] sm:w-[50vw] md:w-[40vw] bg-zinc-900 shadow-2xl z-50 flex flex-col"
+              className="fixed top-0 right-0 h-full w-[85vw] sm:w-[50vw] md:w-[40vw] bg-zinc-900 shadow-2xl z-[70] flex flex-col"
             >
               <div className="flex justify-end p-6 md:p-8">
                 <button 
@@ -135,7 +135,7 @@ export function Header() {
                   initial="initial"
                   animate="animate"
                   exit="exit"
-                  className="flex flex-col justify-center items-start gap-4 md:gap-5 flex-1 overflow-y-auto overflow-x-hidden"
+                  className="flex flex-col justify-center items-start gap-4 md:gap-5 flex-1"
                 >
                   <motion.div variants={linkVariants}>
                     <Link href="/" className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>

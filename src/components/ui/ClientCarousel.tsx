@@ -39,11 +39,11 @@ export function ClientCarousel() {
         }}
       >
         {duplicatedLogos.map((logo, index) => (
-          <div key={index} className="flex items-center justify-center w-[156px] h-[156px] shrink-0 mr-10 md:mr-16">
+          <div key={index} className="flex items-center justify-center w-[80px] h-[80px] md:w-[156px] md:h-[156px] shrink-0 mr-6 md:mr-16">
             <img 
               src={logo.src} 
               alt="Cliente Logo" 
-              className={`max-h-12 max-w-[120px] w-auto object-contain brightness-0 invert shrink-0 ${logo.className || ''}`}
+              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain brightness-0 invert shrink-0 ${logo.className || ''}`}
             />
           </div>
         ))}
@@ -62,11 +62,11 @@ export function ClientCarousel() {
         }}
       >
         {duplicatedLogos.map((logo, index) => (
-          <div key={index} className="flex items-center justify-center w-[156px] h-[156px] shrink-0 mr-10 md:mr-16">
+          <div key={index} className="flex items-center justify-center w-[80px] h-[80px] md:w-[156px] md:h-[156px] shrink-0 mr-6 md:mr-16">
             <img 
               src={logo.src} 
               alt="Cliente Logo" 
-              className={`max-h-12 max-w-[120px] w-auto object-contain brightness-0 invert shrink-0 ${logo.className || ''}`}
+              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain brightness-0 invert shrink-0 ${logo.className || ''}`}
             />
           </div>
         ))}
