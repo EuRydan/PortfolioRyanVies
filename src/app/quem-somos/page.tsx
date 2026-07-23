@@ -13,7 +13,7 @@ export default function QuemSomosPage() {
   return (
     <main className="min-h-screen bg-zinc-900">
       {/* Video Background Banner */}
-      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} />
+      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="Quem Somos" />
 
       {/* Quem Somos Section */}
       <section className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 py-20 md:py-32 lg:py-40">

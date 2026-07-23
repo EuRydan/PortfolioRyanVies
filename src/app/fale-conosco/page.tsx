@@ -11,7 +11,7 @@ export default function FaleConoscoPage() {
   return (
     <main className="min-h-screen bg-zinc-900">
       {/* Video Background Banner */}
-      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} />
+      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="Fale Conosco" />
 
       <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">

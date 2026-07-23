@@ -5,9 +5,10 @@ import { useEffect, useRef } from "react";
 interface VideoBannerProps {
   src: string;
   playbackRate?: number;
+  title?: string;
 }
 
-export function VideoBanner({ src, playbackRate = 1 }: VideoBannerProps) {
+export function VideoBanner({ src, playbackRate = 1, title }: VideoBannerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -28,6 +29,16 @@ export function VideoBanner({ src, playbackRate = 1 }: VideoBannerProps) {
       >
         <source src={src} type="video/mp4" />
       </video>
+      {title && (
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <h1 
+            className="text-3xl md:text-5xl font-bold text-white tracking-widest uppercase mt-8 md:mt-12"
+            style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+          >
+            {title}
+          </h1>
+        </div>
+      )}
     </div>
   );
 }
