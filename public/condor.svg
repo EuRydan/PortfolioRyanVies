@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 885.47 189.66">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Roboto-Black, Roboto;
+        font-size: 168.37px;
+        font-weight: 800;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g>
+      <g>
+        <ellipse class="cls-2" cx="61.15" cy="40.08" rx="61.15" ry="6.52"/>
+        <ellipse class="cls-2" cx="61.15" cy="57.97" rx="61.15" ry="11.37"/>
+        <ellipse class="cls-2" cx="61.15" cy="87" rx="61.15" ry="17.65"/>
+        <path class="cls-2" d="M0,130.38c0-14.21,27.38-25.73,61.15-25.73s61.15,11.52,61.15,25.73-27.38,25.73-61.15,25.73S0,144.58,0,130.38Z"/>
+      </g>
+      <text class="cls-1" transform="translate(160.19 144.04)"><tspan x="0" y="0">condo</tspan><tspan class="cls-3" x="466.22" y="0">r</tspan><tspan class="cls-4" x="515.8" y="0">.br</tspan></text>
+    </g>
+  </g>
+</svg>

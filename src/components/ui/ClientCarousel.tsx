@@ -18,6 +18,7 @@ const logos = [
   { src: "/Nogueira%20Arquitetos.svg", className: "" },
   { src: "/logo_genesis.svg", className: "" },
   { src: "/Logo%20TSB-14.png", className: "scale-[2.5]" }, // Aumentado por conta da borda transparente
+  { src: "/condor.svg", className: "" },
 ];
 
 export function ClientCarousel() {
