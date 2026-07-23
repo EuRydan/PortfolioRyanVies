@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-const menuVariants = {
+const menuVariants: any = {
   initial: { clipPath: "circle(0% at 100% 0%)" },
   animate: {
     clipPath: "circle(150% at 100% 0%)",
@@ -16,7 +16,7 @@ const menuVariants = {
   },
 };
 
-const linkContainerVariants = {
+const linkContainerVariants: any = {
   animate: {
     transition: {
       staggerChildren: 0.1,
@@ -31,7 +31,7 @@ const linkContainerVariants = {
   },
 };
 
-const linkVariants = {
+const linkVariants: any = {
   initial: { y: "100%", opacity: 0, rotateZ: 3 },
   animate: {
     y: 0,
