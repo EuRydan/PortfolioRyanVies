@@ -289,7 +289,7 @@ export default function Home() {
                   className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8"
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                 >
-                  Estratégia, Design e Performance para marcas que querem crescer.
+                  Estratégia, Design e Performance para marcas.
                 </h3>
               </AnimatedSection>
               

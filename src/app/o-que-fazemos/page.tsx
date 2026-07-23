@@ -3,10 +3,11 @@ import { QuoteButton } from "@/components/ui/QuoteButton";
 import { ClientCarousel } from "@/components/ui/ClientCarousel";
 import { VideoBanner } from "@/components/ui/VideoBanner";
 import Link from "next/link";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: 'O Que Fazemos - Vies',
-  description: 'Estratégia, Design e Performance para marcas que querem crescer.',
+export const metadata: Metadata = {
+  title: 'O Que Fazemos',
+  description: 'Estratégia, Design e Performance para marcas.',
 };
 
 export default function OQueFazemosPage() {
@@ -40,7 +41,7 @@ export default function OQueFazemosPage() {
                 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8"
                 style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
               >
-                Estratégia, Design e Performance para marcas que querem crescer.
+                Estratégia, Design e Performance para marcas.
               </h3>
             </AnimatedSection>
             
