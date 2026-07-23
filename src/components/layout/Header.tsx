@@ -143,7 +143,7 @@ export function Header() {
                     </Link>
                   </motion.div>
                   <motion.div variants={linkVariants}>
-                    <Link href="/#quem-somos" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <Link href="/quem-somos" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Quem Somos
                     </Link>
                   </motion.div>
