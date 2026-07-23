@@ -17,6 +17,7 @@ const logos = [
   { src: "/7horizontal-YyvZMZ8815u5QOKP.svg", className: "" },
   { src: "/Nogueira%20Arquitetos.svg", className: "" },
   { src: "/logo_genesis.svg", className: "" },
+  { src: "/Logo%20TSB-14.png", className: "" },
 ];
 
 export function ClientCarousel() {
