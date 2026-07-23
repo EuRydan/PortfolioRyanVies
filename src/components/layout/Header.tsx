@@ -138,27 +138,27 @@ export function Header() {
                   className="flex flex-col justify-center items-start gap-4 md:gap-5 flex-1"
                 >
                   <motion.div variants={linkVariants}>
-                    <Link href="/" className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <Link href="/" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Início
                     </Link>
                   </motion.div>
                   <motion.div variants={linkVariants}>
-                    <Link href="/#quem-somos" className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <Link href="/#quem-somos" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Quem Somos
                     </Link>
                   </motion.div>
                   <motion.div variants={linkVariants}>
-                    <Link href="/portfolio" className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <Link href="/portfolio" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Portfólio
                     </Link>
                   </motion.div>
                   <motion.div variants={linkVariants}>
-                    <Link href="/#o-que-fazemos" className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <Link href="/#o-que-fazemos" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       O Que Fazemos
                     </Link>
                   </motion.div>
                   <motion.div variants={linkVariants}>
-                    <Link href="/fale-conosco" className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <Link href="/fale-conosco" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Fale Conosco
                     </Link>
                   </motion.div>
