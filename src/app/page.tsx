@@ -2,6 +2,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { QuoteButton } from "@/components/ui/QuoteButton";
 import { ScrollArrow } from "@/components/ui/ScrollArrow";
 import Link from "next/link";
+import { ClientCarousel } from "@/components/ui/ClientCarousel";
 
 export default function Home() {
   return (
@@ -65,7 +66,7 @@ export default function Home() {
                 </p>
               </AnimatedSection>
               
-              <AnimatedSection delay={0.2} className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12 lg:gap-16 border-t border-zinc-800 pt-16 md:pt-24">
+              <AnimatedSection delay={0.2} className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12 lg:gap-16">
                 <div className="col-span-2">
                   <h3 className="text-4xl sm:text-5xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>50+</h3>
                   <p className="text-zinc-400 text-sm sm:text-base">Clientes atendidos</p>
@@ -80,7 +81,7 @@ export default function Home() {
                 </div>
               </AnimatedSection>
               
-              <AnimatedSection delay={0.3} className="mt-16">
+              <AnimatedSection delay={0.3} className="mt-12">
                 <QuoteButton />
               </AnimatedSection>
             </div>
@@ -286,7 +287,7 @@ export default function Home() {
               </AnimatedSection>
 
               {/* Services Cards */}
-              <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               
               {/* Card 1: Web */}
               <AnimatedSection delay={0.3} className="bg-zinc-800/30 p-8 md:p-10 hover:bg-black transition-all duration-500 flex flex-col h-full group">
@@ -298,7 +299,7 @@ export default function Home() {
                 <ul className="space-y-4 mt-auto border-t border-zinc-800/50 pt-8">
                   {["Sites Institucionais", "Landing Pages", "E-commerce", "UX/UI Design", "SEO Técnico", "Otimização de Performance", "Integrações e Automações", "Hospedagem e Suporte"].map((item, i) => (
                     <li key={i} className="flex items-center text-sm text-zinc-400">
-                      <span className="w-1.5 h-1.5 bg-zinc-600 group-hover:bg-[#d75310] transition-colors duration-500 rounded-full mr-3 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-[#d75310] rounded-full mr-3 shrink-0"></span>
                       {item}
                     </li>
                   ))}
@@ -315,7 +316,7 @@ export default function Home() {
                 <ul className="space-y-4 mt-auto border-t border-zinc-800/50 pt-8">
                   {["Branding", "Identidade Visual", "Posicionamento de Marca", "Sistemas Visuais", "Design Editorial", "Key Visuals", "Motion Design", "Materiais Institucionais"].map((item, i) => (
                     <li key={i} className="flex items-center text-sm text-zinc-400">
-                      <span className="w-1.5 h-1.5 bg-zinc-600 group-hover:bg-[#d75310] transition-colors duration-500 rounded-full mr-3 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-[#d75310] rounded-full mr-3 shrink-0"></span>
                       {item}
                     </li>
                   ))}
@@ -332,16 +333,48 @@ export default function Home() {
                 <ul className="space-y-4 mt-auto border-t border-zinc-800/50 pt-8">
                   {["Gestão de Tráfego Pago", "Google Ads", "Meta Ads", "LinkedIn Ads", "Geração de Leads", "SEO", "Automação de Marketing", "Otimização de Conversão"].map((item, i) => (
                     <li key={i} className="flex items-center text-sm text-zinc-400">
-                      <span className="w-1.5 h-1.5 bg-zinc-600 group-hover:bg-[#d75310] transition-colors duration-500 rounded-full mr-3 shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-[#d75310] rounded-full mr-3 shrink-0"></span>
                       {item}
                     </li>
                   ))}
                 </ul>
               </AnimatedSection>
 
-            </div>
+              </div>
+
+              {/* CTA Section */}
+              <AnimatedSection delay={0.6} className="mt-16 md:mt-24 flex flex-col items-start gap-8">
+                <div>
+                  <h4 className="text-xl md:text-2xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    Comunicação que converte, em qualquer canal.
+                  </h4>
+                  <p className="text-zinc-400 text-sm md:text-base">
+                    Planejamento e execução sob medida, com design de alta performance
+                  </p>
+                </div>
+                <QuoteButton />
+              </AnimatedSection>
             </div>
           </div>
+        </section>
+
+        {/* Clientes Section */}
+        <section className="w-full pb-20 md:pb-32 lg:pb-40 overflow-hidden">
+          <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+            <AnimatedSection className="flex flex-col items-start mb-12">
+              <h2 
+                className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold" 
+                style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+              >
+                Clientes
+              </h2>
+            </AnimatedSection>
+          </div>
+          
+          {/* Carrossel de logos */}
+          <AnimatedSection delay={0.2} className="w-full mt-4">
+            <ClientCarousel />
+          </AnimatedSection>
         </section>
       </div>
     </main>
