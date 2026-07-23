@@ -103,7 +103,7 @@ export default function Home() {
             
             {/* Projeto 1 */}
             <AnimatedSection delay={0.1}>
-              <Link href="/fale-conosco" className="block">
+              <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/memvor.webp" 
@@ -124,7 +124,7 @@ export default function Home() {
 
             {/* Projeto 2 */}
             <AnimatedSection delay={0.2}>
-              <Link href="/fale-conosco" className="block">
+              <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/teainter.gif" 
@@ -145,7 +145,7 @@ export default function Home() {
 
             {/* Projeto 3 */}
             <AnimatedSection delay={0.3}>
-              <Link href="/fale-conosco" className="block">
+              <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/banner-korre-club.png" 
@@ -166,7 +166,7 @@ export default function Home() {
 
             {/* Projeto 4 */}
             <AnimatedSection delay={0.4}>
-              <Link href="/fale-conosco" className="block">
+              <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/level-up.webp" 
@@ -187,7 +187,7 @@ export default function Home() {
 
             {/* Projeto 5 */}
             <AnimatedSection delay={0.5}>
-              <Link href="/fale-conosco" className="block">
+              <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/voxis.png" 
@@ -208,7 +208,7 @@ export default function Home() {
 
             {/* Projeto 6 */}
             <AnimatedSection delay={0.6}>
-              <Link href="/fale-conosco" className="block">
+              <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/winners.png" 
@@ -232,7 +232,7 @@ export default function Home() {
           <div className="mt-8 flex justify-end">
             <AnimatedSection delay={0.7}>
               <Link 
-                href="#" 
+                href="/portfolio" 
                 className="text-[#d75310] uppercase tracking-widest text-xs md:text-sm font-bold relative group inline-block pb-1"
                 style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
               >
