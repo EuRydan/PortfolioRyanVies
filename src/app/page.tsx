@@ -110,7 +110,7 @@ export default function Home() {
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                         Memvor
                       </h3>
-                      <span className="text-white/90 uppercase text-xs md:text-sm tracking-[0.2em] mt-2 font-medium">Web e UX</span>
+                      <span className="text-white/90 uppercase text-xs md:text-sm tracking-[0.2em] mt-2 font-medium">Produto, Web, UX e Branding</span>
                     </div>
                   </div>
                 </div>
