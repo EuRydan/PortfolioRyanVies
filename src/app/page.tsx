@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Text Overlay (Absolute para acompanhar o scroll) */}
       <section className="absolute top-0 left-0 right-0 w-full h-[592px] pointer-events-none z-10">
-        <div className="w-full max-w-[1920px] mx-auto px-5 md:px-12 lg:px-20 h-full flex flex-col justify-center relative pointer-events-auto">
+        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 h-full flex flex-col justify-center relative pointer-events-auto">
           <AnimatedSection>
             <h1 
               className="text-[60px] sm:text-[90px] lg:text-[120px] font-extrabold leading-[0.85] text-white uppercase mix-blend-difference"
@@ -42,7 +42,7 @@ export default function Home() {
       {/* Content Layer that slides over the Hero */}
       <div className="relative z-10 w-full bg-zinc-900">
         {/* Quem Somos Section */}
-        <section className="w-full max-w-[1920px] mx-auto px-5 md:px-12 lg:px-20 py-20 md:py-32 lg:py-40">
+        <section className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 py-20 md:py-32 lg:py-40">
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="col-span-4 md:col-span-3 lg:col-span-4">
               <AnimatedSection>
@@ -88,7 +88,7 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section id="portfolio" className="w-full max-w-[1920px] mx-auto px-5 md:px-12 lg:px-20 pt-0 pb-20 md:pb-32 lg:pb-40">
+        <section id="portfolio" className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 pt-0 pb-20 md:pb-32 lg:pb-40">
           <AnimatedSection className="flex flex-col items-start justify-start mb-12 md:mb-16">
             <h2 
               className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
@@ -249,7 +249,7 @@ export default function Home() {
         </section>
 
         {/* O Que Fazemos Section */}
-        <section className="w-full max-w-[1920px] mx-auto px-5 md:px-12 lg:px-20 py-20 md:py-32 lg:py-40 border-t border-zinc-800/50">
+        <section className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 py-20 md:py-32 lg:py-40 border-t border-zinc-800/50">
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             
             {/* Left Column: Title */}

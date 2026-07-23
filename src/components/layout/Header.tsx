@@ -80,19 +80,18 @@ export function Header() {
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="max-w-[1920px] mx-auto flex items-center justify-between py-[27px] px-5 md:px-12 lg:px-20 bg-transparent">
+        <div className="max-w-[1920px] mx-auto flex items-center justify-between py-5 px-6 md:px-14 lg:px-24 bg-transparent">
           <Link href="/" className="mix-blend-difference">
             <img src="/logo%20vies.svg" alt="vieslab.md logo" className="h-[28px] w-[83px] object-contain" />
           </Link>
           
           <button 
             onClick={() => setIsDrawerOpen(true)}
-            className="p-2 -mr-2 text-white mix-blend-difference cursor-pointer"
+            className="p-2 -mr-2 mix-blend-difference cursor-pointer group flex flex-col items-end justify-center gap-[6px] w-12 h-12"
             aria-label="Open menu"
           >
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <div className="w-8 h-[2px] bg-white rounded-full transition-all duration-300 group-hover:w-6"></div>
+            <div className="w-5 h-[2px] bg-white rounded-full transition-all duration-300 group-hover:w-8"></div>
           </button>
         </div>
       </header>
