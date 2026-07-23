@@ -170,12 +170,12 @@ export function ChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end pointer-events-none">
       
       {/* Chat Window */}
       <div 
-        className={`bg-white w-[380px] max-w-[calc(100vw-3rem)] rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 origin-bottom-right mb-4 flex flex-col ${
-          isOpen ? "scale-100 opacity-100" : "scale-50 opacity-0 pointer-events-none"
+        className={`bg-white w-[380px] max-w-[calc(100vw-3rem)] rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 origin-bottom-right mb-4 flex flex-col pointer-events-auto ${
+          isOpen ? "scale-100 opacity-100" : "scale-50 opacity-0 !pointer-events-none"
         }`}
       >
         {/* Header */}
@@ -337,7 +337,7 @@ export function ChatWidget() {
       </div>
 
       {/* Floating Button & Tooltip */}
-      <div className={`flex items-center gap-4 transition-all duration-300 absolute bottom-0 right-0 ${isOpen ? "opacity-0 pointer-events-none translate-y-4" : "opacity-100 translate-y-0"}`}>
+      <div className={`flex items-center gap-4 transition-all duration-300 absolute bottom-0 right-0 pointer-events-auto ${isOpen ? "opacity-0 !pointer-events-none translate-y-4" : "opacity-100 translate-y-0"}`}>
         
         {/* Tooltip */}
         {tooltipState !== 'hidden' && (
