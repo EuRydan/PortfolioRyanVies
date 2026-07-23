@@ -88,17 +88,15 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section id="portfolio" className="w-full pt-0 pb-20 md:pb-32 lg:pb-40">
-          <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10">
-            <AnimatedSection className="flex flex-col items-start justify-start mb-12 md:mb-16">
-              <h2 
-                className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
-                style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
-              >
-                Um pouco do portfólio da Viés
-              </h2>
-            </AnimatedSection>
-          </div>
+        <section id="portfolio" className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10 pt-0 pb-20 md:pb-32 lg:pb-40">
+          <AnimatedSection className="flex flex-col items-start justify-start mb-12 md:mb-16">
+            <h2 
+              className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
+              style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+            >
+              Um pouco do portfólio da Viés
+            </h2>
+          </AnimatedSection>
           
           {/* Grid de Projetos (3 colunas no Desktop) */}
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
@@ -226,6 +224,20 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </Link>
+            </AnimatedSection>
+          </div>
+
+          {/* Link Ver Mais Projetos */}
+          <div className="mt-8 flex justify-end">
+            <AnimatedSection delay={0.7}>
+              <Link 
+                href="#" 
+                className="text-[#d75310] uppercase tracking-widest text-xs md:text-sm font-bold relative group inline-block pb-1"
+                style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+              >
+                Ver mais projetos
+                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#d75310] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
               </Link>
             </AnimatedSection>
           </div>
