@@ -97,7 +97,7 @@ export default function Home() {
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px]">
             
             {/* Projeto 1 */}
-            <AnimatedSection delay={0.1}>
+            <AnimatedSection delay={0.1} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
@@ -118,7 +118,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Projeto 2 */}
-            <AnimatedSection delay={0.2}>
+            <AnimatedSection delay={0.2} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
@@ -139,7 +139,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Projeto 3 */}
-            <AnimatedSection delay={0.3}>
+            <AnimatedSection delay={0.3} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
@@ -160,7 +160,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Projeto 4 */}
-            <AnimatedSection delay={0.4}>
+            <AnimatedSection delay={0.4} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
@@ -181,7 +181,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Projeto 5 */}
-            <AnimatedSection delay={0.5}>
+            <AnimatedSection delay={0.5} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
@@ -202,7 +202,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Projeto 6 */}
-            <AnimatedSection delay={0.6}>
+            <AnimatedSection delay={0.6} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
@@ -223,7 +223,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Projeto 7 */}
-            <AnimatedSection delay={0.7}>
+            <AnimatedSection delay={0.7} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
