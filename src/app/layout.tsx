@@ -23,22 +23,22 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || "https://www.viesstudios.com.br"),
   title: {
-    default: "Viés Studios",
-    template: "%s · Viés Studios",
+    default: "Vies Studios",
+    template: "%s · Vies Studios",
   },
   description:
     "Laboratório criativo focado em design estratégico e experiências digitais memoráveis. Transformamos ideias em produtos digitais e marcas com alto impacto visual e estratégico.",
   openGraph: {
-    title: "Viés Studios",
+    title: "Vies Studios",
     description: "Laboratório criativo focado em design estratégico e experiências digitais memoráveis.",
     url: "https://www.viesstudios.com.br",
-    siteName: "Viés Studios",
+    siteName: "Vies Studios",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Viés Studios",
+        alt: "Vies Studios",
       },
     ],
     locale: "pt_BR",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Viés Studios",
+    title: "Vies Studios",
     description: "Laboratório criativo focado em design estratégico e experiências digitais memoráveis.",
     images: ["/og-image.png"],
   },
