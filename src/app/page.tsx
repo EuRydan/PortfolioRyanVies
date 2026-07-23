@@ -237,7 +237,7 @@ export default function Home() {
                 style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
               >
                 Ver mais projetos
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#d75310] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#d75310] transition-all duration-300 ease-out group-hover:w-full"></span>
               </Link>
             </AnimatedSection>
           </div>
