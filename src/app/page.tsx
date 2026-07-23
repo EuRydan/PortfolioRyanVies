@@ -215,6 +215,27 @@ export default function Home() {
                 </div>
               </Link>
             </AnimatedSection>
+
+            {/* Projeto 7 */}
+            <AnimatedSection delay={0.7}>
+              <Link href="/portfolio" className="block">
+                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
+                  <img 
+                    src="/GN.gif" 
+                    alt="Capa do projeto GN" 
+                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
+                  />
+                  <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
+                    <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                      <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                        GN
+                      </h3>
+                      <span className="text-white/90 uppercase text-xs md:text-sm tracking-[0.2em] mt-2 font-medium">Branding</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </AnimatedSection>
           </div>
 
           {/* Link Ver Mais Projetos */}

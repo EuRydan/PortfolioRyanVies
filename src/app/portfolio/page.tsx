@@ -14,6 +14,7 @@ const projects = [
   { id: 'level-up', title: 'Level Up', tag: 'ID Visual', img: '/level-up.webp' },
   { id: 'voxis', title: 'Voxis', tag: 'Produto, UX e Branding', img: '/voxis.png', customClass: 'scale-[1.15]' },
   { id: 'winners', title: 'Winners', tag: 'ID Visual', img: '/winners.png' },
+  { id: 'gn', title: 'GN', tag: 'Branding', img: '/GN.gif' },
 ];
 
 import { VideoBanner } from '@/components/ui/VideoBanner';
