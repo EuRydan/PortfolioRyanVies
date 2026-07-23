@@ -66,7 +66,7 @@ export default function Home() {
                 </p>
               </AnimatedSection>
               
-              <AnimatedSection delay={0.2} className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12 lg:gap-16">
+              <AnimatedSection delay={0.2} className="mt-24 md:mt-40 lg:mt-56 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12 lg:gap-16">
                 <div className="col-span-2">
                   <h3 className="text-4xl sm:text-5xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>50+</h3>
                   <p className="text-zinc-400 text-sm sm:text-base">Clientes atendidos</p>
