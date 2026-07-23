@@ -5,13 +5,13 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const menuVariants = {
-  initial: { x: "100%" },
+  initial: { clipPath: "circle(0% at 100% 0%)" },
   animate: {
-    x: "0%",
+    clipPath: "circle(150% at 100% 0%)",
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
   exit: {
-    x: "100%",
+    clipPath: "circle(0% at 100% 0%)",
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
   },
 };
