@@ -1,7 +1,7 @@
 import { ContactForm } from "@/components/ui/ContactForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { VideoBanner } from "@/components/ui/VideoBanner";
-
+import { ClientCarousel } from "@/components/ui/ClientCarousel";
 export const metadata = {
   title: 'Fale Conosco - Vies',
   description: 'Entre em contato com a equipe Vies.',
@@ -47,6 +47,25 @@ export default function FaleConoscoPage() {
           </div>
         </div>
       </div>
+
+      {/* Clientes Section */}
+      <section className="w-full pt-12 md:pt-16 pb-20 md:pb-32 lg:pb-40 overflow-hidden">
+        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+          <AnimatedSection className="flex flex-col items-start mb-12">
+            <h2 
+              className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold" 
+              style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+            >
+              Clientes
+            </h2>
+          </AnimatedSection>
+        </div>
+        
+        {/* Carrossel de logos */}
+        <AnimatedSection delay={0.2} className="w-full mt-4">
+          <ClientCarousel />
+        </AnimatedSection>
+      </section>
     </main>
   );
 }
