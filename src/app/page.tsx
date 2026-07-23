@@ -88,23 +88,25 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section id="portfolio" className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10 pt-0 pb-20 md:pb-32 lg:pb-40">
-          <AnimatedSection className="flex flex-col items-start justify-start mb-12 md:mb-16">
-            <h2 
-              className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
-              style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
-            >
-              Um pouco do portfólio da Viés
-            </h2>
-          </AnimatedSection>
+        <section id="portfolio" className="w-full pt-0 pb-20 md:pb-32 lg:pb-40">
+          <div className="w-full max-w-[1600px] mx-auto px-5 md:px-8 lg:px-10">
+            <AnimatedSection className="flex flex-col items-start justify-start mb-12 md:mb-16">
+              <h2 
+                className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
+                style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+              >
+                Um pouco do portfólio da Viés
+              </h2>
+            </AnimatedSection>
+          </div>
           
           {/* Grid de Projetos (3 colunas no Desktop) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
             
             {/* Projeto 1 */}
             <AnimatedSection delay={0.1}>
               <Link href="/fale-conosco" className="block">
-                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/memvor.webp" 
                     alt="Capa do projeto Memvor" 
@@ -125,7 +127,7 @@ export default function Home() {
             {/* Projeto 2 */}
             <AnimatedSection delay={0.2}>
               <Link href="/fale-conosco" className="block">
-                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/teainter.gif" 
                     alt="Capa do projeto Teainter" 
@@ -146,7 +148,7 @@ export default function Home() {
             {/* Projeto 3 */}
             <AnimatedSection delay={0.3}>
               <Link href="/fale-conosco" className="block">
-                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/banner-korre-club.png" 
                     alt="Capa do projeto Korre Club" 
@@ -167,7 +169,7 @@ export default function Home() {
             {/* Projeto 4 */}
             <AnimatedSection delay={0.4}>
               <Link href="/fale-conosco" className="block">
-                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/level-up.webp" 
                     alt="Capa do projeto Level Up" 
@@ -188,7 +190,7 @@ export default function Home() {
             {/* Projeto 5 */}
             <AnimatedSection delay={0.5}>
               <Link href="/fale-conosco" className="block">
-                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/voxis.png" 
                     alt="Capa do projeto Voxis" 
@@ -209,7 +211,7 @@ export default function Home() {
             {/* Projeto 6 */}
             <AnimatedSection delay={0.6}>
               <Link href="/fale-conosco" className="block">
-                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
                     src="/winners.png" 
                     alt="Capa do projeto Winners" 
