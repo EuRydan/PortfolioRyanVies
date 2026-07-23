@@ -43,7 +43,7 @@ export default function Home() {
       {/* Content Layer that slides over the Hero */}
       <div className="relative z-10 w-full bg-zinc-900">
         {/* Quem Somos Section */}
-        <section className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 py-20 md:py-32 lg:py-40">
+        <section className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 pt-12 pb-20 md:pt-16 md:pb-32 lg:pt-20 lg:pb-40">
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
             <div className="col-span-4 md:col-span-3 lg:col-span-4">
               <AnimatedSection>
