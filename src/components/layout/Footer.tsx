@@ -43,7 +43,7 @@ export function Footer() {
           </div>
 
           {/* Navegação */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-2 lg:col-start-7 flex flex-col gap-4">
+          <div className="col-span-2 md:col-span-2 lg:col-span-2 lg:col-start-7 flex flex-col items-start gap-4">
             <h4 className="text-white font-semibold mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Navegação</h4>
             <Link href="/#quem-somos" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Quem Somos</Link>
             <Link href="/portfolio" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Portfólio</Link>
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
 
           {/* Social */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-2 flex flex-col gap-4">
+          <div className="col-span-2 md:col-span-2 lg:col-span-2 flex flex-col items-start gap-4">
             <h4 className="text-white font-semibold mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Social</h4>
             <a href="#" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Instagram</a>
             <a href="#" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">LinkedIn</a>
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
 
           {/* Contato */}
-          <div className="col-span-4 md:col-span-4 lg:col-span-2 flex flex-col gap-4">
+          <div className="col-span-4 md:col-span-4 lg:col-span-2 flex flex-col items-start gap-4">
             <h4 className="text-white font-semibold mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Fale Conosco</h4>
             <a href="mailto:contato@viesstudios.com.br" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">contato@viesstudios.com.br</a>
             <p className="text-zinc-400 text-sm">Rio de Janeiro, RJ<br />Brasil</p>
