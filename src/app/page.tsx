@@ -88,7 +88,7 @@ export default function Home() {
           </AnimatedSection>
           
           {/* Grid de Projetos (3 colunas no Desktop) */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px]">
             
             {/* Projeto 1 */}
             <AnimatedSection delay={0.1}>
