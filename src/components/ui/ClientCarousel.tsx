@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/logo%20branco%20memvor.svg", className: "scale-75" }, // Diminuído para equilibrar com os demais
+  { src: "/logo%20branco%20memvor.svg", className: "scale-75", keepOriginalColor: true }, // Diminuído para equilibrar com os demais
   { src: "/BCS%20RIO.svg", className: "" },
   { src: "/ASA%20logo%20horizontal%20100%25%20branco.svg", className: "" },
   { src: "/Teainter%20Horizontal%20Branco.png", className: "" },
@@ -44,7 +44,7 @@ export function ClientCarousel() {
             <img 
               src={logo.src} 
               alt="Cliente Logo" 
-              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain brightness-0 invert shrink-0 ${logo.className || ''}`}
+              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain shrink-0 ${logo.keepOriginalColor ? '' : 'brightness-0 invert'} ${logo.className || ''}`}
             />
           </div>
         ))}
@@ -67,7 +67,7 @@ export function ClientCarousel() {
             <img 
               src={logo.src} 
               alt="Cliente Logo" 
-              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain brightness-0 invert shrink-0 ${logo.className || ''}`}
+              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain shrink-0 ${logo.keepOriginalColor ? '' : 'brightness-0 invert'} ${logo.className || ''}`}
             />
           </div>
         ))}
