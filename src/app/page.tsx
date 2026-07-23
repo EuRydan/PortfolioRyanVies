@@ -358,8 +358,28 @@ export default function Home() {
           </div>
         </section>
 
+        {/* CTA Banner */}
+        <section className="w-full bg-[#d75310] py-16 md:py-20">
+          <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+            <AnimatedSection className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+              <h2 
+                className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center md:text-left leading-tight" 
+                style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+              >
+                Vamos falar sobre seu próximo passo?
+              </h2>
+              <Link 
+                href="/fale-conosco" 
+                className="inline-flex items-center justify-center bg-white text-[#d75310] px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-zinc-100 transition-colors shrink-0"
+              >
+                Falar Conosco
+              </Link>
+            </AnimatedSection>
+          </div>
+        </section>
+
         {/* Clientes Section */}
-        <section className="w-full pb-20 md:pb-32 lg:pb-40 overflow-hidden">
+        <section className="w-full pt-20 md:pt-32 lg:pt-40 pb-20 md:pb-32 lg:pb-40 overflow-hidden">
           <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
             <AnimatedSection className="flex flex-col items-start mb-12">
               <h2 
