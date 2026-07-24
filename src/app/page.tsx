@@ -468,11 +468,11 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-6 lg:gap-8">
               {/* Article 1 */}
               <AnimatedSection delay={0.2}>
                 <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-2xl">
+                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
                     <img 
                       src="/capa-produto.jpeg" 
                       alt="Quero criar um app ou SaaS"
@@ -501,7 +501,7 @@ export default function Home() {
               {/* Article 2 */}
               <AnimatedSection delay={0.3}>
                 <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-2xl">
+                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
                     <img 
                       src="/capa-artigo.jpg" 
                       alt="Criação de sites em Duque de Caxias"
