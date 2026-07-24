@@ -70,7 +70,7 @@ export function BlogContent() {
                     <img 
                       src={article.image} 
                       alt={article.title}
-                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                      className={`object-cover w-full h-full transition-transform duration-700 ${article.id === 2 ? 'scale-[1.15] group-hover:scale-[1.2]' : 'group-hover:scale-105'}`}
                     />
                   ) : (
                     <span className="text-zinc-600 text-[10px] uppercase tracking-wider font-bold">Imagem do Post</span>
