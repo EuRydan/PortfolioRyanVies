@@ -130,14 +130,16 @@ export default function OQueFazemosPage() {
       {/* CTA Banner */}
       <section className="w-full bg-[#d75310] py-16 md:py-20">
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
-          <AnimatedSection className="flex flex-col md:flex-row items-center justify-start gap-8 md:gap-24 lg:gap-32">
-            <h2 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center md:text-left leading-tight uppercase" 
-              style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
-            >
-              Vamos falar<br className="hidden md:block" /> sobre seu<br className="hidden md:block" /> próximo passo?
-            </h2>
-            <div className="flex flex-col items-center md:items-start">
+          <AnimatedSection className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div className="col-span-4 md:col-span-3 lg:col-span-4">
+              <h2 
+                className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center md:text-left leading-tight uppercase" 
+                style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+              >
+                Vamos falar<br className="hidden md:block" /> sobre seu<br className="hidden md:block" /> próximo passo?
+              </h2>
+            </div>
+            <div className="col-span-4 md:col-span-5 lg:col-span-8 flex flex-col items-center md:items-start">
               <span className="text-white/90 text-sm font-medium mb-3">
                 Pronto para começar?
               </span>
