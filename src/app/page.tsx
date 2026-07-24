@@ -2,8 +2,10 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { QuoteButton } from "@/components/ui/QuoteButton";
 import { ScrollArrow } from "@/components/ui/ScrollArrow";
 import Link from "next/link";
-import { ClientCarousel } from "@/components/ui/ClientCarousel";
-import { ScrollRevealStats } from "@/components/ui/ScrollRevealStats";
+import dynamic from "next/dynamic";
+
+const ClientCarousel = dynamic(() => import("@/components/ui/ClientCarousel").then(mod => mod.ClientCarousel));
+const ScrollRevealStats = dynamic(() => import("@/components/ui/ScrollRevealStats").then(mod => mod.ScrollRevealStats));
 
 import { Metadata } from "next";
 
@@ -25,9 +27,10 @@ export default function Home() {
           loop 
           muted 
           playsInline
+          preload="metadata"
           className="object-cover w-full h-full rotate-180"
         >
-          <source src="/7794281-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+          <source src="/video-hero-vies-home.mp4" type="video/mp4" />
         </video>
       </div>
 

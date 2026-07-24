@@ -1,7 +1,9 @@
 import { ContactForm } from "@/components/ui/ContactForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { VideoBanner } from "@/components/ui/VideoBanner";
-import { ClientCarousel } from "@/components/ui/ClientCarousel";
+import dynamic from "next/dynamic";
+
+const ClientCarousel = dynamic(() => import("@/components/ui/ClientCarousel").then(mod => mod.ClientCarousel));
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

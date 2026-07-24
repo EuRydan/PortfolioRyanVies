@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
-import { ClientCarousel } from '@/components/ui/ClientCarousel';
+import dynamic from 'next/dynamic';
+
+const ClientCarousel = dynamic(() => import('@/components/ui/ClientCarousel').then(mod => mod.ClientCarousel));
 
 import { Metadata } from 'next';
 

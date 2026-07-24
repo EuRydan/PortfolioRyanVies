@@ -55,8 +55,10 @@ export const metadata: Metadata = {
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { CustomCursor } from "@/components/ui/CustomCursor";
-import { ChatWidget } from "@/components/ui/ChatWidget";
+import dynamic from "next/dynamic";
+
+const CustomCursor = dynamic(() => import("@/components/ui/CustomCursor").then(mod => mod.CustomCursor));
+const ChatWidget = dynamic(() => import("@/components/ui/ChatWidget").then(mod => mod.ChatWidget));
 
 export default function RootLayout({
   children,

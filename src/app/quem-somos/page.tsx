@@ -1,7 +1,9 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { QuoteButton } from "@/components/ui/QuoteButton";
-import { ClientCarousel } from "@/components/ui/ClientCarousel";
 import { VideoBanner } from "@/components/ui/VideoBanner";
+import dynamic from "next/dynamic";
+
+const ClientCarousel = dynamic(() => import("@/components/ui/ClientCarousel").then(mod => mod.ClientCarousel));
 import Link from "next/link";
 
 import { Metadata } from 'next';

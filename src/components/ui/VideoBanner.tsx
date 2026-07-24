@@ -25,6 +25,7 @@ export function VideoBanner({ src, playbackRate = 1, title }: VideoBannerProps) 
         loop 
         muted 
         playsInline
+        preload="metadata"
         className="object-cover w-full h-full"
       >
         <source src={src} type="video/mp4" />
