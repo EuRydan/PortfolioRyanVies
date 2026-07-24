@@ -6,6 +6,15 @@ import Link from 'next/link';
 
 const articles = [
   {
+    id: 2,
+    title: 'Quero criar um app ou SaaS: por onde começo?',
+    categories: ['Criação de produto digital'],
+    date: '24 Jul 2026',
+    image: '/capa-produto.jpeg',
+    slug: '/blog/quero-criar-um-app-saas-por-onde-comecar',
+    excerpt: 'Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.'
+  },
+  {
     id: 1,
     title: 'Criação de sites em Duque de Caxias: quanto custa em 2026',
     categories: ['Criação de sites', 'Site no RJ'],
