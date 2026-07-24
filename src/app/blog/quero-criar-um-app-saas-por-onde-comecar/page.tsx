@@ -83,7 +83,7 @@ export default function ArticlePage() {
               <img 
                 src="/capa-produto.jpeg" 
                 alt="Quero criar um app ou SaaS"
-                className="w-full h-full object-cover scale-[1.15]"
+                className="w-full h-full object-cover"
               />
             </div>
 

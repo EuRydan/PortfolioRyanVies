@@ -65,12 +65,12 @@ export function BlogContent() {
               <Link href={article.slug} className="group flex flex-col h-full bg-zinc-800/10 hover:bg-zinc-800/30 rounded-xl transition-colors overflow-hidden">
                 
                 {/* Imagem de Capa do Artigo */}
-                <div className="relative aspect-video w-full bg-zinc-800 flex items-center justify-center">
+                <div className="relative aspect-[3/2] w-full bg-zinc-800 flex items-center justify-center">
                   {article.image ? (
                     <img 
                       src={article.image} 
                       alt={article.title}
-                      className={`object-cover w-full h-full transition-transform duration-700 ${article.id === 2 ? 'scale-[1.15] group-hover:scale-[1.2]' : 'group-hover:scale-105'}`}
+                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : (
                     <span className="text-zinc-600 text-[10px] uppercase tracking-wider font-bold">Imagem do Post</span>
