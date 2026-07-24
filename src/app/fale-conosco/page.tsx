@@ -2,9 +2,14 @@ import { ContactForm } from "@/components/ui/ContactForm";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { VideoBanner } from "@/components/ui/VideoBanner";
 import { ClientCarousel } from "@/components/ui/ClientCarousel";
-export const metadata = {
-  title: 'Fale Conosco - Vies',
-  description: 'Entre em contato com a equipe Vies.',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Fale Conosco | Solicite seu Orçamento',
+  description: 'Pronto para elevar o nível do seu negócio? Entre em contato com a Vies Studios e solicite um orçamento personalizado para o seu próximo projeto digital.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/fale-conosco",
+  },
 };
 
 export default function FaleConoscoPage() {

@@ -5,6 +5,16 @@ import Link from "next/link";
 import { ClientCarousel } from "@/components/ui/ClientCarousel";
 import { ScrollRevealStats } from "@/components/ui/ScrollRevealStats";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Vies Studios | Laboratório Criativo de Design e Web",
+  description: "Agência de design estratégico e desenvolvimento web com estética premium. Transformamos ideias em produtos digitais seguros, focados em performance e SEO.",
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/",
+  },
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen">

@@ -6,8 +6,11 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'O Que Fazemos',
-  description: 'Estratégia, Design e Performance para marcas.',
+  title: 'O Que Fazemos | Soluções em Design e Web',
+  description: 'Nossas especialidades: Criação de Marcas, Sites Institucionais, Landing Pages e E-commerces. Foco absoluto em estética premium, segurança e SEO avançado.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/o-que-fazemos",
+  },
 };
 
 export default function OQueFazemosPage() {

@@ -1,9 +1,14 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 
-export const metadata = {
-  title: 'Termos de Uso - Vies',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Termos de Uso | Vies Studios',
   description: 'Termos e condições de uso dos nossos serviços e site.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/termos",
+  },
 };
 
 export default function TermosPage() {

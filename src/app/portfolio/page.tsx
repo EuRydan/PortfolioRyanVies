@@ -2,9 +2,14 @@ import Link from 'next/link';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ClientCarousel } from '@/components/ui/ClientCarousel';
 
-export const metadata = {
-  title: 'Portfólio - Vies',
-  description: 'Conheça nossos projetos recentes e casos de sucesso.',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Portfólio de Projetos | Vies Studios',
+  description: 'Conheça nossos cases de sucesso em design e desenvolvimento web. Projetos com alto impacto visual, tecnologia de ponta e resultados reais para nossos clientes.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/portfolio",
+  },
 };
 
 const projects = [

@@ -8,6 +8,9 @@ import AudioPlayer from '@/components/AudioPlayer';
 export const metadata: Metadata = {
   title: 'Criação de sites em Duque de Caxias: quanto custa em 2026 | Vies Studios',
   description: 'Quanto custa um site em Duque de Caxias em 2026? Veja faixas de preço reais, o que muda o valor e como contratar sem cair em armadilha.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/blog/criacao-de-sites-em-duque-de-caxias",
+  },
 };
 
 export default function ArticlePage() {

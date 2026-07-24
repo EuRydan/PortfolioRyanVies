@@ -1,9 +1,14 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 
-export const metadata = {
-  title: 'Política de Privacidade - Vies',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Política de Privacidade | Vies Studios',
   description: 'Nossa política de privacidade e como tratamos seus dados.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/privacidade",
+  },
 };
 
 export default function PrivacidadePage() {

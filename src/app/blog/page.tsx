@@ -1,9 +1,14 @@
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { BlogContent } from './BlogContent';
 
-export const metadata = {
-  title: 'Blog - Vies',
-  description: 'Acompanhe as novidades e artigos do nosso blog.',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog | Artigos sobre Design, Tecnologia e SEO',
+  description: 'Fique por dentro das últimas tendências de design estratégico, desenvolvimento web, dicas de performance e estratégias de SEO com os especialistas da Vies Studios.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/blog",
+  },
 };
 
 export default function BlogPage() {

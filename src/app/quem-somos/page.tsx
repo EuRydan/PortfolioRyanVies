@@ -4,9 +4,14 @@ import { ClientCarousel } from "@/components/ui/ClientCarousel";
 import { VideoBanner } from "@/components/ui/VideoBanner";
 import Link from "next/link";
 
-export const metadata = {
-  title: 'Quem Somos - Vies',
-  description: 'Somos um laboratório criativo de design e tecnologia.',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Quem Somos | Conheça a Vies Studios',
+  description: 'Somos um laboratório criativo obcecado por estética e performance. Entenda nossa cultura, nossos processos e por que somos a escolha certa para o seu negócio.',
+  alternates: {
+    canonical: "https://www.viesstudios.com.br/quem-somos",
+  },
 };
 
 export default function QuemSomosPage() {
