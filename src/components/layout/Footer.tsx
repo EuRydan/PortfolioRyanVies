@@ -55,6 +55,7 @@ export function Footer() {
             <Link href="/#quem-somos" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Quem Somos</Link>
             <Link href="/portfolio" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Portfólio</Link>
             <Link href="/o-que-fazemos" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">O Que Fazemos</Link>
+            <Link href="/blog" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Blog</Link>
             <Link href="/fale-conosco" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Fale Conosco</Link>
           </div>
 
