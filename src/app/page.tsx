@@ -436,6 +436,96 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Blog Preview Section */}
+        <section className="w-full pt-20 md:pt-32 lg:pt-40 bg-zinc-900">
+          <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
+              <AnimatedSection className="flex flex-col items-start">
+                <h2 
+                  className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold mb-4" 
+                  style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                >
+                  Nosso Blog
+                </h2>
+                <h3 
+                  className="text-3xl sm:text-4xl font-bold text-white leading-tight"
+                  style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                >
+                  Últimos artigos e insights
+                </h3>
+              </AnimatedSection>
+              
+              <AnimatedSection delay={0.1}>
+                <Link 
+                  href="/blog" 
+                  className="inline-flex items-center text-[#d75310] font-bold tracking-widest uppercase hover:text-white transition-colors"
+                >
+                  Ver todos os artigos
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </AnimatedSection>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+              {/* Article 1 */}
+              <AnimatedSection delay={0.2}>
+                <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
+                  <div className="w-full aspect-[3/2] overflow-hidden mb-6 bg-zinc-800 rounded-lg">
+                    <img 
+                      src="/capa-produto.jpeg" 
+                      alt="Quero criar um app ou SaaS"
+                      className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    />
+                  </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-[#d75310] text-xs font-bold uppercase tracking-wider">
+                      Criação de produto digital
+                    </span>
+                    <span className="text-zinc-500 text-xs font-medium">
+                      24 Jul 2026
+                    </span>
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-[#d75310] transition-colors" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    Quero criar um app ou SaaS: por onde começo?
+                  </h4>
+                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed line-clamp-3">
+                    Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.
+                  </p>
+                </Link>
+              </AnimatedSection>
+
+              {/* Article 2 */}
+              <AnimatedSection delay={0.3}>
+                <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group block h-full flex flex-col">
+                  <div className="w-full aspect-[3/2] overflow-hidden mb-6 bg-zinc-800 rounded-lg">
+                    <img 
+                      src="/capa-artigo.jpg" 
+                      alt="Criação de sites em Duque de Caxias"
+                      className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    />
+                  </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-[#d75310] text-xs font-bold uppercase tracking-wider">
+                      Criação de sites
+                    </span>
+                    <span className="text-zinc-500 text-xs font-medium">
+                      24 Jul 2026
+                    </span>
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-[#d75310] transition-colors" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    Criação de sites em Duque de Caxias: quanto custa em 2026
+                  </h4>
+                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed line-clamp-3">
+                    Quanto custa um site em Duque de Caxias em 2026? Veja faixas de preço reais, o que muda o valor e como contratar sem cair em armadilha.
+                  </p>
+                </Link>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
         {/* Clientes Section */}
         <section className="w-full pt-20 md:pt-32 lg:pt-40 pb-20 md:pb-32 lg:pb-40 overflow-hidden">
           <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
