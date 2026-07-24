@@ -468,58 +468,62 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 gap-4 md:gap-6 max-w-5xl">
               {/* Article 1 */}
               <AnimatedSection delay={0.2}>
-                <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-[3/2] overflow-hidden mb-6 bg-zinc-800 rounded-lg">
+                <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group flex flex-col sm:flex-row bg-zinc-800/20 hover:bg-zinc-800/40 border border-zinc-800/50 rounded-2xl p-4 md:p-5 gap-5 md:gap-8 transition-all duration-300 items-center">
+                  <div className="w-full sm:w-48 md:w-56 shrink-0 aspect-[3/2] overflow-hidden rounded-xl bg-zinc-800">
                     <img 
                       src="/capa-produto.jpeg" 
                       alt="Quero criar um app ou SaaS"
                       className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />
                   </div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-[#d75310] text-xs font-bold uppercase tracking-wider">
-                      Criação de produto digital
-                    </span>
-                    <span className="text-zinc-500 text-xs font-medium">
-                      24 Jul 2026
-                    </span>
+                  <div className="flex flex-col w-full">
+                    <div className="flex items-center gap-3 mb-2 md:mb-3">
+                      <span className="text-[#d75310] text-[10px] md:text-xs font-bold uppercase tracking-wider">
+                        Criação de produto digital
+                      </span>
+                      <span className="text-zinc-500 text-[10px] md:text-xs font-medium">
+                        24 Jul 2026
+                      </span>
+                    </div>
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                      Quero criar um app ou SaaS: por onde começo?
+                    </h4>
+                    <p className="text-zinc-400 text-xs md:text-sm leading-relaxed line-clamp-2 md:line-clamp-3">
+                      Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.
+                    </p>
                   </div>
-                  <h4 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-[#d75310] transition-colors" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                    Quero criar um app ou SaaS: por onde começo?
-                  </h4>
-                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed line-clamp-3">
-                    Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.
-                  </p>
                 </Link>
               </AnimatedSection>
 
               {/* Article 2 */}
               <AnimatedSection delay={0.3}>
-                <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-[3/2] overflow-hidden mb-6 bg-zinc-800 rounded-lg">
+                <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group flex flex-col sm:flex-row bg-zinc-800/20 hover:bg-zinc-800/40 border border-zinc-800/50 rounded-2xl p-4 md:p-5 gap-5 md:gap-8 transition-all duration-300 items-center">
+                  <div className="w-full sm:w-48 md:w-56 shrink-0 aspect-[3/2] overflow-hidden rounded-xl bg-zinc-800">
                     <img 
                       src="/capa-artigo.jpg" 
                       alt="Criação de sites em Duque de Caxias"
                       className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />
                   </div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-[#d75310] text-xs font-bold uppercase tracking-wider">
-                      Criação de sites
-                    </span>
-                    <span className="text-zinc-500 text-xs font-medium">
-                      24 Jul 2026
-                    </span>
+                  <div className="flex flex-col w-full">
+                    <div className="flex items-center gap-3 mb-2 md:mb-3">
+                      <span className="text-[#d75310] text-[10px] md:text-xs font-bold uppercase tracking-wider">
+                        Criação de sites
+                      </span>
+                      <span className="text-zinc-500 text-[10px] md:text-xs font-medium">
+                        24 Jul 2026
+                      </span>
+                    </div>
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                      Criação de sites em Duque de Caxias: quanto custa em 2026
+                    </h4>
+                    <p className="text-zinc-400 text-xs md:text-sm leading-relaxed line-clamp-2 md:line-clamp-3">
+                      Quanto custa um site em Duque de Caxias em 2026? Veja faixas de preço reais, o que muda o valor e como contratar sem cair em armadilha.
+                    </p>
                   </div>
-                  <h4 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-[#d75310] transition-colors" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                    Criação de sites em Duque de Caxias: quanto custa em 2026
-                  </h4>
-                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed line-clamp-3">
-                    Quanto custa um site em Duque de Caxias em 2026? Veja faixas de preço reais, o que muda o valor e como contratar sem cair em armadilha.
-                  </p>
                 </Link>
               </AnimatedSection>
             </div>
