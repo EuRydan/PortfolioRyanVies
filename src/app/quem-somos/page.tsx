@@ -64,7 +64,7 @@ export default function QuemSomosPage() {
             <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 border border-zinc-800/50 rounded-2xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
               <div className="shrink-0 flex items-center justify-center">
                 <img 
-                  src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/167761004" 
+                  src="/ux-badge.png" 
                   alt="Selo de Certificação em Experiência do Usuário" 
                   className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl"
                 />
