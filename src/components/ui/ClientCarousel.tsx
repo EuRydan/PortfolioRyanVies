@@ -22,8 +22,13 @@ const logos = [
 ];
 
 export function ClientCarousel() {
-  // Duplicamos o array 4 vezes: 2 para preencher a tela atual e 2 para o loop contínuo
-  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
+  // Separamos as logos em duas linhas, 8 em cima, 8 embaixo
+  const topLogos = logos.slice(0, 8);
+  const bottomLogos = logos.slice(8, 16);
+
+  // Duplicamos o array várias vezes para preencher a tela atual e para o loop contínuo
+  const duplicatedTopLogos = [...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos];
+  const duplicatedBottomLogos = [...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos];
 
   return (
     <div className="w-full overflow-hidden relative flex flex-col gap-12 py-6">
@@ -40,7 +45,7 @@ export function ClientCarousel() {
           repeat: Infinity,
         }}
       >
-        {duplicatedLogos.map((logo, index) => (
+        {duplicatedTopLogos.map((logo, index) => (
           <div key={index} className="flex items-center justify-center w-[80px] h-[80px] md:w-[156px] md:h-[156px] shrink-0 mr-6 md:mr-16">
             <img 
               src={logo.src} 
@@ -63,7 +68,7 @@ export function ClientCarousel() {
           repeat: Infinity,
         }}
       >
-        {duplicatedLogos.map((logo, index) => (
+        {duplicatedBottomLogos.map((logo, index) => (
           <div key={index} className="flex items-center justify-center w-[80px] h-[80px] md:w-[156px] md:h-[156px] shrink-0 mr-6 md:mr-16">
             <img 
               src={logo.src} 

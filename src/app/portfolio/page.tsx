@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 const projects = [
-  { id: 'memvor', title: 'Memvor', tag: 'Web e UX', img: '/memvor.webp' },
+  { id: 'memvor', title: 'Memvor', tag: 'Produto, Web, UX e Branding', img: '/memvor.webp' },
   { id: 'teainter', title: 'Teainter', tag: 'Branding', img: '/teainter.gif' },
   { id: 'korre-club', title: 'Korre Club', tag: 'Branding', img: '/banner-korre-club.png' },
   { id: 'level-up', title: 'Level Up', tag: 'ID Visual', img: '/level-up.webp' },
