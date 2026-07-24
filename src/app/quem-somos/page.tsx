@@ -62,16 +62,12 @@ export default function QuemSomosPage() {
             </AnimatedSection>
             
             <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
-              <div className="shrink-0 flex items-center justify-center w-full sm:w-[350px]">
-                <iframe
-                  src="https://www.credential.net/embed/ed153957-bfa2-44f2-be26-f9107cc0dab6"
-                  width="100%"
-                  height="260"
-                  frameBorder="0"
-                  allowFullScreen
-                  className="rounded-lg shadow-xl"
-                  title="Certificação em Experiência do Usuário"
-                ></iframe>
+              <div className="shrink-0 flex items-center justify-center">
+                <img 
+                  src="/ux-badge.png" 
+                  alt="Selo de Certificação em Experiência do Usuário" 
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl"
+                />
               </div>
               <div className="flex flex-col justify-center h-full pt-2">
                 <h4 className="text-xl sm:text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>

@@ -12,7 +12,6 @@ const securityHeaders = [
       "img-src 'self' data: blob: https://api.accredible.com",
       "font-src 'self'",
       "connect-src 'self'",
-      "frame-src 'self' https://www.credential.net",
       "frame-ancestors 'none'",
       "base-uri 'self'",
       "form-action 'self'",
