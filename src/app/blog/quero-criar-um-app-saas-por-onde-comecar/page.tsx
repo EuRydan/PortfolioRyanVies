@@ -2,6 +2,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { ParallaxBackground } from '@/components/ui/ParallaxBackground';
+import { TableOfContents } from '@/components/ui/TableOfContents';
 
 export const metadata: Metadata = {
   title: 'Quero criar um app ou SaaS: por onde começo? | Vies Studios',
@@ -12,6 +13,16 @@ export const metadata: Metadata = {
 };
 
 export default function ArticlePage() {
+  const tocItems = [
+    { id: 'qual-problema', label: 'Qual é o problema que você resolve?' },
+    { id: 'diferenca-app-saas', label: 'A diferença entre app e SaaS' },
+    { id: 'sobre-mvp', label: 'O que é um MVP de verdade' },
+    { id: 'quanto-custa', label: 'Quanto custa desenvolver?' },
+    { id: 'stack-tecnologica', label: 'Stack: o que saber antes de contratar' },
+    { id: 'erro-mais-comum', label: 'O erro que afunda projetos' },
+    { id: 'quando-contratar', label: 'Quando contratar uma agência' },
+  ];
+
   return (
     <main className="min-h-screen bg-white flex flex-col">
       
@@ -96,7 +107,7 @@ export default function ArticlePage() {
                 Esse artigo não é um tutorial de como programar. É um guia de como pensar antes de agir.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="qual-problema" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Antes de qualquer coisa: qual é o problema que você resolve?
               </h3>
               
@@ -116,7 +127,7 @@ export default function ArticlePage() {
                 Produto nasce de problema. Problema nasce de observação, não de inspiração.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="diferenca-app-saas" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 A diferença entre app, SaaS e produto digital
               </h3>
               
@@ -140,7 +151,7 @@ export default function ArticlePage() {
                 Saber em qual categoria sua ideia se encaixa importa porque define o modelo de monetização, o ciclo de vendas e o que precisa ser construído primeiro.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="sobre-mvp" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 O MVP não é uma versão menor do seu produto. É outra coisa.
               </h3>
               
@@ -166,7 +177,7 @@ export default function ArticlePage() {
                 Um MVP bem construído leva de 30 a 90 dias. Um produto com todas as features que você imaginou hoje leva de 6 meses a 2 anos, e boa parte dessas features vai ser removida depois que você descobrir o que o usuário realmente usa.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="quanto-custa" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Quanto custa desenvolver um produto digital?
               </h3>
               
@@ -216,7 +227,7 @@ export default function ArticlePage() {
                 Vale dizer: o custo inicial pode ser próximo de zero usando planos gratuitos de Vercel, Supabase e Railway. O gasto real começa quando você tem usuários ativos e começa a chamar APIs pagas, como as de inteligência artificial, envio de e-mail ou processamento de pagamentos.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="stack-tecnologica" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Stack: o que você precisa saber antes de contratar alguém
               </h3>
 
@@ -235,7 +246,7 @@ export default function ArticlePage() {
                 A stack mais usada em 2026 pra produtos web é Next.js no frontend, Supabase como banco de dados com autenticação, e Vercel pra deploy. Essa combinação cobre a maioria dos casos de uso com boa performance, segurança razoável e custo inicial baixo.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="erro-mais-comum" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 O erro que afunda a maioria dos projetos
               </h3>
 
@@ -255,7 +266,7 @@ export default function ArticlePage() {
                 Os produtos que chegam longe não são os que foram construídos mais rápido. São os que erraram mais barato.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="quando-contratar" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Quando faz sentido contratar uma agência ou estúdio
               </h3>
 
@@ -319,6 +330,12 @@ export default function ArticlePage() {
 
             </div>
           </div>
+          
+          {/* Sidebar */}
+          <aside className="w-[280px] shrink-0 hidden lg:block sticky top-32">
+            <TableOfContents items={tocItems} />
+          </aside>
+
         </div>
       </section>
     </main>
