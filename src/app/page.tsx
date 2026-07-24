@@ -27,7 +27,8 @@ export default function Home() {
           loop 
           muted 
           playsInline
-          preload="metadata"
+          preload="auto"
+          poster="/hero-poster.webp"
           className="object-cover w-full h-full rotate-180"
         >
           <source src="/video-hero-vies-home.mp4" type="video/mp4" />
