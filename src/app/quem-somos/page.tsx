@@ -1,5 +1,4 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { QuoteButton } from "@/components/ui/QuoteButton";
 import { VideoBanner } from "@/components/ui/VideoBanner";
 import dynamic from "next/dynamic";
 
@@ -77,10 +76,6 @@ export default function QuemSomosPage() {
                   Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação oficial em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
                 </p>
               </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.3} className="mt-12">
-              <QuoteButton />
             </AnimatedSection>
           </div>
         </div>
