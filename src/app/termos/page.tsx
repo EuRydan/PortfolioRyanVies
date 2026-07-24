@@ -27,7 +27,7 @@ export default function TermosPage() {
         <AnimatedSection delay={0.1} className="prose prose-invert prose-zinc max-w-none">
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">1. Aceitação dos Termos</h2>
           <p className="text-zinc-300 leading-relaxed mb-6">
-            Ao acessar e utilizar o site da Viés, você concorda em cumprir e ficar vinculado a estes Termos de Uso. 
+            Ao acessar e utilizar o site da Vies, você concorda em cumprir e ficar vinculado a estes Termos de Uso. 
             Se você não concordar com qualquer parte destes termos, não deverá acessar ou utilizar nosso site.
           </p>
 
@@ -41,18 +41,18 @@ export default function TermosPage() {
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">3. Propriedade Intelectual</h2>
           <p className="text-zinc-300 leading-relaxed mb-6">
             Todo o conteúdo presente neste site, incluindo textos, gráficos, logotipos, imagens, clipes de áudio, downloads digitais e compilações de dados 
-            é de propriedade da Viés ou de seus fornecedores de conteúdo e é protegido pelas leis internacionais de direitos autorais.
+            é de propriedade da Vies ou de seus fornecedores de conteúdo e é protegido pelas leis internacionais de direitos autorais.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">4. Limitação de Responsabilidade</h2>
           <p className="text-zinc-300 leading-relaxed mb-6">
-            A Viés não será responsável por quaisquer danos diretos, indiretos, incidentais, especiais ou consequentes 
+            A Vies não será responsável por quaisquer danos diretos, indiretos, incidentais, especiais ou consequentes 
             que resultem do uso ou da incapacidade de usar nosso site ou serviços, incluindo, mas não se limitando a, confiança do usuário em qualquer informação obtida no site.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">5. Modificações dos Termos</h2>
           <p className="text-zinc-300 leading-relaxed mb-6">
-            A Viés reserva-se o direito de revisar estes Termos de Uso a qualquer momento sem aviso prévio. 
+            A Vies reserva-se o direito de revisar estes Termos de Uso a qualquer momento sem aviso prévio. 
             Ao usar este site, você concorda em ficar vinculado à versão atual desses Termos de Uso.
           </p>
 

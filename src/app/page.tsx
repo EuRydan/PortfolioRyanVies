@@ -89,7 +89,7 @@ export default function Home() {
               className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold text-left" 
               style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
             >
-              Um pouco do portfólio da Viés
+              Um pouco do portfólio da Vies
             </h2>
           </AnimatedSection>
           

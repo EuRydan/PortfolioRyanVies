@@ -1,9 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function Footer() {
+  const pathname = usePathname();
+  const isContentPage = pathname?.startsWith("/blog/") && pathname !== "/blog";
+  const maxWidthClass = isContentPage ? "max-w-[1280px]" : "max-w-[1920px]";
+
   return (
     <footer className="w-full bg-zinc-950 pt-24 md:pt-32 pb-12 md:pb-16">
-      <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+      <div className={`w-full ${maxWidthClass} mx-auto px-6 md:px-14 lg:px-24`}>
         <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-6 lg:gap-6 mb-16">
           {/* Logo & Descrição */}
           <div className="col-span-4 md:col-span-4 lg:col-span-4 flex flex-col">

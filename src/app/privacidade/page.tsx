@@ -27,7 +27,7 @@ export default function PrivacidadePage() {
         <AnimatedSection delay={0.1} className="prose prose-invert prose-zinc max-w-none">
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">1. Introdução</h2>
           <p className="text-zinc-300 leading-relaxed mb-6">
-            A Viés ("nós", "nosso", "nossa") respeita a sua privacidade e está comprometida em proteger os seus dados pessoais. 
+            A Vies ("nós", "nosso", "nossa") respeita a sua privacidade e está comprometida em proteger os seus dados pessoais. 
             Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações quando você utiliza nosso site e nossos serviços.
           </p>
 
