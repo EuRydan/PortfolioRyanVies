@@ -468,7 +468,7 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               {/* Article 1 */}
               <AnimatedSection delay={0.2}>
                 <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
