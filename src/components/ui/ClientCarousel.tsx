@@ -22,16 +22,14 @@ const logos = [
 ];
 
 export function ClientCarousel() {
-  // Separamos as logos em duas linhas, 8 em cima, 8 embaixo
-  const topLogos = logos.slice(0, 8);
-  const bottomLogos = logos.slice(8, 16);
-
-  // Duplicamos o array várias vezes para preencher a tela atual e para o loop contínuo
-  const duplicatedTopLogos = [...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos, ...topLogos];
-  const duplicatedBottomLogos = [...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos, ...bottomLogos];
+  // Para criar a ilusão de esteira (conveyor belt), usamos todos os logos.
+  // A linha de baixo tem a ordem invertida para parecer que o logo que saiu por um lado, volta pelo outro.
+  const duplicatedTopLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
+  const reversedLogos = [...logos].reverse();
+  const duplicatedBottomLogos = [...reversedLogos, ...reversedLogos, ...reversedLogos, ...reversedLogos, ...reversedLogos, ...reversedLogos];
 
   return (
-    <div className="w-full overflow-hidden relative flex flex-col gap-12 py-6">
+    <div className="w-full overflow-hidden relative flex flex-col gap-4 py-6">
       
       {/* Primeira Linha (Movimento para a esquerda) */}
       <motion.div 
@@ -64,7 +62,7 @@ export function ClientCarousel() {
         }}
         transition={{
           ease: "linear",
-          duration: 140, // Velocidade um pouco diferente para efeito visual
+          duration: 120, // Mesma velocidade para manter a ilusão de esteira conectada
           repeat: Infinity,
         }}
       >
