@@ -61,7 +61,7 @@ export default function QuemSomosPage() {
               </div>
             </AnimatedSection>
             
-            <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 border border-zinc-800/50 rounded-2xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
+            <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
               <div className="shrink-0 flex items-center justify-center">
                 <img 
                   src="/ux-badge.png" 
