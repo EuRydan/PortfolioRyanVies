@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 };
 
 const projects = [
-  { id: 'memvor', title: 'Memvor', tag: 'Produto, Web, UX e Branding', img: '/memvor.webp' },
-  { id: 'teainter', title: 'Teainter', tag: 'Branding', img: '/teainter.gif' },
-  { id: 'lic', title: 'LIC', tag: 'Branding', img: '/lic.svg' },
-  { id: 'korre-club', title: 'Korre Club', tag: 'Branding', img: '/banner-korre-club.png' },
-  { id: 'level-up', title: 'Level Up', tag: 'ID Visual', img: '/level-up.webp' },
-  { id: 'voxis', title: 'Voxis', tag: 'Produto, UX e Branding', img: '/voxis.png', customClass: 'scale-[1.15]' },
-  { id: 'winners', title: 'Winners', tag: 'ID Visual', img: '/winners.png' },
-  { id: 'gn', title: 'Gigantes de Nazaré', tag: 'Material On/Off', img: '/GN.gif' },
+  { id: 'memvor', title: 'Memvor', tag: 'Produto, Web, UX e Branding', img: '/projects/covers/memvor.webp' },
+  { id: 'teainter', title: 'Teainter', tag: 'Branding', img: '/projects/teainter/teainter-2.gif' },
+  { id: 'lic', title: 'LIC', tag: 'Branding', img: '/projects/covers/lic.svg' },
+  { id: 'korre-club', title: 'Korre Club', tag: 'Branding', img: '/projects/covers/banner-korre-club.png' },
+  { id: 'level-up', title: 'Level Up', tag: 'ID Visual', img: '/projects/covers/level-up.webp' },
+  { id: 'voxis', title: 'Voxis', tag: 'Produto, UX e Branding', img: '/projects/voxis/voxis-9.png', customClass: 'scale-[1.15]' },
+  { id: 'winners', title: 'Winners', tag: 'ID Visual', img: '/projects/covers/winners.png' },
+  { id: 'gn', title: 'Gigantes de Nazaré', tag: 'Material On/Off', img: '/projects/covers/GN.gif' },
 ];
 
 import { VideoBanner } from '@/components/ui/VideoBanner';

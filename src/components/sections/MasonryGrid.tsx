@@ -7,9 +7,9 @@ const placeholderCases = [
   { slug: "korre-club", title: "Korre Club", aspectRatio: "video" as const, coverImage: "/projects/covers/banner-korre-club.png" },
   { slug: "LIC", title: "LIC", aspectRatio: "video" as const, coverImage: "/projects/covers/lic.svg" },
   { slug: "level-up", title: "Level Up", aspectRatio: "video" as const, coverImage: "/projects/covers/level-up.webp" },
-  { slug: "teainter", title: "TEAINTER", aspectRatio: "video" as const, coverImage: "/teainter.gif" },
+  { slug: "teainter", title: "TEAINTER", aspectRatio: "video" as const, coverImage: "/projects/teainter/teainter-2.gif" },
   { slug: "gn", title: "Gigantes de Nazaré", aspectRatio: "video" as const, coverImage: "/projects/covers/GN.gif" },
-  { slug: "memvor", title: "Memvor.app", aspectRatio: "video" as const, coverImage: "/Memvor.svg" },
+  { slug: "memvor", title: "Memvor.app", aspectRatio: "video" as const, coverImage: "/projects/covers/memvor.webp" },
 ];
 
 export function MasonryGrid() {
