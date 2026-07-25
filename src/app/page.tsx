@@ -154,7 +154,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/teainter.gif" 
+                    src="/projects/teainter/teainter-2.gif" 
                     alt="Capa do projeto Teainter" 
                     className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
@@ -217,7 +217,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/voxis.png" 
+                    src="/projects/voxis/voxis-9.png" 
                     alt="Capa do projeto Voxis" 
                     className="absolute inset-0 w-full h-full object-cover scale-[1.15] md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
