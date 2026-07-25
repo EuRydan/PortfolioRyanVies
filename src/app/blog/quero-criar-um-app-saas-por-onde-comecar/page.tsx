@@ -50,7 +50,7 @@ export default function ArticlePage() {
 
             <AnimatedSection delay={0.1}>
               <h1 
-                className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 max-w-4xl"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 max-w-4xl"
                 style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
               >
                 Quero criar um app ou SaaS: por onde começo?
@@ -58,7 +58,7 @@ export default function ArticlePage() {
             </AnimatedSection>
             
             <AnimatedSection delay={0.2}>
-              <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-2xl">
+              <p className="text-zinc-400 text-base md:text-base md:text-lg leading-relaxed max-w-2xl">
                 Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.
               </p>
             </AnimatedSection>
@@ -85,7 +85,7 @@ export default function ArticlePage() {
       </section>
 
       {/* Article Content Section */}
-      <section className="w-full flex-1 bg-white py-16 md:py-24">
+      <section className="w-full flex-1 bg-white py-10 md:py-16 lg:py-24">
         <div className="w-full max-w-[1280px] mx-auto px-6 md:px-14 lg:px-24 flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
           
           <div className="flex-1 max-w-3xl flex flex-col">
@@ -99,71 +99,71 @@ export default function ArticlePage() {
             </div>
 
             <div className="prose prose-lg prose-zinc max-w-none">
-              <p className="text-zinc-800 text-lg md:text-xl leading-relaxed mb-6 font-medium">
+              <p className="text-zinc-800 text-base md:text-lg lg:text-xl leading-relaxed mb-6 font-medium">
                 A maioria das pessoas que chega com uma ideia de app ou SaaS comete o mesmo erro: começa pela parte errada. Contrata um desenvolvedor antes de validar, gasta meses construindo algo que ninguém pediu ou tenta fazer tudo de uma vez e trava no meio do caminho.
               </p>
               
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
                 Esse artigo não é um tutorial de como programar. É um guia de como pensar antes de agir.
               </p>
 
-              <h3 id="qual-problema" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="qual-problema" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Antes de qualquer coisa: qual é o problema que você resolve?
               </h3>
               
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Produto digital que não resolve um problema específico não vira negócio. Vira projeto de portfolio.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 A pergunta certa não é "minha ideia é boa?" É "quem paga pra ter esse problema resolvido hoje, de que forma, e quanto esse problema custa pra essa pessoa?"
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Se você consegue responder isso com nomes reais de pessoas, conversas que já teve e situações concretas, você tem o começo de um produto. Se a resposta for "todo mundo que usa smartphone", você ainda está no estágio da ideia.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
                 Produto nasce de problema. Problema nasce de observação, não de inspiração.
               </p>
 
-              <h3 id="diferenca-app-saas" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="diferenca-app-saas" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 A diferença entre app, SaaS e produto digital
               </h3>
               
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Os três termos aparecem juntos o tempo todo, mas não significam a mesma coisa.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 <strong>App</strong> é qualquer aplicativo, mobile ou web, que o usuário acessa pra realizar alguma tarefa. Pode ser gratuito, pago por download ou por uso.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 <strong>SaaS (Software as a Service)</strong> é um modelo de negócio específico: o usuário paga uma assinatura recorrente pra acessar o software pela internet, sem instalar nada. O vendedor hospeda tudo e o cliente paga mensalmente ou anualmente. É o modelo do Spotify, do Notion, do Canva.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 <strong>Produto digital</strong> é o termo mais amplo. Cobre apps, SaaS, plataformas, ferramentas internas e qualquer software que entrega valor de forma contínua.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
                 Saber em qual categoria sua ideia se encaixa importa porque define o modelo de monetização, o ciclo de vendas e o que precisa ser construído primeiro.
               </p>
 
-              <h3 id="sobre-mvp" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="sobre-mvp" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 O MVP não é uma versão menor do seu produto. É outra coisa.
               </h3>
               
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 MVP é a sigla pra Minimum Viable Product, produto mínimo viável. O erro mais comum é interpretar isso como "meu produto completo com menos features".
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 MVP é a menor versão possível que valida se alguém paga pelo que você está oferecendo. Pode ser uma landing page com formulário de interesse antes de existir qualquer código. Pode ser um processo manual que você executa pra um cliente antes de automatizar. Pode ser um protótipo no Figma que você mostra pra dez pessoas e coleta reação.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6 font-bold">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6 font-bold">
                 O objetivo do MVP não é lançar. É aprender rápido e barato se a direção faz sentido.
               </p>
 
@@ -173,15 +173,15 @@ export default function ArticlePage() {
                 </p>
               </div>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
                 Um MVP bem construído leva de 30 a 90 dias. Um produto com todas as features que você imaginou hoje leva de 6 meses a 2 anos, e boa parte dessas features vai ser removida depois que você descobrir o que o usuário realmente usa.
               </p>
 
-              <h3 id="quanto-custa" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="quanto-custa" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Quanto custa desenvolver um produto digital?
               </h3>
               
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Depende muito do que você chama de produto. As faixas mais realistas para o mercado brasileiro em 2026:
               </p>
 
@@ -219,81 +219,81 @@ export default function ArticlePage() {
                 </table>
               </div>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Esses valores cobrem desenvolvimento e design. Infraestrutura, APIs de terceiros, domínio e ferramentas de suporte são custos adicionais que variam conforme o produto.
               </p>
               
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
                 Vale dizer: o custo inicial pode ser próximo de zero usando planos gratuitos de Vercel, Supabase e Railway. O gasto real começa quando você tem usuários ativos e começa a chamar APIs pagas, como as de inteligência artificial, envio de e-mail ou processamento de pagamentos.
               </p>
 
-              <h3 id="stack-tecnologica" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="stack-tecnologica" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Stack: o que você precisa saber antes de contratar alguém
               </h3>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Você não precisa saber programar pra ter um produto digital. Mas precisa entender o suficiente pra não ser enganado ou tomar decisões ruins de arquitetura no começo.
               </p>
 
-              <ul className="list-disc pl-6 text-zinc-600 text-lg leading-relaxed mb-6 space-y-4">
+              <ul className="list-disc pl-6 text-zinc-600 text-base md:text-lg leading-relaxed mb-6 space-y-4">
                 <li><strong>Frontend</strong> é o que o usuário vê e interage. <strong>Backend</strong> é a lógica que processa os dados, aplica as regras de negócio e se comunica com o banco de dados. Você precisa dos dois, e eles precisam conversar bem.</li>
                 <li><strong>Banco de dados</strong> guarda tudo: usuários, transações, conteúdo. A escolha certa no começo evita reescrever metade do produto mais tarde.</li>
                 <li><strong>Autenticação</strong> é o sistema de login. Parece simples, mas é onde a maioria dos produtos tem as vulnerabilidades mais graves se feito sem cuidado.</li>
                 <li><strong>Pagamento recorrente</strong> em SaaS não é só "integrar o Pix". Envolve planos, cobranças automáticas, gestão de inadimplência, webhooks pra confirmar pagamento e lógica pra liberar ou bloquear acesso conforme o status da assinatura.</li>
               </ul>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
                 A stack mais usada em 2026 pra produtos web é Next.js no frontend, Supabase como banco de dados com autenticação, e Vercel pra deploy. Essa combinação cobre a maioria dos casos de uso com boa performance, segurança razoável e custo inicial baixo.
               </p>
 
-              <h3 id="erro-mais-comum" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="erro-mais-comum" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 O erro que afunda a maioria dos projetos
               </h3>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Construir demais antes de validar.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Isso acontece porque a fase de construção parece produtiva. Você tá fazendo algo, o produto vai tomando forma, cada nova feature parece importante. O problema é que você só vai descobrir se acertou na direção quando alguém real usar o produto e pagar por ele.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Cada semana construindo uma feature que ninguém pediu é uma semana que você poderia ter usado pra falar com clientes, ajustar o posicionamento ou mudar completamente o que o produto faz.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12 font-bold">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12 font-bold">
                 Os produtos que chegam longe não são os que foram construídos mais rápido. São os que erraram mais barato.
               </p>
 
-              <h3 id="quando-contratar" className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 id="quando-contratar" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Quando faz sentido contratar uma agência ou estúdio
               </h3>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Depende do momento e do que você precisa.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Se você ainda está na fase de validação, o que você precisa não é de código, é de clareza sobre o problema, o público e a proposta de valor. Nessa fase, um designer que sabe construir protótipos e uma conversa honesta sobre viabilidade valem mais que um time de desenvolvimento.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
                 Se você já validou a ideia, tem pessoas dispostas a pagar e precisa colocar o produto no ar, aí faz sentido contratar desenvolvimento.
               </p>
 
-              <p className="text-zinc-600 text-lg leading-relaxed mb-12">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
                 O que evitar: contratar alguém pra "desenvolver a ideia" sem ter clareza do que precisa ser construído primeiro. Sem um briefing bem definido, o projeto vira uma conversa sem fim de adicionar features e o prazo estoura antes do produto existir.
               </p>
 
               <div className="bg-zinc-900 text-white rounded-xl p-8 md:p-10 my-12">
-                <h4 className="text-xl md:text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                <h4 className="text-lg md:text-xl lg:text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                   O que a Viés faz nesse contexto
                 </h4>
-                <p className="text-zinc-300 text-lg leading-relaxed mb-6">
+                <p className="text-zinc-300 text-base md:text-lg leading-relaxed mb-6">
                   A Viés Studios desenvolve produtos digitais desde a concepção até o lançamento. Já construímos SaaS com autenticação, planos de assinatura, pagamento recorrente e painel administrativo. Sabemos onde a maioria dos projetos trava e como evitar que isso aconteça no seu.
                 </p>
-                <p className="text-zinc-300 text-lg leading-relaxed mb-8">
+                <p className="text-zinc-300 text-base md:text-lg leading-relaxed mb-8">
                   Se você tem uma ideia e quer entender o que faz sentido construir primeiro, mande uma mensagem. A conversa inicial é gratuita e já sai com uma direção clara.
                 </p>
                 <Link href="/fale-conosco" className="inline-block bg-[#d75310] hover:bg-[#b5440c] text-white font-bold py-3 px-8 rounded-full transition-colors">
@@ -301,30 +301,30 @@ export default function ArticlePage() {
                 </Link>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                 Perguntas frequentes
               </h3>
 
               <div className="space-y-8">
                 <div>
-                  <h5 className="text-xl font-bold text-zinc-900 mb-3">Preciso saber programar pra criar um SaaS?</h5>
-                  <p className="text-zinc-600 text-lg leading-relaxed">Não necessariamente. Mas entender o básico de como um produto digital funciona ajuda muito na hora de tomar decisões, avaliar orçamentos e conversar com quem vai construir. O risco de não entender nada é delegar decisões importantes pra quem não conhece o seu negócio.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Preciso saber programar pra criar um SaaS?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Não necessariamente. Mas entender o básico de como um produto digital funciona ajuda muito na hora de tomar decisões, avaliar orçamentos e conversar com quem vai construir. O risco de não entender nada é delegar decisões importantes pra quem não conhece o seu negócio.</p>
                 </div>
                 <div>
-                  <h5 className="text-xl font-bold text-zinc-900 mb-3">Dá pra criar um SaaS com IA sem programar?</h5>
-                  <p className="text-zinc-600 text-lg leading-relaxed">Dá pra criar um MVP funcional. Ferramentas como Lovable, Bolt e Cursor aceleram muito o processo. O problema costuma aparecer quando o produto precisa de segurança real, integrações complexas ou escalar além dos primeiros usuários. Pra isso, desenvolvimento com alguém que sabe o que está fazendo ainda é insubstituível.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Dá pra criar um SaaS com IA sem programar?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Dá pra criar um MVP funcional. Ferramentas como Lovable, Bolt e Cursor aceleram muito o processo. O problema costuma aparecer quando o produto precisa de segurança real, integrações complexas ou escalar além dos primeiros usuários. Pra isso, desenvolvimento com alguém que sabe o que está fazendo ainda é insubstituível.</p>
                 </div>
                 <div>
-                  <h5 className="text-xl font-bold text-zinc-900 mb-3">Qual a diferença entre um app e um SaaS?</h5>
-                  <p className="text-zinc-600 text-lg leading-relaxed">App é o produto em si. SaaS é o modelo de negócio onde o produto é entregue como serviço por assinatura. Um app pode ser SaaS ou não.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Qual a diferença entre um app e um SaaS?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">App é o produto em si. SaaS é o modelo de negócio onde o produto é entregue como serviço por assinatura. Um app pode ser SaaS ou não.</p>
                 </div>
                 <div>
-                  <h5 className="text-xl font-bold text-zinc-900 mb-3">Quanto tempo leva pra lançar um produto digital?</h5>
-                  <p className="text-zinc-600 text-lg leading-relaxed">Um MVP focado leva de 30 a 90 dias. Um produto com todas as features que você imagina hoje pode levar mais de um ano. A recomendação é sempre lançar o menor produto que valida a ideia e crescer a partir do feedback real.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Quanto tempo leva pra lançar um produto digital?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Um MVP focado leva de 30 a 90 dias. Um produto com todas as features que você imagina hoje pode levar mais de um ano. A recomendação é sempre lançar o menor produto que valida a ideia e crescer a partir do feedback real.</p>
                 </div>
                 <div>
-                  <h5 className="text-xl font-bold text-zinc-900 mb-3">Como sei se minha ideia tem mercado?</h5>
-                  <p className="text-zinc-600 text-lg leading-relaxed">Converse com pessoas que teriam o problema que você resolve. Se elas já pagam por alguma solução hoje, mesmo que ruim, é sinal de que o problema é real. Se ninguém paga por nada parecido, pode ser inovação ou pode ser que o problema não é grande o suficiente pra virar negócio.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Como sei se minha ideia tem mercado?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Converse com pessoas que teriam o problema que você resolve. Se elas já pagam por alguma solução hoje, mesmo que ruim, é sinal de que o problema é real. Se ninguém paga por nada parecido, pode ser inovação ou pode ser que o problema não é grande o suficiente pra virar negócio.</p>
                 </div>
               </div>
 
