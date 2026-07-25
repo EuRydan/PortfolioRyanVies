@@ -62,7 +62,7 @@ export function Footer() {
           {/* Social */}
           <div className="col-span-2 md:col-span-2 lg:col-span-2 flex flex-col items-start gap-4">
             <h4 className="text-white font-semibold mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Social</h4>
-            <a href="https://www.instagram.com/vieslab.md/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Instagram</a>
+            <a href="https://www.instagram.com/viesstudios/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">Instagram</a>
             <Link href="/" className="text-zinc-400 hover:text-[#d75310] transition-colors text-sm">LinkedIn</Link>
           </div>
 

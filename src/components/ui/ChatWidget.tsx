@@ -185,7 +185,7 @@ export function ChatWidget() {
               <img src="/brand/icone%20vies%20logo%20branco.svg" alt="Vieslab" className="w-full h-auto brightness-0 invert" />
             </div>
             <div>
-              <h4 className="font-bold text-sm" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>vieslab.md</h4>
+              <h4 className="font-bold text-sm" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>@viesstudios</h4>
               <p className="text-xs text-zinc-400 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
                 Online agora
