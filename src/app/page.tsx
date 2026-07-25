@@ -20,19 +20,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Video Background (Sticky para Parallax) */}
+      {/* Image Background (Sticky para Parallax) */}
       <div className="sticky top-0 w-full h-[592px] z-0 overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          preload="auto"
-          poster="/marketing/hero-poster.webp"
-          className="object-cover w-full h-full rotate-180"
-        >
-          <source src="/brand/video-hero-vies-home.mp4" type="video/mp4" />
-        </video>
+        <img 
+          src="/brand/banner-site-header.png"
+          alt="Vies Studios Banner"
+          className="object-cover object-center w-full h-full"
+        />
       </div>
 
       {/* Text Overlay (Absolute para acompanhar o scroll) */}
