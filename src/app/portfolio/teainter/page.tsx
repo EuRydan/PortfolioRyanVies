@@ -1,14 +1,13 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 import { Metadata } from "next";
-import { QuoteButton } from "@/components/ui/QuoteButton";
 import dynamic from "next/dynamic";
 import { ProjectSplitLayout } from "@/components/layout/ProjectSplitLayout";
 
 const ClientCarousel = dynamic(() => import("@/components/ui/ClientCarousel").then(mod => mod.ClientCarousel));
 
 export const metadata: Metadata = {
-  title: "Memvor | Portfólio Vies Studios",
+  title: "Teainter | Portfólio Vies Studios",
 };
 
 export default function ProjectPage() {
@@ -20,28 +19,72 @@ export default function ProjectPage() {
         leftImages={[
           <img 
             key="1"
-            src="/memvor%20portfolio1.png" 
-            alt="Capa Projeto Memvor" 
+            src="/teainter.png" 
+            alt="Projeto Teainter - Apresentação" 
             className="w-full h-full object-cover"
           />,
           <img 
             key="2"
-            src="/memvor%20portfolio.png" 
-            alt="Detalhes Projeto Memvor" 
+            src="/teainter.gif" 
+            alt="Projeto Teainter - Animação" 
             className="w-full h-auto block"
           />,
           <img 
             key="3"
-            src="/memvor%20portfolio2.png" 
-            alt="Mais Detalhes Projeto Memvor" 
+            src="/8111e7207851675.66e46182e3ae3.png" 
+            alt="Projeto Teainter - Imagem 9" 
             className="w-full h-auto block"
           />,
           <img 
             key="4"
-            src="/memvor%20portfolio3.png" 
-            alt="Final Projeto Memvor" 
+            src="/teainter%20texto.png" 
+            alt="Projeto Teainter - Texto" 
             className="w-full h-auto block"
-          />
+          />,
+          <img 
+            key="5"
+            src="/5d0bed207851675.66e46182e2ccc.png" 
+            alt="Projeto Teainter - Imagem 4" 
+            className="w-full h-auto block"
+          />,
+          <img 
+            key="6"
+            src="/853527207851675.66e46182dfa84.png" 
+            alt="Projeto Teainter - Imagem 5" 
+            className="w-full h-auto block"
+          />,
+          <img 
+            key="7"
+            src="/12dfde207851675.66e46182e1744.png" 
+            alt="Projeto Teainter - Imagem 6" 
+            className="w-full h-auto block"
+          />,
+          <img 
+            key="8"
+            src="/0d90ef207851675.66e46182e0ba8.png" 
+            alt="Projeto Teainter - Imagem 7" 
+            className="w-full h-auto block"
+          />,
+          <img 
+            key="9"
+            src="/201905207851675.66e46182e1250.png" 
+            alt="Projeto Teainter - Imagem 8" 
+            className="w-full h-auto block"
+          />,
+          <img key="10" src="/833e87207851675.66e46182da9f3.png" alt="Projeto Teainter - Imagem 10" className="w-full h-auto block" />,
+          <img key="11" src="/a6a39e207851675.66e46182df47d.png" alt="Projeto Teainter - Imagem 11" className="w-full h-auto block" />,
+          <img key="12" src="/1e91e4207851675.66e46182de790.png" alt="Projeto Teainter - Imagem 12" className="w-full h-auto block" />,
+          <img key="13" src="/ca0747207851675.66e46182e27cc.png" alt="Projeto Teainter - Imagem 13" className="w-full h-auto block" />,
+          <img key="14" src="/a6c39b207851675.66e46182dbf59.png" alt="Projeto Teainter - Imagem 14" className="w-full h-auto block" />,
+          <img key="15" src="/c1c433207851675.66e46182dd934.png" alt="Projeto Teainter - Imagem 15" className="w-full h-auto block" />,
+          <img key="16" src="/b0906e207851675.66e46182dc64e.png" alt="Projeto Teainter - Imagem 16" className="w-full h-auto block" />,
+          <img key="17" src="/2248ae207851675.66e46182e33f7.png" alt="Projeto Teainter - Imagem 17" className="w-full h-auto block" />,
+          <img key="18" src="/887b3d207851675.66e46182dcd4e.png" alt="Projeto Teainter - Imagem 18" className="w-full h-auto block" />,
+          <img key="19" src="/611ef3207851675.66e46182dd406.png" alt="Projeto Teainter - Imagem 19" className="w-full h-auto block" />,
+          <img key="20" src="/eeb449207851675.66e46182dec70.png" alt="Projeto Teainter - Imagem 20" className="w-full h-auto block" />,
+          <img key="21" src="/635213207851675.66e46182e421e.png" alt="Projeto Teainter - Imagem 21" className="w-full h-auto block" />,
+          <img key="22" src="/3b163f207851675.66e46182e2142.png" alt="Projeto Teainter - Imagem 22" className="w-full h-auto block" />,
+          <img key="23" src="/b8ca7e207851675.66e46182ddff7.png" alt="Projeto Teainter - Imagem 23" className="w-full h-auto block" />
         ]}
         rightContent={
           <AnimatedSection>
@@ -62,40 +105,50 @@ export default function ProjectPage() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 uppercase tracking-tight mb-8"
               style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
             >
-              MEMVOR
+              TEAINTER
             </h1>
 
             {/* Conteúdo do Projeto */}
             <div className="space-y-8 text-zinc-600 text-sm md:text-[15px] leading-relaxed">
               <p>
-                A Viés Studios não vive só de projetos para clientes. A Memvor é prova disso — um produto próprio, construído internamente para resolver um problema real: os melhores momentos de um evento ficam presos em dezenas de celulares diferentes, e nunca chegam a se encontrar.
+                A Teainter é uma clínica de intervenção comportamental dedicada a crianças com TEA, com uma equipe multidisciplinar que reúne psicólogos, fonoaudiólogos, pedagogos, nutricionistas e terapeutas ocupacionais. O trabalho é sério, humano e cheio de cuidado. A identidade visual precisava dizer isso sem abrir mão de leveza.
               </p>
 
               <div>
-                <h3 className="text-zinc-900 font-bold mb-3">A ideia</h3>
+                <h3 className="text-zinc-900 font-bold mb-3">O desafio</h3>
                 <p>
-                  Eventos reúnem pessoas. Essas pessoas fotografam, filmam, registram. Mas no fim da noite, cada memória fica isolada em um dispositivo diferente. A Memvor resolve isso com um álbum digital coletivo, acessado por QR Code, onde qualquer convidado pode contribuir em tempo real, sem cadastro, sem complicação.
+                  A marca existia, mas não traduzia visualmente o que a Teainter representa na prática. Era hora de repensar tudo: símbolo, paleta, tipografia, tom. Não uma reforma, uma reconstrução com propósito.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-zinc-900 font-bold mb-3">Design e uso</h3>
+                <h3 className="text-zinc-900 font-bold mb-3">O símbolo</h3>
                 <p>
-                  A experiência foi projetada para funcionar sem manual. O convidado escaneia, envia e pronto. Para quem organiza o evento, um painel completo cuida de tudo: criação do álbum, gestão de co-anfitriões, configuração de planos e personalização visual. O produto atende casamentos, formaturas, festas corporativas e qualquer celebração que mereça ser lembrada.
+                  O ponto de partida foi o nome. As letras T e i da Teainter, quando combinadas, formam naturalmente o contorno de um peixe em movimento. Esse símbolo carrega duas leituras ao mesmo tempo: a identidade da marca e a ideia de desenvolvimento, fluidez e progresso, qualidades centrais no trabalho com crianças no espectro.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-zinc-900 font-bold mb-3">Por dentro</h3>
+                <h3 className="text-zinc-900 font-bold mb-3">Sistema visual</h3>
+                <p className="mb-4">
+                  A paleta foi construída em camadas. As cores principais, verde, roxo, vermelho e amarelo, representam calma, foco, energia e alegria. As complementares aprofundam cada um desses valores sem perder a coerência. O resultado é um sistema vibrante mas equilibrado, capaz de funcionar tanto em materiais clínicos quanto em comunicação para famílias.
+                </p>
                 <p>
-                  Construída com Next.js, Supabase e integração com Mercado Pago, a Memvor tem validação de assinatura via HMAC, sistema de afiliados com rastreamento por cookie, suporte a vídeos, modo Telão em tempo real e lógica de idempotência para garantir que nenhum pagamento seja contabilizado duas vezes. Simples por fora, sólida por dentro.
+                  A tipografia combina Neulis e Poppins: uma para a voz interna da marca, outra para o diálogo com o mundo. Elementos orgânicos e ilustrativos completam o sistema, trazendo movimento e afeto para cada peça.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-zinc-900 font-bold mb-3">O que representa</h3>
+                <h3 className="text-zinc-900 font-bold mb-3">Aplicações</h3>
                 <p>
-                  A Memvor mostra o que a Viés é capaz de fazer quando tem controle total do processo: da concepção ao deploy, com foco em segurança, performance e uma experiência que as pessoas realmente querem usar.
+                  Da papelaria ao uniforme, dos posts de Instagram aos cartões de visita, cada ponto de contato foi pensado para reforçar a mesma sensação: um lugar seguro, profissional e acolhedor. A marca funciona no jaleco de uma terapeuta da mesma forma que funciona num outdoor ou numa tela de celular.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-zinc-900 font-bold mb-3">O que ficou</h3>
+                <p>
+                  Uma identidade que respeita a seriedade do trabalho sem abrir mão da humanidade. A Teainter saiu do projeto com uma marca que as famílias reconhecem, confiam e sentem.
                 </p>
               </div>
             </div>
@@ -103,11 +156,11 @@ export default function ProjectPage() {
             <div className="mt-12 pt-8 border-t border-zinc-200 flex flex-col gap-4">
               <div className="grid grid-cols-[80px_1fr] md:grid-cols-[100px_1fr] gap-4 items-start">
                 <span className="font-bold text-zinc-900 text-sm md:text-[15px]">Cliente</span>
-                <span className="text-zinc-600 text-sm md:text-[15px]">Memvor</span>
+                <span className="text-zinc-600 text-sm md:text-[15px]">Teainter Intervenção Comportamental</span>
               </div>
               <div className="grid grid-cols-[80px_1fr] md:grid-cols-[100px_1fr] gap-4 items-start">
                 <span className="font-bold text-zinc-900 text-sm md:text-[15px]">Serviços</span>
-                <span className="text-zinc-600 text-sm md:text-[15px]">Product Design, UX/UI, Full-Stack, SaaS</span>
+                <span className="text-zinc-600 text-sm md:text-[15px]">Rebranding, Identidade Visual, Design System, Social Media</span>
               </div>
             </div>
 

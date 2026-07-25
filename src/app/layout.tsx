@@ -66,9 +66,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${geist.variable} ${geistMono.variable} ${manrope.variable} overflow-x-hidden`} suppressHydrationWarning>
+    <html lang="pt-BR" className={`${geist.variable} ${geistMono.variable} ${manrope.variable}`} suppressHydrationWarning>
       <body
-        className="font-sans bg-zinc-900 text-zinc-100 antialiased selection:bg-[#d75310] selection:text-white flex flex-col min-h-screen overflow-x-hidden"
+        className="font-sans bg-zinc-900 text-zinc-100 antialiased selection:bg-[#d75310] selection:text-white flex flex-col min-h-screen"
         suppressHydrationWarning
       >
         <CustomCursor />
