@@ -19,78 +19,78 @@ export default function ProjectPage() {
         leftImages={[
           <img 
             key="1"
-            src="/teainter.png" 
+            src="/projects/teainter/teainter-1.png" 
             alt="Projeto Teainter - Apresentação" 
             className="w-full h-full object-cover"
           />,
           <img 
             key="2"
-            src="/teainter.gif" 
+            src="/projects/teainter/teainter-2.gif" 
             alt="Projeto Teainter - Animação" 
             className="w-full h-auto block"
           />,
           <img 
             key="3"
-            src="/8111e7207851675.66e46182e3ae3.png" 
+            src="/projects/teainter/teainter-3.png" 
             alt="Projeto Teainter - Imagem 9" 
             className="w-full h-auto block"
           />,
           <img 
             key="4"
-            src="/teainter%20texto.png" 
+            src="/projects/teainter/teainter-4.png" 
             alt="Projeto Teainter - Texto" 
             className="w-full h-auto block"
           />,
           <img 
             key="5"
-            src="/5d0bed207851675.66e46182e2ccc.png" 
+            src="/projects/teainter/teainter-5.png" 
             alt="Projeto Teainter - Imagem 4" 
             className="w-full h-auto block"
           />,
           <img 
             key="6"
-            src="/853527207851675.66e46182dfa84.png" 
+            src="/projects/teainter/teainter-6.png" 
             alt="Projeto Teainter - Imagem 5" 
             className="w-full h-auto block"
           />,
           <img 
             key="7"
-            src="/12dfde207851675.66e46182e1744.png" 
+            src="/projects/teainter/teainter-7.png" 
             alt="Projeto Teainter - Imagem 6" 
             className="w-full h-auto block"
           />,
           <img 
             key="8"
-            src="/0d90ef207851675.66e46182e0ba8.png" 
+            src="/projects/teainter/teainter-8.png" 
             alt="Projeto Teainter - Imagem 7" 
             className="w-full h-auto block"
           />,
           <img 
             key="9"
-            src="/201905207851675.66e46182e1250.png" 
+            src="/projects/teainter/teainter-9.png" 
             alt="Projeto Teainter - Imagem 8" 
             className="w-full h-auto block"
           />,
-          <img key="10" src="/833e87207851675.66e46182da9f3.png" alt="Projeto Teainter - Imagem 10" className="w-full h-auto block" />,
-          <img key="11" src="/a6a39e207851675.66e46182df47d.png" alt="Projeto Teainter - Imagem 11" className="w-full h-auto block" />,
-          <img key="12" src="/1e91e4207851675.66e46182de790.png" alt="Projeto Teainter - Imagem 12" className="w-full h-auto block" />,
-          <img key="13" src="/ca0747207851675.66e46182e27cc.png" alt="Projeto Teainter - Imagem 13" className="w-full h-auto block" />,
-          <img key="14" src="/a6c39b207851675.66e46182dbf59.png" alt="Projeto Teainter - Imagem 14" className="w-full h-auto block" />,
-          <img key="15" src="/c1c433207851675.66e46182dd934.png" alt="Projeto Teainter - Imagem 15" className="w-full h-auto block" />,
-          <img key="16" src="/b0906e207851675.66e46182dc64e.png" alt="Projeto Teainter - Imagem 16" className="w-full h-auto block" />,
-          <img key="17" src="/2248ae207851675.66e46182e33f7.png" alt="Projeto Teainter - Imagem 17" className="w-full h-auto block" />,
-          <img key="18" src="/887b3d207851675.66e46182dcd4e.png" alt="Projeto Teainter - Imagem 18" className="w-full h-auto block" />,
-          <img key="19" src="/611ef3207851675.66e46182dd406.png" alt="Projeto Teainter - Imagem 19" className="w-full h-auto block" />,
-          <img key="20" src="/eeb449207851675.66e46182dec70.png" alt="Projeto Teainter - Imagem 20" className="w-full h-auto block" />,
-          <img key="21" src="/635213207851675.66e46182e421e.png" alt="Projeto Teainter - Imagem 21" className="w-full h-auto block" />,
-          <img key="22" src="/3b163f207851675.66e46182e2142.png" alt="Projeto Teainter - Imagem 22" className="w-full h-auto block" />,
-          <img key="23" src="/b8ca7e207851675.66e46182ddff7.png" alt="Projeto Teainter - Imagem 23" className="w-full h-auto block" />
+          <img key="10" src="/projects/teainter/teainter-10.png" alt="Projeto Teainter - Imagem 10" className="w-full h-auto block" />,
+          <img key="11" src="/projects/teainter/teainter-11.png" alt="Projeto Teainter - Imagem 11" className="w-full h-auto block" />,
+          <img key="12" src="/projects/teainter/teainter-12.png" alt="Projeto Teainter - Imagem 12" className="w-full h-auto block" />,
+          <img key="13" src="/projects/teainter/teainter-13.png" alt="Projeto Teainter - Imagem 13" className="w-full h-auto block" />,
+          <img key="14" src="/projects/teainter/teainter-14.png" alt="Projeto Teainter - Imagem 14" className="w-full h-auto block" />,
+          <img key="15" src="/projects/teainter/teainter-15.png" alt="Projeto Teainter - Imagem 15" className="w-full h-auto block" />,
+          <img key="16" src="/projects/teainter/teainter-16.png" alt="Projeto Teainter - Imagem 16" className="w-full h-auto block" />,
+          <img key="17" src="/projects/teainter/teainter-17.png" alt="Projeto Teainter - Imagem 17" className="w-full h-auto block" />,
+          <img key="18" src="/projects/teainter/teainter-18.png" alt="Projeto Teainter - Imagem 18" className="w-full h-auto block" />,
+          <img key="19" src="/projects/teainter/teainter-19.png" alt="Projeto Teainter - Imagem 19" className="w-full h-auto block" />,
+          <img key="20" src="/projects/teainter/teainter-20.png" alt="Projeto Teainter - Imagem 20" className="w-full h-auto block" />,
+          <img key="21" src="/projects/teainter/teainter-21.png" alt="Projeto Teainter - Imagem 21" className="w-full h-auto block" />,
+          <img key="22" src="/projects/teainter/teainter-22.png" alt="Projeto Teainter - Imagem 22" className="w-full h-auto block" />,
+          <img key="23" src="/projects/teainter/teainter-23.png" alt="Projeto Teainter - Imagem 23" className="w-full h-auto block" />
         ]}
         rightContent={
           <AnimatedSection>
             {/* Logo da Agência */}
             <div className="mb-12">
-              <img src="/icone%20vies%20logo%20branco.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
+              <img src="/projects/teainter/teainter-24.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
             </div>
 
             {/* Breadcrumbs */}

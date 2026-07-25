@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { CaseCover } from "./CaseCover";
 
 const placeholderCases = [
-  { slug: "korre-club", title: "Korre Club", aspectRatio: "video" as const, coverImage: "/banner-korre-club.png" },
-  { slug: "LIC", title: "LIC", aspectRatio: "video" as const, coverImage: "/lic.svg" },
-  { slug: "level-up", title: "Level Up", aspectRatio: "video" as const, coverImage: "/level-up.webp" },
+  { slug: "korre-club", title: "Korre Club", aspectRatio: "video" as const, coverImage: "/projects/covers/banner-korre-club.png" },
+  { slug: "LIC", title: "LIC", aspectRatio: "video" as const, coverImage: "/projects/covers/lic.svg" },
+  { slug: "level-up", title: "Level Up", aspectRatio: "video" as const, coverImage: "/projects/covers/level-up.webp" },
   { slug: "teainter", title: "TEAINTER", aspectRatio: "video" as const, coverImage: "/teainter.gif" },
-  { slug: "gn", title: "Gigantes de Nazaré", aspectRatio: "video" as const, coverImage: "/GN.gif" },
+  { slug: "gn", title: "Gigantes de Nazaré", aspectRatio: "video" as const, coverImage: "/projects/covers/GN.gif" },
   { slug: "memvor", title: "Memvor.app", aspectRatio: "video" as const, coverImage: "/Memvor.svg" },
 ];
 

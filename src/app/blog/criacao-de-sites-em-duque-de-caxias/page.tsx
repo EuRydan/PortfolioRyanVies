@@ -29,7 +29,7 @@ export default function ArticlePage() {
       
       {/* Article Header Section */}
       <section className="w-full bg-black flex flex-col justify-center pt-24 md:pt-32 pb-16 lg:pb-0 relative overflow-hidden" style={{ minHeight: '534px' }}>
-        <ParallaxBackground src="/bg-header.jpg" />
+        <ParallaxBackground src="/brand/bg-header.jpg" />
         
         <div className="w-full max-w-[1280px] mx-auto px-6 md:px-14 lg:px-24 relative z-10">
           
@@ -72,7 +72,7 @@ export default function ArticlePage() {
             <AnimatedSection delay={0.3}>
               <div className="flex items-center gap-4 mt-8">
                 <img 
-                  src="/Ryan%20Ferreira.jpeg" 
+                  src="/marketing/Ryan%20Ferreira.jpeg" 
                   alt="Ryan Ferreira" 
                   className="w-12 h-12 rounded-full object-cover border border-zinc-800"
                 />
@@ -101,7 +101,7 @@ export default function ArticlePage() {
             <>
               <div className="w-full aspect-video md:aspect-[21/9] bg-zinc-100 rounded-xl overflow-hidden mb-12">
                 <img 
-                  src="/capa-artigo.jpg" 
+                  src="/marketing/capa-artigo.jpg" 
                   alt="Criação de sites em Duque de Caxias"
                   className="w-full h-full object-cover"
                 />

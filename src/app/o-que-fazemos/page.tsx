@@ -19,7 +19,7 @@ export default function OQueFazemosPage() {
   return (
     <main className="min-h-screen bg-zinc-900">
       {/* Video Background Banner */}
-      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="O Que Fazemos" />
+      <VideoBanner src="/brand/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="O Que Fazemos" />
 
       {/* O Que Fazemos Section */}
       <section className="w-full bg-black py-20 md:py-32 lg:py-40">

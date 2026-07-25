@@ -28,10 +28,10 @@ export default function Home() {
           muted 
           playsInline
           preload="auto"
-          poster="/hero-poster.webp"
+          poster="/marketing/hero-poster.webp"
           className="object-cover w-full h-full rotate-180"
         >
-          <source src="/video-hero-vies-home.mp4" type="video/mp4" />
+          <source src="/brand/video-hero-vies-home.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
               <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
                 <div className="shrink-0 flex items-center justify-center">
                   <img 
-                    src="/ux-badge.png" 
+                    src="/marketing/ux-badge.png" 
                     alt="Selo de Certificação em Experiência do Usuário" 
                     className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl"
                   />
@@ -133,7 +133,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/memvor.webp" 
+                    src="/projects/covers/memvor.webp" 
                     alt="Capa do projeto Memvor" 
                     className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
@@ -175,7 +175,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/banner-korre-club.png" 
+                    src="/projects/covers/banner-korre-club.png" 
                     alt="Capa do projeto Korre Club" 
                     className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
@@ -196,7 +196,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/level-up.webp" 
+                    src="/projects/covers/level-up.webp" 
                     alt="Capa do projeto Level Up" 
                     className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
@@ -238,7 +238,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/winners.png" 
+                    src="/projects/covers/winners.png" 
                     alt="Capa do projeto Winners" 
                     className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
@@ -259,7 +259,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/GN.gif" 
+                    src="/projects/covers/GN.gif" 
                     alt="Capa do projeto GN" 
                     className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
@@ -280,7 +280,7 @@ export default function Home() {
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img 
-                    src="/lic.svg" 
+                    src="/projects/covers/lic.svg" 
                     alt="Capa do projeto LIC" 
                     className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
@@ -495,7 +495,7 @@ export default function Home() {
                 <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
                   <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
                     <img 
-                      src="/capa-produto.jpeg" 
+                      src="/marketing/capa-produto.jpeg" 
                       alt="Quero criar um app ou SaaS"
                       className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />
@@ -524,7 +524,7 @@ export default function Home() {
                 <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group block h-full flex flex-col">
                   <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
                     <img 
-                      src="/capa-artigo.jpg" 
+                      src="/marketing/capa-artigo.jpg" 
                       alt="Criação de sites em Duque de Caxias"
                       className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />

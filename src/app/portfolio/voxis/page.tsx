@@ -21,7 +21,7 @@ export default function ProjectPage() {
           <div
             key="1"
             style={{
-              backgroundImage: 'url(/a2f9b0171441371.646ea071add4d.png)',
+              backgroundImage: 'url(/projects/voxis/voxis-1.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundColor: '#1de4e4',
@@ -31,48 +31,48 @@ export default function ProjectPage() {
           />,
           <div key="2" className="w-full flex">
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/f9b513171441371.646ebfefe4499.webp" alt="Projeto Voxis - Detalhe 1" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-2.webp" alt="Projeto Voxis - Detalhe 1" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/2521db171441371.646ebfefe53a1.webp" alt="Projeto Voxis - Detalhe 2" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-3.webp" alt="Projeto Voxis - Detalhe 2" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/868c89171441371.646ebfefe3846.webp" alt="Projeto Voxis - Detalhe 3" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-4.webp" alt="Projeto Voxis - Detalhe 3" className="w-full h-full object-cover" />
             </div>
           </div>,
-          <img key="3" src="/69befe171441371.646ebff1495dc.png" alt="Projeto Voxis - Imagem 3" className="w-full h-auto block" />,
-          <img key="4" src="/1ca9dd171441371.646ebff14c065.png" alt="Projeto Voxis - Imagem 4" className="w-full h-auto block" />,
-          <img key="5" src="/3315ef171441371.646ebff1489d0.png" alt="Projeto Voxis - Imagem 5" className="w-full h-auto block" />,
-          <img key="6" src="/7b0822171441371.646ebff14afcd.png" alt="Projeto Voxis - Imagem 6" className="w-full h-auto block" />,
-          <img key="7" src="/voxis.png" alt="Projeto Voxis - Apresentação" className="w-full h-auto block" />,
+          <img key="3" src="/projects/voxis/voxis-5.png" alt="Projeto Voxis - Imagem 3" className="w-full h-auto block" />,
+          <img key="4" src="/projects/voxis/voxis-6.png" alt="Projeto Voxis - Imagem 4" className="w-full h-auto block" />,
+          <img key="5" src="/projects/voxis/voxis-7.png" alt="Projeto Voxis - Imagem 5" className="w-full h-auto block" />,
+          <img key="6" src="/projects/voxis/voxis-8.png" alt="Projeto Voxis - Imagem 6" className="w-full h-auto block" />,
+          <img key="7" src="/projects/voxis/voxis-9.png" alt="Projeto Voxis - Apresentação" className="w-full h-auto block" />,
           <div key="8" className="w-full flex">
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/ab9df1171441371.646eca560fab8.png" alt="Projeto Voxis - Ícone 1" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-10.png" alt="Projeto Voxis - Ícone 1" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/92e78a171441371.646eca560ed96.webp" alt="Projeto Voxis - Ícone 2" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-11.webp" alt="Projeto Voxis - Ícone 2" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/7791d2171441371.646eca560e260.webp" alt="Projeto Voxis - Ícone 3" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-12.webp" alt="Projeto Voxis - Ícone 3" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/96198a171441371.646eca5611623.webp" alt="Projeto Voxis - Ícone 4" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-13.webp" alt="Projeto Voxis - Ícone 4" className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 aspect-square overflow-hidden">
-              <img src="/3ec80b171441371.646eca5610903.webp" alt="Projeto Voxis - Ícone 5" className="w-full h-full object-cover" />
+              <img src="/projects/voxis/voxis-14.webp" alt="Projeto Voxis - Ícone 5" className="w-full h-full object-cover" />
             </div>
           </div>,
-          <img key="9" src="/4173ff171441371.646eca56adab6.webp" alt="Projeto Voxis - Imagem 9" className="w-full h-auto block" />,
-          <img key="10" src="/87cade171441371.646eca56ae725.png" alt="Projeto Voxis - Imagem 10" className="w-full h-auto block" />,
+          <img key="9" src="/projects/voxis/voxis-15.webp" alt="Projeto Voxis - Imagem 9" className="w-full h-auto block" />,
+          <img key="10" src="/projects/voxis/voxis-16.png" alt="Projeto Voxis - Imagem 10" className="w-full h-auto block" />,
           <div key="11" className="w-full flex justify-center bg-white py-10">
-            <img src="/77ec0d171441371.646eca56ace52.png" alt="Projeto Voxis - Imagem 11 (Original)" className="w-auto max-w-full h-auto block" />
+            <img src="/projects/voxis/voxis-17.png" alt="Projeto Voxis - Imagem 11 (Original)" className="w-auto max-w-full h-auto block" />
           </div>
         ]}
         rightContent={
           <AnimatedSection>
             {/* Logo da Agência */}
             <div className="mb-12">
-              <img src="/icone%20vies%20logo%20branco.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
+              <img src="/projects/voxis/voxis-18.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
             </div>
 
             {/* Breadcrumbs */}

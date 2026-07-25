@@ -31,7 +31,7 @@ export default function PortfolioPage() {
   return (
     <main className="min-h-screen bg-zinc-900 pb-0">
       {/* Video Background Banner */}
-      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="Portfólio" />
+      <VideoBanner src="/brand/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="Portfólio" />
 
       <div className="w-full max-w-[1920px] mx-auto mt-12 md:mt-20">
 

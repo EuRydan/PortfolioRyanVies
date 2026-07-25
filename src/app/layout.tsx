@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Vies Studios",
     images: [
       {
-        url: "/og-image.png",
+        url: "/brand/og-image.png",
         width: 1200,
         height: 630,
         alt: "Vies Studios",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vies Studios",
     description: "Laboratório criativo focado em design estratégico e experiências digitais memoráveis.",
-    images: ["/og-image.png"],
+    images: ["/brand/og-image.png"],
   },
 };
 

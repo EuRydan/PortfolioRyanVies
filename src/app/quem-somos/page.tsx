@@ -19,7 +19,7 @@ export default function QuemSomosPage() {
   return (
     <main className="min-h-screen bg-zinc-900">
       {/* Video Background Banner */}
-      <VideoBanner src="/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="Quem Somos" />
+      <VideoBanner src="/brand/12552791_1920_1080_30fps.mp4" playbackRate={0.6} title="Quem Somos" />
 
       {/* Quem Somos Section */}
       <section className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 py-20 md:py-32 lg:py-40">
@@ -63,7 +63,7 @@ export default function QuemSomosPage() {
             <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
               <div className="shrink-0 flex items-center justify-center">
                 <img 
-                  src="/ux-badge.png" 
+                  src="/marketing/ux-badge.png" 
                   alt="Selo de Certificação em Experiência do Usuário" 
                   className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl"
                 />

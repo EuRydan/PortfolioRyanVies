@@ -47,7 +47,7 @@ export default function ProjectPage() {
           <AnimatedSection>
             {/* Logo da Agência */}
             <div className="mb-12">
-              <img src="/icone%20vies%20logo%20branco.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
+              <img src="/brand/icone%20vies%20logo%20branco.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
             </div>
 
             {/* Breadcrumbs */}

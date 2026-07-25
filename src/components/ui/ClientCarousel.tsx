@@ -3,22 +3,22 @@
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/logo%20branco%20memvor.svg", className: "scale-75", keepOriginalColor: true }, // Diminuído para equilibrar com os demais
-  { src: "/BCS%20RIO.svg", className: "" },
-  { src: "/ASA%20logo%20horizontal%20100%25%20branco.svg", className: "" },
-  { src: "/Teainter%20Horizontal%20Branco.png", className: "" },
-  { src: "/lic%20logo.svg", className: "" },
-  { src: "/Gigantes%20de%20Nazaré_1.svg", className: "" },
-  { src: "/Cópia%20de%20Ativo%2010-8.png", className: "" },
-  { src: "/Pizzaria%20Fratelli.svg", className: "" },
-  { src: "/Ativo%2024.svg", className: "" },
-  { src: "/Cópia%20de%20Ativo%204.png", className: "" },
-  { src: "/Ativo%208.png", className: "" },
-  { src: "/7horizontal-YyvZMZ8815u5QOKP.svg", className: "" },
-  { src: "/Nogueira%20Arquitetos.svg", className: "" },
-  { src: "/logo_genesis.svg", className: "" },
-  { src: "/Logo%20TSB-14.png", className: "scale-[2.5]" }, // Aumentado por conta da borda transparente
-  { src: "/condor.svg", className: "" },
+  { src: "/clients/memvor.svg", className: "scale-75", keepOriginalColor: true },
+  { src: "/clients/bcs-rio.svg", className: "" },
+  { src: "/clients/asa.svg", className: "" },
+  { src: "/clients/teainter.png", className: "" },
+  { src: "/clients/lic.svg", className: "" },
+  { src: "/clients/gigantes-de-nazare.svg", className: "" },
+  { src: "/clients/ativo-10-8.png", className: "" },
+  { src: "/clients/pizzaria-fratelli.svg", className: "" },
+  { src: "/clients/ativo-24.svg", className: "" },
+  { src: "/clients/ativo-4.png", className: "" },
+  { src: "/clients/ativo-8.png", className: "" },
+  { src: "/clients/7horizontal.svg", className: "" },
+  { src: "/clients/nogueira-arquitetos.svg", className: "" },
+  { src: "/clients/genesis.svg", className: "" },
+  { src: "/clients/tsb.png", className: "scale-[2.5]" },
+  { src: "/clients/condor.svg", className: "" },
 ];
 
 export function ClientCarousel() {
