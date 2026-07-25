@@ -28,7 +28,7 @@ export default function ArticlePage() {
     <main className="min-h-screen bg-white flex flex-col">
       
       {/* Article Header Section */}
-      <section className="w-full bg-black flex flex-col justify-center pt-20 md:pt-24 relative overflow-hidden" style={{ height: '533.66px' }}>
+      <section className="w-full bg-black flex flex-col justify-center pt-24 md:pt-32 pb-16 lg:pb-0 relative overflow-hidden" style={{ minHeight: '534px' }}>
         <ParallaxBackground src="/bg-header.jpg" />
         
         <div className="w-full max-w-[1280px] mx-auto px-6 md:px-14 lg:px-24 relative z-10">

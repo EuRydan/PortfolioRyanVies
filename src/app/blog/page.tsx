@@ -16,7 +16,7 @@ export default function BlogPage() {
     <main className="min-h-screen bg-zinc-900 pb-20 md:pb-32 pt-24 md:pt-0">
       
       {/* Blog Header Section */}
-      <section className="w-full bg-black flex items-center pt-20 md:pt-24" style={{ height: '400.11px' }}>
+      <section className="w-full bg-black flex items-center pt-24 md:pt-28 pb-12 lg:pb-0" style={{ minHeight: '400px' }}>
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
           

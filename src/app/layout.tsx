@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${geist.variable} ${geistMono.variable} ${manrope.variable}`}>
       <body
-        className="font-sans bg-zinc-900 text-zinc-100 antialiased selection:bg-[#d75310] selection:text-white flex flex-col min-h-screen"
+        className="font-sans bg-zinc-900 text-zinc-100 antialiased selection:bg-[#d75310] selection:text-white flex flex-col min-h-screen overflow-x-hidden"
         suppressHydrationWarning
       >
         <CustomCursor />
