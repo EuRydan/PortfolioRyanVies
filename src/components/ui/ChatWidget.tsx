@@ -182,7 +182,7 @@ export function ChatWidget() {
         <div className="bg-[#0f0f0f] text-white p-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center p-2">
-              <img src="/logo%20vies.svg" alt="Vieslab" className="w-full h-auto brightness-0 invert" />
+              <img src="/icone%20vies%20logo%20branco.svg" alt="Vieslab" className="w-full h-auto brightness-0 invert" />
             </div>
             <div>
               <h4 className="font-bold text-sm" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>vieslab.md</h4>
@@ -214,7 +214,7 @@ export function ChatWidget() {
               <div key={msg.id} className={`flex items-end gap-2 ${isBot ? "justify-start" : "justify-end"}`}>
                 {isBot && (
                   <div className={`w-8 h-8 bg-[#0f0f0f] rounded-full flex items-center justify-center p-1.5 shrink-0 ${!showAvatar ? "opacity-0" : ""}`}>
-                    <img src="/logo%20vies.svg" alt="Vieslab" className="w-full h-auto brightness-0 invert" />
+                    <img src="/icone%20vies%20logo%20branco.svg" alt="Vieslab" className="w-full h-auto brightness-0 invert" />
                   </div>
                 )}
                 
@@ -373,8 +373,8 @@ export function ChatWidget() {
           className="w-16 h-16 bg-[#0f0f0f] rounded-full shadow-2xl flex items-center justify-center relative hover:scale-105 transition-transform shrink-0"
           aria-label="Abrir chat"
         >
-          <div className="w-10 h-10 flex items-center justify-center">
-            <img src="/logo%20vies.svg" alt="Vieslab" className="w-full h-auto brightness-0 invert" />
+          <div className="w-8 h-8 flex items-center justify-center">
+            <img src="/icone%20vies%20logo%20branco.svg" alt="Vieslab" className="w-full h-auto brightness-0 invert" />
           </div>
           <span className="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-zinc-900 rounded-full animate-pulse"></span>
         </button>

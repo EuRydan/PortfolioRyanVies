@@ -78,6 +78,9 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  const isProjectPage = pathname?.startsWith("/portfolio/") && pathname !== "/portfolio";
+  if (isProjectPage) return null;
+
   return (
     <>
       <header 

@@ -38,7 +38,7 @@ export default function PortfolioPage() {
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[1px]">
           {projects.map((project, index) => (
             <AnimatedSection key={project.id} delay={0.1 * (index % 4)} effect="pop">
-              <Link href="/fale-conosco" className="block h-full">
+              <Link href={`/portfolio/${project.id}`} className="block h-full">
                 <div className="group cursor-crosshair relative w-full aspect-square bg-zinc-800 overflow-hidden">
                   <img 
                     src={project.img} 
