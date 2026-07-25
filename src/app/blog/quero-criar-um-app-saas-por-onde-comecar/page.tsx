@@ -88,7 +88,7 @@ export default function ArticlePage() {
       <section className="w-full flex-1 bg-white py-10 md:py-16 lg:py-24">
         <div className="w-full max-w-[1280px] mx-auto px-6 md:px-14 lg:px-24 flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
           
-          <div className="flex-1 max-w-3xl flex flex-col">
+          <div className="flex-1 min-w-0 w-full max-w-3xl flex flex-col">
             
             <div className="w-full aspect-video md:aspect-[21/9] bg-zinc-100 rounded-xl overflow-hidden mb-12">
               <img 
