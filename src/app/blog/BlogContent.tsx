@@ -6,6 +6,15 @@ import Link from 'next/link';
 
 const articles = [
   {
+    id: 4,
+    title: 'Seu site foi feito para vender, mas ele está protegido para isso?',
+    categories: ['Segurança de sites'],
+    date: '27 Jul 2026',
+    image: '/marketing/capa-produto.jpeg',
+    slug: '/blog/seu-site-foi-feito-para-vender-mas-ele-esta-protegido-para-isso',
+    excerpt: 'Sites feitos às pressas costumam esconder falhas de segurança que colocam dados de clientes em risco. Entenda os riscos mais comuns e por que segurança deveria entrar no projeto desde o primeiro dia, não depois que algo já deu errado.'
+  },
+  {
     id: 3,
     title: 'Velocidade de site não é detalhe técnico, é decisão de negócio',
     categories: ['Performance e SEO'],
@@ -34,7 +43,7 @@ const articles = [
   }
 ];
 
-const categories = ['Todos', 'Criação de sites', 'Criação de produto digital', 'Conversão e landing pages', 'Site no RJ', 'Performance e SEO'];
+const categories = ['Todos', 'Criação de sites', 'Criação de produto digital', 'Conversão e landing pages', 'Site no RJ', 'Performance e SEO', 'Segurança de sites'];
 
 export function BlogContent() {
   const [activeCategory, setActiveCategory] = useState('Todos');
