@@ -1,4 +1,5 @@
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { ParallaxBackground } from '@/components/ui/ParallaxBackground';
 import { BlogContent } from './BlogContent';
 
 import { Metadata } from 'next';
@@ -16,8 +17,9 @@ export default function BlogPage() {
     <main className="min-h-screen bg-zinc-900 pb-20 md:pb-32 pt-24 md:pt-0">
       
       {/* Blog Header Section */}
-      <section className="w-full bg-black flex items-center pt-24 md:pt-28 pb-12 lg:pb-0" style={{ minHeight: '400px' }}>
-        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+      <section className="w-full bg-black flex items-center pt-24 md:pt-28 pb-12 lg:pb-0 relative overflow-hidden" style={{ minHeight: '400px' }}>
+        <ParallaxBackground src="/brand/bg-header.jpg" />
+        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 relative z-10">
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
           
             {/* Left Column: Title */}

@@ -10,7 +10,7 @@ const articles = [
     title: 'Quero criar um app ou SaaS: por onde começo?',
     categories: ['Criação de produto digital'],
     date: '24 Jul 2026',
-    image: '/capa-produto.jpeg',
+    image: '/marketing/capa-produto.jpeg',
     slug: '/blog/quero-criar-um-app-saas-por-onde-comecar',
     excerpt: 'Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.'
   },
@@ -19,7 +19,7 @@ const articles = [
     title: 'Criação de sites em Duque de Caxias: quanto custa em 2026',
     categories: ['Criação de sites', 'Site no RJ'],
     date: '24 Jul 2026',
-    image: '/capa-artigo.jpg',
+    image: '/marketing/capa-artigo.jpg',
     slug: '/blog/criacao-de-sites-em-duque-de-caxias',
     excerpt: 'Quanto custa um site em Duque de Caxias em 2026? Veja faixas de preço reais, o que muda o valor e como contratar sem cair em armadilha.'
   }
