@@ -104,7 +104,7 @@ export default function ArticlePage() {
               </p>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Esse artigo não é um tutorial de como programar. É um guia de como pensar antes de agir.
+                Esse artigo é um guia de como pensar antes de agir, não um tutorial de como programar.
               </p>
 
               <h3 id="qual-problema" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -116,7 +116,7 @@ export default function ArticlePage() {
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                A pergunta certa não é "minha ideia é boa?" É "quem paga pra ter esse problema resolvido hoje, de que forma, e quanto esse problema custa pra essa pessoa?"
+                A pergunta certa é 'quem paga pra ter esse problema resolvido hoje, de que forma, e quanto esse problema custa pra essa pessoa?' 'Minha ideia é boa?' não leva a lugar nenhum.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
@@ -152,7 +152,7 @@ export default function ArticlePage() {
               </p>
 
               <h3 id="sobre-mvp" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                O MVP não é uma versão menor do seu produto. É outra coisa.
+                O MVP não é o seu produto em miniatura. Ele testa uma hipótese, seu produto entrega o resultado final.
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
@@ -263,7 +263,7 @@ export default function ArticlePage() {
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12 font-bold">
-                Os produtos que chegam longe não são os que foram construídos mais rápido. São os que erraram mais barato.
+                Os produtos que chegam longe erraram mais barato, não necessariamente mais rápido.
               </p>
 
               <h3 id="quando-contratar" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
