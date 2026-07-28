@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 export default function ArticlePage() {
   const tocItems = [
     { id: 'erros-comuns', label: 'Os erros de segurança mais comuns em sites' },
-    { id: 'camadas-protecao', label: 'Segurança não é sobre paranoia, é sobre camadas' },
+    { id: 'camadas-protecao', label: 'Segurança se constrói em camadas' },
     { id: 'exemplo-webhook', label: 'Um exemplo prático: validação de webhook em pagamentos' },
     { id: 'diferencial-competitivo', label: 'Por que isso também é diferencial competitivo' },
     { id: 'passos-simples', label: 'Passos simples para começar a proteger seu site hoje' },
-    { id: 'seguranca-no-projeto', label: 'Segurança como parte do projeto, não como extra' },
+    { id: 'seguranca-no-projeto', label: 'Segurança faz parte do projeto desde o início' },
     { id: 'faq', label: 'Perguntas frequentes' },
   ];
 

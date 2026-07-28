@@ -17,7 +17,7 @@ export default function ArticlePage() {
   const tocItems = [
     { id: 'por-que-velocidade', label: 'Por que a velocidade pesa tanto no SEO' },
     { id: 'o-que-deixa-lento', label: 'O que costuma deixar um site lento' },
-    { id: 'exemplo-vies', label: 'Um exemplo real: o site da Viés' },
+    { id: 'exemplo-vies', label: 'Um exemplo real: o site da Viés Studios' },
     { id: 'como-medir', label: 'Como medir a performance do seu site' },
     { id: 'o-que-priorizar', label: 'O que priorizar primeiro' },
     { id: 'primeira-impressao', label: 'Velocidade é parte da primeira impressão' },
