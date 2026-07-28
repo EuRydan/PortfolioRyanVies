@@ -153,7 +153,7 @@ export default function ArticlePage() {
               </p>
 
               <ul className="list-disc pl-6 text-zinc-600 text-base md:text-lg leading-relaxed mb-12 space-y-4">
-                <li><strong>Headline clara e orientada a benefício.</strong> O título precisa comunicar, em poucos segundos, o que o visitante ganha ali. Não é sobre ser criativo, é sobre ser entendido de primeira.</li>
+                <li><strong>Headline clara e orientada a benefício.</strong> O título precisa comunicar, em poucos segundos, o que o visitante ganha ali. Criatividade só ajuda se a mensagem continuar clara na primeira leitura.</li>
                 <li><strong>Subtítulo que amplia a promessa.</strong> Complementa o título, adiciona contexto e reforça o motivo pelo qual vale a pena continuar lendo.</li>
                 <li><strong>CTA direto e visível.</strong> O botão de ação precisa estar claro, sem ambiguidade sobre o que acontece ao clicar.</li>
                 <li><strong>Prova social.</strong> Depoimentos, números de clientes atendidos, cases reais. Esse tipo de elemento reduz a insegurança de quem ainda não conhece a marca.</li>
@@ -189,7 +189,7 @@ export default function ArticlePage() {
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                O ponto de partida de uma boa landing page não é o layout, é a dor do público. Antes de definir cores, fontes ou blocos visuais, vale mapear o que o visitante busca, qual objeção ele carrega e o que precisa ouvir para seguir adiante.
+                O ponto de partida de uma boa landing page é a dor do público, antes de qualquer decisão de layout. Antes de definir cores, fontes ou blocos visuais, vale mapear o que o visitante busca, qual objeção ele carrega e o que precisa ouvir para seguir adiante.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
@@ -225,7 +225,7 @@ export default function ArticlePage() {
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Na Viés Studios, cada landing page nasce de uma combinação entre estratégia, design e conteúdo, pensada para o objetivo comercial específico daquele projeto, não como uma peça isolada dentro do site.
+                Na Viés Studios, cada landing page nasce de uma combinação entre estratégia, design e conteúdo, pensada para o objetivo comercial específico daquele projeto dentro da jornada do cliente.
               </p>
 
               <div className="bg-zinc-900 text-white rounded-xl p-8 md:p-10 my-12">
