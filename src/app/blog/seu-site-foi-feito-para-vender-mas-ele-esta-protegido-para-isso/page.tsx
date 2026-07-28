@@ -92,7 +92,7 @@ export default function ArticlePage() {
             
             <div className="w-full aspect-video md:aspect-[21/9] bg-zinc-100 rounded-xl overflow-hidden mb-12">
               <img 
-                src="/marketing/capa-produto.jpeg" 
+                src="/marketing/pexels-pixabay-60504.jpg" 
                 alt="Segurança de sites"
                 className="w-full h-full object-cover"
               />

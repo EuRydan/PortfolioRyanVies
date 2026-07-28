@@ -91,7 +91,7 @@ export default function ArticlePage() {
             
             <div className="w-full aspect-video md:aspect-[21/9] bg-zinc-100 rounded-xl overflow-hidden mb-12">
               <img 
-                src="/marketing/hero-poster.webp" 
+                src="/marketing/pexels-cottonbro-6986455.jpg" 
                 alt="Velocidade de site"
                 className="w-full h-full object-cover"
               />
