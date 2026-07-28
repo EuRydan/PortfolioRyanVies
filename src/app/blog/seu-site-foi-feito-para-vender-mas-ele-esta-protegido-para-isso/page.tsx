@@ -75,7 +75,7 @@ export default function ArticlePage() {
                     Ryan Ferreira
                   </span>
                   <span className="text-zinc-500 text-sm font-medium mt-0.5">
-                    27 Jul 2026 <span className="mx-1">&middot;</span> 5 min de leitura
+                    28 Jul 2026 <span className="mx-1">&middot;</span> 5 min de leitura
                   </span>
                 </div>
               </div>

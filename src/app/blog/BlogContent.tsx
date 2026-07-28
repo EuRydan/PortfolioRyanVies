@@ -9,7 +9,7 @@ const articles = [
     id: 4,
     title: 'Seu site foi feito para vender, mas ele está protegido para isso?',
     categories: ['Segurança de sites'],
-    date: '27 Jul 2026',
+    date: '28 Jul 2026',
     image: '/marketing/capa-produto.jpeg',
     slug: '/blog/seu-site-foi-feito-para-vender-mas-ele-esta-protegido-para-isso',
     excerpt: 'Sites feitos às pressas costumam esconder falhas de segurança que colocam dados de clientes em risco. Entenda os riscos mais comuns e por que segurança deveria entrar no projeto desde o primeiro dia, não depois que algo já deu errado.'
