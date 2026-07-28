@@ -5,8 +5,9 @@ import { ParallaxBackground } from '@/components/ui/ParallaxBackground';
 import { TableOfContents } from '@/components/ui/TableOfContents';
 
 export const metadata: Metadata = {
-  title: 'Seu site foi feito para vender, mas ele está protegido para isso? | Vies Studios',
+  title: 'Quantas brechas o seu site esconde sem você saber? | Vies Studios',
   description: 'Sites feitos às pressas costumam esconder falhas de segurança que colocam dados de clientes em risco. Entenda os riscos mais comuns e por que segurança deveria entrar no projeto desde o primeiro dia, não depois que algo já deu errado.',
+  keywords: ['segurança de sites', 'segurança web', 'proteção de dados', 'vulnerabilidade em sites', 'boas práticas de segurança digital'],
   alternates: {
     canonical: "https://www.viesstudios.com.br/blog/seu-site-foi-feito-para-vender-mas-ele-esta-protegido-para-isso",
   },
@@ -53,7 +54,7 @@ export default function ArticlePage() {
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 max-w-4xl"
                 style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
               >
-                Seu site foi feito para vender, mas ele está protegido para isso?
+                Quantas brechas o seu site esconde sem você saber?
               </h1>
             </AnimatedSection>
             
@@ -100,7 +101,7 @@ export default function ArticlePage() {
 
             <div className="prose prose-lg prose-zinc max-w-none">
               <p className="text-zinc-800 text-base md:text-lg lg:text-xl leading-relaxed mb-6 font-medium">
-                Grande parte das empresas só pensa em segurança depois que algo já deu errado. Um formulário invadido, um banco de dados exposto, um cliente reclamando que recebeu cobrança duplicada porque alguém manipulou uma URL. Nesse momento, o prejuízo já não é só técnico, é de confiança. E confiança é bem mais difícil de recuperar do que qualquer bug.
+                Grande parte das empresas só pensa em segurança depois que algo já deu errado. Um formulário invadido, um banco de dados exposto, um cliente reclamando que recebeu cobrança duplicada porque alguém manipulou uma URL. Nesse momento, o prejuízo já passou de técnico para reputacional. E confiança é bem mais difícil de recuperar do que qualquer bug.
               </p>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
@@ -112,23 +113,23 @@ export default function ArticlePage() {
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Não é preciso ser um projeto grande ou complexo para ter falha de segurança. Alguns dos problemas mais frequentes aparecem em sites pequenos, de negócios locais, tanto quanto em plataformas maiores:
+                Projetos pequenos, de negócios locais, costumam apresentar as mesmas falhas de plataformas grandes e complexas. Alguns dos problemas mais frequentes:
               </p>
 
               <ul className="list-disc pl-6 text-zinc-600 text-base md:text-lg leading-relaxed mb-6 space-y-4">
-                <li><strong>Dados sensíveis sem proteção adequada:</strong> Formulários de contato, cadastro ou checkout que enviam informações sem validação, permitindo que qualquer pessoa envie dados maliciosos junto com o que era esperado.</li>
-                <li><strong>Falta de controle de acesso:</strong> Sistemas onde, trocando um número na URL, é possível acessar informações de outro usuário. Esse tipo de falha, chamada de IDOR, é uma das mais comuns e uma das mais fáceis de evitar quando o projeto já nasce pensando nisso.</li>
-                <li><strong>Regras de banco de dados abertas demais:</strong> Bancos de dados configurados para aceitar leitura ou escrita sem exigir autenticação correta, expondo informações que deveriam estar restritas.</li>
-                <li><strong>Falta de validação em webhooks e integrações de pagamento:</strong> Integrações com gateways de pagamento que não validam a assinatura de cada requisição, abrindo espaço para que alguém simule uma confirmação de pagamento que nunca aconteceu de verdade.</li>
-                <li><strong>Scripts de terceiros sem controle:</strong> Chats, pixels e ferramentas de análise adicionados sem revisão, criando pontos de entrada que ninguém está monitorando.</li>
+                <li><strong>1. Dados sensíveis sem proteção adequada</strong> Formulários de contato, cadastro ou checkout que enviam informações sem validação, permitindo que qualquer pessoa envie dados maliciosos junto com o que era esperado.</li>
+                <li><strong>2. Falta de controle de acesso</strong> Sistemas onde, trocando um número na URL, é possível acessar informações de outro usuário. Esse tipo de falha, chamada de IDOR, é uma das mais comuns e uma das mais fáceis de evitar quando o projeto já nasce pensando nisso.</li>
+                <li><strong>3. Regras de banco de dados abertas demais</strong> Bancos de dados configurados para aceitar leitura ou escrita sem exigir autenticação correta, expondo informações que deveriam estar restritas.</li>
+                <li><strong>4. Falta de validação em webhooks e integrações de pagamento</strong> Integrações com gateways de pagamento que não validam a assinatura de cada requisição, abrindo espaço para que alguém simule uma confirmação de pagamento que nunca aconteceu de verdade.</li>
+                <li><strong>5. Scripts de terceiros sem controle</strong> Chats, pixels e ferramentas de análise adicionados sem revisão, criando pontos de entrada que ninguém está monitorando.</li>
               </ul>
 
               <h3 id="camadas-protecao" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                Segurança não é sobre paranoia, é sobre camadas
+                Segurança se constrói em camadas
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                O conceito mais importante em segurança digital não é ter uma solução mágica que resolve tudo. É trabalhar com camadas de proteção, de forma que, se uma falhar, a próxima ainda segura o problema. Esse princípio é conhecido como defesa em profundidade, e costuma envolver:
+                O conceito mais importante em segurança digital envolve trabalhar com camadas de proteção, de forma que, se uma falhar, a próxima ainda segura o problema. Esse princípio é conhecido como defesa em profundidade, e costuma envolver:
               </p>
 
               <ul className="list-disc pl-6 text-zinc-600 text-base md:text-lg leading-relaxed mb-6 space-y-4">
@@ -157,7 +158,7 @@ export default function ArticlePage() {
 
               <div className="bg-zinc-50 border-l-4 border-[#d75310] p-6 my-8 rounded-r-xl">
                 <p className="text-zinc-700 italic text-lg m-0 font-bold">
-                  A correção correta passa por validar a assinatura de cada requisição usando a chave secreta fornecida pelo gateway, garantindo que só notificações legítimas sejam processadas. É um ajuste que não aparece visualmente em nenhuma parte do site, mas que separa um sistema de pagamento confiável de um sistema vulnerável.
+                  A correção correta passa por validar a assinatura de cada requisição usando a chave secreta fornecida pelo gateway, garantindo que só notificações legítimas sejam processadas. É um ajuste invisível para quem visita o site, mas que separa um sistema de pagamento confiável de um sistema vulnerável.
                 </p>
               </div>
 
@@ -170,7 +171,7 @@ export default function ArticlePage() {
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Não se trata de assustar ninguém, e sim de mostrar profissionalismo. Um cliente que entende que seus dados e os dados de quem visita seu site estão protegidos tende a confiar mais na marca, e isso se reflete direto na reputação do negócio.
+                Mostrar esse cuidado passa mais profissionalismo do que qualquer discurso de vendas. Um cliente que entende que seus dados e os dados de quem visita seu site estão protegidos tende a confiar mais na marca, e isso se reflete direto na reputação do negócio.
               </p>
 
               <h3 id="passos-simples" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -186,15 +187,15 @@ export default function ArticlePage() {
               </ul>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Nenhum desses pontos exige reconstruir o site do zero. Exige revisão e atenção, aplicadas desde o início do projeto, e não como remendo depois que algo já falhou.
+                A maioria desses pontos pede revisão e atenção, aplicadas desde o início do projeto, bem antes de virarem remendo depois que algo já falhou.
               </p>
 
               <h3 id="seguranca-no-projeto" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                Segurança como parte do projeto, não como extra
+                Segurança faz parte do projeto desde o início
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Na Viés Studios, segurança entra no planejamento junto com design e performance, não como uma etapa separada no final. Faz parte da estrutura, assim como a identidade visual e a experiência do usuário.
+                Na Viés Studios, segurança entra no planejamento junto com design e performance. Faz parte da estrutura, assim como a identidade visual e a experiência do usuário.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">

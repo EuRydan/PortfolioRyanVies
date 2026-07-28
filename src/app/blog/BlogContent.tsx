@@ -7,7 +7,7 @@ import Link from 'next/link';
 const articles = [
   {
     id: 4,
-    title: 'Seu site foi feito para vender, mas ele está protegido para isso?',
+    title: 'Quantas brechas o seu site esconde sem você saber?',
     categories: ['Segurança de sites'],
     date: '28 Jul 2026',
     image: '/marketing/pexels-pixabay-60504.jpg',
