@@ -485,6 +485,35 @@ export default function Home() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-6 lg:gap-8">
               {/* Article 1 */}
+              <AnimatedSection delay={0.1}>
+                <Link href="/blog/conversao-e-landing-page-como-transformar-visitante-em-lead" className="group block h-full flex flex-col">
+                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
+                    <img 
+                      src="/marketing/pexels-tranmautritam-326514.jpg" 
+                      alt="Conversão e landing pages"
+                      className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-[#d75310] text-[10px] md:text-xs font-bold uppercase tracking-wider">
+                        Conversão e landing pages
+                      </span>
+                      <span className="text-zinc-500 text-[10px] md:text-xs font-medium">
+                        28 Jul 2026
+                      </span>
+                    </div>
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                      Conversão e landing page: como transformar visitante em lead com estratégia
+                    </h4>
+                    <p className="text-zinc-400 text-xs md:text-sm leading-relaxed line-clamp-2">
+                      Uma landing page bonita não garante resultado. Entenda o que realmente aumenta conversão, os erros que derrubam performance e como estruturar uma página pensada para gerar leads de verdade.
+                    </p>
+                  </div>
+                </Link>
+              </AnimatedSection>
+
+              {/* Article 2 */}
               <AnimatedSection delay={0.2}>
                 <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
                   <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
