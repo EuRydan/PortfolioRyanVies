@@ -47,7 +47,7 @@ export default function PrivacidadePage() {
             <li><strong>Dados de Uso:</strong> informações sobre como você usa nosso site.</li>
           </ul>
           
-          <div className="bg-zinc-800/50 p-6 rounded-xl border-l-4 border-[#d75310] mb-8">
+          <div className="bg-zinc-800/50 p-6 rounded-xl mb-8">
             <p className="text-zinc-300 leading-relaxed m-0">
               <strong>Nota sobre o formulário de contato:</strong> As informações preenchidas no formulário de orçamento do nosso site não são armazenadas em nossos servidores ou banco de dados. O formulário funciona apenas como um facilitador que repassa os dados digitados diretamente para o seu aplicativo do WhatsApp, de onde a mensagem é enviada para nós.
             </p>
