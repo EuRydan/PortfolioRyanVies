@@ -46,6 +46,12 @@ export default function PrivacidadePage() {
             <li><strong>Dados Técnicos:</strong> endereço IP, tipo e versão do navegador, configuração de fuso horário, sistema operacional.</li>
             <li><strong>Dados de Uso:</strong> informações sobre como você usa nosso site.</li>
           </ul>
+          
+          <div className="bg-zinc-800/50 p-6 rounded-xl border-l-4 border-[#d75310] mb-8">
+            <p className="text-zinc-300 leading-relaxed m-0">
+              <strong>Nota sobre o formulário de contato:</strong> As informações preenchidas no formulário de orçamento do nosso site não são armazenadas em nossos servidores ou banco de dados. O formulário funciona apenas como um facilitador que repassa os dados digitados diretamente para o seu aplicativo do WhatsApp, de onde a mensagem é enviada para nós.
+            </p>
+          </div>
 
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">3. Como Usamos Seus Dados</h2>
           <p className="text-zinc-300 leading-relaxed mb-6">
