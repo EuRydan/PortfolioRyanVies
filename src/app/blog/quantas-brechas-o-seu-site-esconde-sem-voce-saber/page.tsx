@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Sites feitos às pressas costumam esconder falhas de segurança que colocam dados de clientes em risco. Entenda os riscos mais comuns e por que segurança deveria entrar no projeto desde o primeiro dia, não depois que algo já deu errado.',
   keywords: ['segurança de sites', 'segurança web', 'proteção de dados', 'vulnerabilidade em sites', 'boas práticas de segurança digital'],
   alternates: {
-    canonical: "https://www.viesstudios.com.br/blog/seu-site-foi-feito-para-vender-mas-ele-esta-protegido-para-isso",
+    canonical: "https://www.viesstudios.com.br/blog/quantas-brechas-o-seu-site-esconde-sem-voce-saber",
   },
 };
 

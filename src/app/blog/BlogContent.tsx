@@ -11,7 +11,7 @@ const articles = [
     categories: ['Segurança de sites'],
     date: '28 Jul 2026',
     image: '/marketing/pexels-pixabay-60504.jpg',
-    slug: '/blog/seu-site-foi-feito-para-vender-mas-ele-esta-protegido-para-isso',
+    slug: '/blog/quantas-brechas-o-seu-site-esconde-sem-voce-saber',
     excerpt: 'Sites feitos às pressas costumam esconder falhas de segurança que colocam dados de clientes em risco. Entenda os riscos mais comuns e por que segurança deveria entrar no projeto desde o primeiro dia, não depois que algo já deu errado.'
   },
   {
@@ -20,7 +20,7 @@ const articles = [
     categories: ['Performance e SEO'],
     date: '27 Jul 2026',
     image: '/marketing/pexels-cottonbro-6986455.jpg',
-    slug: '/blog/velocidade-de-site-nao-e-detalhe-tecnico',
+    slug: '/blog/velocidade-de-site-afeta-o-caixa-da-empresa',
     excerpt: 'Um site lento perde cliente antes mesmo de mostrar o produto. Entenda por que a velocidade de carregamento afeta SEO, conversão e a experiência do usuário, e veja como corrigimos isso na prática.'
   },
   {

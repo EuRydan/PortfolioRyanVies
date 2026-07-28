@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Um site lento perde cliente antes mesmo de mostrar o produto. Entenda por que a velocidade de carregamento afeta SEO, conversão e a experiência do usuário, e veja como corrigimos isso na prática.',
   keywords: ['velocidade de site', 'performance de site', 'Core Web Vitals', 'otimização de site', 'SEO técnico'],
   alternates: {
-    canonical: "https://www.viesstudios.com.br/blog/velocidade-de-site-nao-e-detalhe-tecnico",
+    canonical: "https://www.viesstudios.com.br/blog/velocidade-de-site-afeta-o-caixa-da-empresa",
   },
 };
 
