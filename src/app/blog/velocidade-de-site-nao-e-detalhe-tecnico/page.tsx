@@ -5,8 +5,9 @@ import { ParallaxBackground } from '@/components/ui/ParallaxBackground';
 import { TableOfContents } from '@/components/ui/TableOfContents';
 
 export const metadata: Metadata = {
-  title: 'Velocidade de site não é detalhe técnico, é decisão de negócio | Vies Studios',
+  title: 'Velocidade de site afeta o caixa da empresa, não só a nota no PageSpeed | Vies Studios',
   description: 'Um site lento perde cliente antes mesmo de mostrar o produto. Entenda por que a velocidade de carregamento afeta SEO, conversão e a experiência do usuário, e veja como corrigimos isso na prática.',
+  keywords: ['velocidade de site', 'performance de site', 'Core Web Vitals', 'otimização de site', 'SEO técnico'],
   alternates: {
     canonical: "https://www.viesstudios.com.br/blog/velocidade-de-site-nao-e-detalhe-tecnico",
   },
@@ -52,7 +53,7 @@ export default function ArticlePage() {
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 max-w-4xl"
                 style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
               >
-                Velocidade de site não é detalhe técnico, é decisão de negócio
+                Velocidade de site afeta o caixa da empresa, não só a nota no PageSpeed
               </h1>
             </AnimatedSection>
             
@@ -99,11 +100,11 @@ export default function ArticlePage() {
 
             <div className="prose prose-lg prose-zinc max-w-none">
               <p className="text-zinc-800 text-base md:text-lg lg:text-xl leading-relaxed mb-6 font-medium">
-                Todo mundo já passou por isso. Você clica em um link, a página começa a carregar, passam dois, três segundos, e nada aparece além de uma tela branca. Na maioria das vezes, o usuário simplesmente sai. Não espera, não dá uma segunda chance. E o pior: o Google percebe esse comportamento e usa isso contra o site nos rankings de busca.
+                Todo mundo já passou por isso. Você clica em um link, a página começa a carregar, passam dois, três segundos, e nada aparece além de uma tela branca. Na maioria das vezes, o usuário simplesmente sai. Não espera, não dá uma segunda chance. E o Google percebe esse comportamento e usa isso contra o site nos rankings de busca.
               </p>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Performance deixou de ser assunto só de desenvolvedor. Hoje é estratégia de negócio, porque impacta diretamente em três coisas que qualquer empresa quer: aparecer no Google, converter visitante em cliente e passar credibilidade.
+                Performance já saiu do departamento de tecnologia e virou pauta de reunião comercial. Ela impacta diretamente em três coisas que qualquer empresa quer: aparecer no Google, converter visitante em cliente e passar credibilidade.
               </p>
 
               <h3 id="por-que-velocidade" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -121,7 +122,7 @@ export default function ArticlePage() {
               </ul>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Um site que demora demais para responder nesses três pontos tende a perder posição para concorrentes mais rápidos, mesmo com conteúdo parecido. Ou seja, dois sites podem ter o mesmo texto, as mesmas palavras-chave, a mesma qualidade de escrita, e o mais rápido ainda vai na frente.
+                Um site que demora demais para responder nesses três pontos tende a perder posição para concorrentes mais rápidos, mesmo com conteúdo parecido. Dois sites podem ter o mesmo texto, as mesmas palavras-chave, a mesma qualidade de escrita, e o mais rápido ainda vai na frente.
               </p>
 
               <h3 id="o-que-deixa-lento" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -168,7 +169,7 @@ export default function ArticlePage() {
               </div>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Esse tipo de ganho normalmente não exige reconstruir o site do zero. Exige entender onde está o gargalo e atacar exatamente esse ponto.
+                Basta identificar o gargalo certo e atacar ele direto para conseguir esse tipo de ganho, sem reconstruir nada.
               </p>
 
               <h3 id="como-medir" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -186,7 +187,7 @@ export default function ArticlePage() {
               </ul>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Vale rodar esses testes periodicamente, principalmente depois de adicionar novas seções, imagens ou integrações ao site. Performance não é algo que se resolve uma vez e esquece, é manutenção contínua.
+                Vale rodar esses testes periodicamente, principalmente depois de adicionar novas seções, imagens ou integrações ao site. Performance pede revisão de tempos em tempos, sobretudo depois de mudanças no site.
               </p>
 
               <h3 id="o-que-priorizar" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -214,7 +215,7 @@ export default function ArticlePage() {
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Na Viés Studios, performance entra como critério desde o início do projeto, junto com segurança e SEO, não como um ajuste de última hora. É mais barato pensar nisso na estrutura do site do que remendar depois que ele já está no ar cheio de gargalos.
+                Na Vies Studios, performance entra como critério desde o início do projeto, junto com segurança e SEO. Pensar nisso na estrutura do site sai mais barato do que remendar depois que ele já está no ar cheio de gargalos.
               </p>
 
               <div className="bg-zinc-900 text-white rounded-xl p-8 md:p-10 my-12">

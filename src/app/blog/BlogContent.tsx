@@ -16,7 +16,7 @@ const articles = [
   },
   {
     id: 3,
-    title: 'Velocidade de site não é detalhe técnico, é decisão de negócio',
+    title: 'Velocidade de site afeta o caixa da empresa, não só a nota no PageSpeed',
     categories: ['Performance e SEO'],
     date: '27 Jul 2026',
     image: '/marketing/pexels-cottonbro-6986455.jpg',
