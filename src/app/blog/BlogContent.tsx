@@ -10,7 +10,7 @@ const articles = [
     title: 'Conversão e landing page: como transformar visitante em lead com estratégia',
     categories: ['Conversão e landing pages'],
     date: '28 Jul 2026',
-    image: '/marketing/capa-produto.jpeg',
+    image: '/marketing/pexels-tranmautritam-326514.jpg',
     slug: '/blog/conversao-e-landing-page-como-transformar-visitante-em-lead',
     excerpt: 'Uma landing page bonita não garante resultado. Entenda o que realmente aumenta conversão, os erros que derrubam performance e como estruturar uma página pensada para gerar leads de verdade.'
   },

@@ -93,7 +93,7 @@ export default function ArticlePage() {
             
             <div className="w-full aspect-video md:aspect-[21/9] bg-zinc-100 rounded-xl overflow-hidden mb-12">
               <img 
-                src="/marketing/capa-produto.jpeg" 
+                src="/marketing/pexels-tranmautritam-326514.jpg" 
                 alt="Conversão e landing pages"
                 className="w-full h-full object-cover"
               />
