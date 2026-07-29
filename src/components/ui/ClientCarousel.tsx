@@ -6,6 +6,8 @@ const logos = [
   { src: "/clients/memvor.svg", className: "scale-75", keepOriginalColor: true },
   { src: "/clients/bcs-rio.svg", className: "" },
   { src: "/clients/asa.svg", className: "" },
+  { src: "/clients/Logo-Condes-fundo-transparente.png", className: "" },
+  { src: "/clients/logo-secretaria-desenvolvimento-economico-ouro-preto.png", className: "" },
   { src: "/clients/teainter.png", className: "" },
   { src: "/clients/lic.svg", className: "" },
   { src: "/clients/gigantes-de-nazare.svg", className: "" },
