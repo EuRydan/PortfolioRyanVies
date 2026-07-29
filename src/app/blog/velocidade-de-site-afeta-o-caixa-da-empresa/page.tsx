@@ -22,6 +22,7 @@ export default function ArticlePage() {
     { id: 'como-medir', label: 'Como medir a performance do seu site' },
     { id: 'o-que-priorizar', label: 'O que priorizar primeiro' },
     { id: 'primeira-impressao', label: 'Velocidade é parte da primeira impressão' },
+    { id: 'faq', label: 'Perguntas frequentes' },
   ];
 
   return (
@@ -242,6 +243,35 @@ export default function ArticlePage() {
                   Falar com especialista
                 </Link>
               </div>
+
+              <>
+                <h3 id="faq" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-8 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                  Perguntas frequentes
+                </h3>
+                
+                <div className="space-y-6 mb-12">
+                  <div className="border-b border-zinc-200 pb-6">
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-800 mb-3">Meu site é feito no WordPress, dá pra ficar rápido?</h4>
+                    <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+                      Sim, mas exige mais cuidado. É preciso usar um tema leve e otimizado, reduzir drasticamente a quantidade de plugins, implementar um bom sistema de cache de servidor e comprimir todas as imagens. Dependendo do tamanho do projeto, a migração para uma arquitetura moderna como o Next.js pode ser a solução definitiva para o gargalo de velocidade.
+                    </p>
+                  </div>
+                  
+                  <div className="border-b border-zinc-200 pb-6">
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-800 mb-3">O que é mais importante: carregar rápido no celular ou no computador?</h4>
+                    <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+                      No celular. O Google usa o "Mobile-First Indexing", o que significa que ele avalia a versão mobile do seu site para definir o ranqueamento geral de SEO. Além disso, a maioria esmagadora dos usuários já acessa via smartphone, e conexões de internet móvel (4G/5G) costumam ser mais instáveis que as de Wi-Fi.
+                    </p>
+                  </div>
+
+                  <div className="pt-2">
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-800 mb-3">Quanto tempo meu site deve levar para carregar?</h4>
+                    <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+                      O ideal é que o maior elemento visível (LCP - Largest Contentful Paint) carregue em até 2,5 segundos. Passou de 3 segundos, você já começa a perder visitantes impacientes e a taxa de rejeição da sua página tende a disparar exponencialmente.
+                    </p>
+                  </div>
+                </div>
+              </>
 
             </div>
           </div>

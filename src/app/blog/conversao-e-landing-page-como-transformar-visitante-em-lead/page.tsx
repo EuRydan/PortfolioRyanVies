@@ -23,6 +23,7 @@ export default function ArticlePage() {
     { id: 'pensar-estrategicamente', label: 'Como pensar a landing page estrategicamente' },
     { id: 'testes-otimizacao', label: 'Testes e otimização' },
     { id: 'conversao-consequencia', label: 'Conversão é consequência' },
+    { id: 'faq', label: 'Perguntas frequentes' },
   ];
 
   return (
@@ -249,6 +250,35 @@ export default function ArticlePage() {
                   Falar com especialista
                 </Link>
               </div>
+
+              <>
+                <h3 id="faq" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-8 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                  Perguntas frequentes
+                </h3>
+                
+                <div className="space-y-6 mb-12">
+                  <div className="border-b border-zinc-200 pb-6">
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-800 mb-3">Toda empresa precisa de uma landing page?</h4>
+                    <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+                      Se você roda anúncios (tráfego pago) ou faz campanhas com um objetivo específico, sim. Mandar quem clica no seu anúncio para a página inicial do seu site institucional faz o visitante se perder no meio de tanta informação. A landing page mantém o foco em uma única oferta e aumenta drasticamente a taxa de conversão.
+                    </p>
+                  </div>
+                  
+                  <div className="border-b border-zinc-200 pb-6">
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-800 mb-3">O que não pode faltar em uma landing page que converte?</h4>
+                    <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+                      Uma promessa clara logo na primeira dobra (aquela que aparece antes de rolar a página), botões de chamada para ação (CTAs) bem posicionados e contrastantes, formulário enxuto focado no essencial, remoção de distrações (como menus complexos) e provas sociais (depoimentos, logos de clientes, métricas).
+                    </p>
+                  </div>
+
+                  <div className="pt-2">
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-800 mb-3">Qual a diferença entre landing page e site institucional?</h4>
+                    <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+                      O site institucional funciona como a sede da sua empresa na internet: tem todas as informações, página quem somos, portfólio completo de serviços, blog, etc. A landing page tem um único objetivo (como pedir um orçamento de um serviço específico ou baixar um material), sem menus de navegação e sem links de fuga que dispersem a atenção do usuário.
+                    </p>
+                  </div>
+                </div>
+              </>
 
             </div>
           </div>
