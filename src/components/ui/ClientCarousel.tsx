@@ -39,7 +39,7 @@ export function ClientCarousel() {
         }}
         transition={{
           ease: "linear",
-          duration: 120, // Ajuste de velocidade bem mais lento
+          duration: 240, // Ajuste de velocidade bem mais lento
           repeat: Infinity,
         }}
       >
@@ -62,7 +62,7 @@ export function ClientCarousel() {
         }}
         transition={{
           ease: "linear",
-          duration: 120, // Mesma velocidade para manter a ilusão de esteira conectada
+          duration: 240, // Mesma velocidade para manter a ilusão de esteira conectada
           repeat: Infinity,
         }}
       >

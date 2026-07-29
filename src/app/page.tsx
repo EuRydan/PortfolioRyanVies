@@ -452,18 +452,18 @@ export default function Home() {
         </section>
 
         {/* Blog Preview Section */}
-        <section className="w-full pt-20 md:pt-32 lg:pt-40 bg-zinc-900">
+        <section className="w-full pt-20 md:pt-32 lg:pt-40 bg-white">
           <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
               <AnimatedSection className="flex flex-col items-start">
                 <h2 
-                  className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold mb-4" 
+                  className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-500 font-semibold mb-4" 
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                 >
                   Nosso Blog
                 </h2>
                 <h3 
-                  className="text-3xl sm:text-4xl font-bold text-white leading-tight"
+                  className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight"
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                 >
                   Últimos artigos e insights
@@ -473,7 +473,7 @@ export default function Home() {
               <AnimatedSection delay={0.1}>
                 <Link 
                   href="/blog" 
-                  className="inline-flex items-center text-[#d75310] font-bold tracking-widest uppercase hover:text-white transition-colors"
+                  className="inline-flex items-center text-[#d75310] font-bold tracking-widest uppercase hover:text-zinc-900 transition-colors"
                 >
                   Ver todos os artigos
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -487,7 +487,7 @@ export default function Home() {
               {/* Article 1 */}
               <AnimatedSection delay={0.1}>
                 <Link href="/blog/conversao-e-landing-page-como-transformar-visitante-em-lead" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
+                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
                     <img 
                       src="/marketing/pexels-tranmautritam-326514.jpg" 
                       alt="Conversão e landing pages"
@@ -503,10 +503,10 @@ export default function Home() {
                         28 Jul 2026
                       </span>
                     </div>
-                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-900 mb-2 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Conversão e landing page: como transformar visitante em lead com estratégia
                     </h4>
-                    <p className="text-zinc-400 text-xs md:text-sm leading-relaxed line-clamp-2">
+                    <p className="text-zinc-600 text-xs md:text-sm leading-relaxed line-clamp-2">
                       Uma landing page bonita não garante resultado. Entenda o que realmente aumenta conversão, os erros que derrubam performance e como estruturar uma página pensada para gerar leads de verdade.
                     </p>
                   </div>
@@ -516,7 +516,7 @@ export default function Home() {
               {/* Article 2 */}
               <AnimatedSection delay={0.2}>
                 <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
+                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
                     <img 
                       src="/marketing/capa-produto.jpeg" 
                       alt="Quero criar um app ou SaaS"
@@ -532,20 +532,20 @@ export default function Home() {
                         24 Jul 2026
                       </span>
                     </div>
-                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-900 mb-2 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Quero criar um app ou SaaS: por onde começo?
                     </h4>
-                    <p className="text-zinc-400 text-xs md:text-sm leading-relaxed line-clamp-2">
+                    <p className="text-zinc-600 text-xs md:text-sm leading-relaxed line-clamp-2">
                       Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.
                     </p>
                   </div>
                 </Link>
               </AnimatedSection>
 
-              {/* Article 2 */}
+              {/* Article 3 */}
               <AnimatedSection delay={0.3}>
                 <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-800 rounded-none">
+                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
                     <img 
                       src="/marketing/capa-artigo.jpg" 
                       alt="Criação de sites em Duque de Caxias"
@@ -561,10 +561,10 @@ export default function Home() {
                         24 Jul 2026
                       </span>
                     </div>
-                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    <h4 className="text-lg md:text-xl font-bold text-zinc-900 mb-2 group-hover:text-[#d75310] transition-colors leading-snug" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Criação de sites em Duque de Caxias: quanto custa em 2026
                     </h4>
-                    <p className="text-zinc-400 text-xs md:text-sm leading-relaxed line-clamp-2">
+                    <p className="text-zinc-600 text-xs md:text-sm leading-relaxed line-clamp-2">
                       Quanto custa um site em Duque de Caxias em 2026? Veja faixas de preço reais, o que muda o valor e como contratar sem cair em armadilha.
                     </p>
                   </div>
