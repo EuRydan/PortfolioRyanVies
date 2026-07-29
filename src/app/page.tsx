@@ -454,8 +454,8 @@ export default function Home() {
         {/* Blog Preview Section */}
         <section className="w-full pt-16 md:pt-24 lg:pt-32 pb-10 md:pb-16 lg:pb-20 bg-white">
           <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
-              <AnimatedSection className="flex flex-col items-start">
+            <div className="flex flex-col items-center text-center mb-12 md:mb-16 gap-6 max-w-2xl mx-auto">
+              <AnimatedSection className="flex flex-col items-center">
                 <h2 
                   className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-500 font-semibold mb-4" 
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
@@ -463,7 +463,7 @@ export default function Home() {
                   Nosso Blog
                 </h2>
                 <h3 
-                  className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight"
+                  className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight mb-6"
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                 >
                   Últimos artigos e insights
@@ -483,7 +483,7 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
               {/* Article 1 */}
               <AnimatedSection delay={0.1}>
                 <Link href="/blog/conversao-e-landing-page-como-transformar-visitante-em-lead" className="group block h-full flex flex-col">
