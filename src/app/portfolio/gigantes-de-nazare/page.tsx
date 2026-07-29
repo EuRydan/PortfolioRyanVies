@@ -50,21 +50,40 @@ export default function ProjectPage() {
 
             {/* Conteúdo do Projeto */}
             <div className="space-y-8 text-zinc-600 text-sm md:text-[15px] leading-relaxed">
-              <p>
-                [TEXTO_INTRODUTORIO_AQUI]
-              </p>
-
-              <div>
-                <h3 className="text-zinc-900 font-bold mb-3">[TITULO_SECAO_1]</h3>
+              <div className="space-y-4">
                 <p>
-                  [TEXTO_SECAO_1]
+                  O Gigantes de Nazaré é um dos maiores eventos de ondas gigantes do mundo, com etapas em Portugal e no Brasil reunindo os melhores atletas de tow-in surf. A Etapa Rio, realizada ao longo de algumas edições no Pontão do Leblon, virou um dos pontos altos do calendário esportivo carioca.
+                </p>
+                <p>
+                  Ao longo dessas edições, produzimos alguns dos materiais de comunicação do evento, em parceria com a Brandala Comunicação e Design.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-zinc-900 font-bold mb-3">[TITULO_SECAO_2]</h3>
+                <h3 className="text-zinc-900 font-bold mb-3">O trabalho</h3>
                 <p>
-                  [TEXTO_SECAO_2]
+                  As peças incluíram banners para os canais oficiais do evento (YouTube, Facebook, Instagram e TikTok), relatórios de performance transformando números de audiência em comunicação visual, e materiais de ativação da Etapa Rio, como stories de programação, previsão do tempo e divulgação do mutirão de limpeza realizado na Praia de São Conrado, em parceria com o Salvemos São Conrado.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-zinc-900 font-bold mb-3">O conceito</h3>
+                <p>
+                  A identidade se apoia nas cores de Portugal, país de origem do evento, com listras diagonais em verde e vermelho que funcionam como assinatura visual em qualquer peça. O fundo em azul petróleo escuro, cortado por linhas onduladas que remetem ao movimento das ondas, sustenta o tom cinematográfico do evento. A tagline "Redefinindo o impossível" resume o espírito da marca e aparece de forma recorrente nas peças.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-zinc-900 font-bold mb-3">Comunidade e patrocínio</h3>
+                <p>
+                  As peças de ativação da Etapa Rio reuniram uma rede extensa de patrocinadores e apoiadores, do Governo do Rio de Janeiro a marcas como Corona e Sesc, todos integrados sob a mesma identidade visual.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-zinc-900 font-bold mb-3">O resultado</h3>
+                <p>
+                  Material de comunicação consistente para uma das etapas mais importantes do calendário do Gigantes de Nazaré, aplicado em múltiplas plataformas e conectado à comunidade local carioca.
                 </p>
               </div>
             </div>
@@ -76,7 +95,7 @@ export default function ProjectPage() {
               </div>
               <div className="grid grid-cols-[80px_1fr] md:grid-cols-[100px_1fr] gap-4 items-start">
                 <span className="font-bold text-zinc-900 text-sm md:text-[15px]">Serviços</span>
-                <span className="text-zinc-600 text-sm md:text-[15px]">[SERVICOS_AQUI]</span>
+                <span className="text-zinc-600 text-sm md:text-[15px]">Design de Comunicação, Social Media, Material de Ativação</span>
               </div>
             </div>
 
