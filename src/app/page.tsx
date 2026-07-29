@@ -452,7 +452,7 @@ export default function Home() {
               {/* Article 1 */}
               <AnimatedSection delay={0.1}>
                 <Link href="/blog/conversao-e-landing-page-como-transformar-visitante-em-lead" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
+                  <div className="relative w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
                     <Image src="/marketing/pexels-tranmautritam-326514.jpg" alt="Conversão e landing pages" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
                   </div>
                   <div className="flex flex-col">
@@ -477,7 +477,7 @@ export default function Home() {
               {/* Article 2 */}
               <AnimatedSection delay={0.2}>
                 <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
+                  <div className="relative w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
                     <Image src="/marketing/capa-produto.jpeg" alt="Quero criar um app ou SaaS" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
                   </div>
                   <div className="flex flex-col">
@@ -502,7 +502,7 @@ export default function Home() {
               {/* Article 3 */}
               <AnimatedSection delay={0.3}>
                 <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group block h-full flex flex-col">
-                  <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
+                  <div className="relative w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
                     <Image src="/marketing/capa-artigo.jpg" alt="Criação de sites em Duque de Caxias" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
                   </div>
                   <div className="flex flex-col">
