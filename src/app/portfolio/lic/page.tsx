@@ -87,7 +87,7 @@ export default function ProjectPage() {
               <div>
                 <h3 className="text-zinc-900 font-bold mb-3">O conceito</h3>
                 <p>
-                  A identidade parte de um símbolo direto: uma coroa estilizada em geometria angular, dourado sobre fundo escuro, que remete à realeza do esporte e ao status de ídolo dos protagonistas da marca. É um símbolo pensado para funcionar sozinho, como selo, como marca d'água, como assinatura de autoridade.
+                  O símbolo nasce da própria MTR7. O número 7 da marca-mãe foi girado até formar o L de LIC, criando uma ponte visual direta entre as duas identidades. O resultado é uma coroa estilizada em geometria angular, dourada sobre fundo escuro, que carrega ao mesmo tempo a herança da MTR7 e o status de realeza do esporte que a LIC representa.
                 </p>
               </div>
 
