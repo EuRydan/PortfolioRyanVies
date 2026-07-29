@@ -452,7 +452,7 @@ export default function Home() {
         </section>
 
         {/* Blog Preview Section */}
-        <section className="w-full pt-20 md:pt-32 lg:pt-40 bg-white">
+        <section className="w-full py-16 md:py-24 lg:py-32 bg-white">
           <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
               <AnimatedSection className="flex flex-col items-start">
@@ -575,7 +575,7 @@ export default function Home() {
         </section>
 
         {/* Clientes Section */}
-        <section className="w-full pt-20 md:pt-32 lg:pt-40 pb-20 md:pb-32 lg:pb-40 overflow-hidden">
+        <section className="w-full pt-10 md:pt-14 lg:pt-20 pb-20 md:pb-32 lg:pb-40 overflow-hidden">
           <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
             <AnimatedSection className="flex flex-col items-start mb-12">
               <h2 
