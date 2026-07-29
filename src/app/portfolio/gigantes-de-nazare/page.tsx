@@ -52,7 +52,7 @@ export default function ProjectPage() {
             <div className="space-y-8 text-zinc-600 text-sm md:text-[15px] leading-relaxed">
               <div className="space-y-4">
                 <p>
-                  O Gigantes de Nazaré é um dos maiores eventos de ondas gigantes do mundo, com etapas em Portugal e no Brasil reunindo os melhores atletas de tow-in surf. A Etapa Rio, realizada ao longo de algumas edições no Pontão do Leblon, virou um dos pontos altos do calendário esportivo carioca.
+                  Gigantes de Nazaré é um dos maiores eventos de ondas gigantes do mundo, com etapas em Portugal e no Brasil reunindo os melhores atletas de tow-in surf. A Etapa Rio, realizada ao longo de algumas edições no Pontão do Leblon, virou um dos pontos altos do calendário esportivo carioca.
                 </p>
                 <p>
                   Ao longo dessas edições, produzimos alguns dos materiais de comunicação do evento, em parceria com a Brandala Comunicação e Design.
