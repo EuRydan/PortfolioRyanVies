@@ -1,13 +1,14 @@
-import { AnimatedSection } from '@/components/ui/AnimatedSection';
+﻿import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { ParallaxBackground } from '@/components/ui/ParallaxBackground';
 import { TableOfContents } from '@/components/ui/TableOfContents';
-import AudioPlayer from '@/components/AudioPlayer';
+import dynamic from 'next/dynamic';
+const AudioPlayer = dynamic(() => import('@/components/AudioPlayer'));
 
 export const metadata: Metadata = {
-  title: 'Quero criar um app ou SaaS: por onde começo? | Vies Studios',
-  description: 'Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.',
+  title: 'Quero criar um app ou SaaS: por onde comeÃ§o? | Vies Studios',
+  description: 'Tem uma ideia de app ou SaaS mas nÃ£o sabe por onde comeÃ§ar? Veja o que realmente importa antes de escrever uma linha de cÃ³digo ou contratar alguÃ©m.',
   alternates: {
     canonical: "https://www.viesstudios.com.br/blog/quero-criar-um-app-saas-por-onde-comecar",
   },
@@ -15,13 +16,13 @@ export const metadata: Metadata = {
 
 export default function ArticlePage() {
   const tocItems = [
-    { id: 'qual-problema', label: 'Qual é o problema que você resolve?' },
-    { id: 'diferenca-app-saas', label: 'A diferença entre app e SaaS' },
-    { id: 'sobre-mvp', label: 'O que é um MVP de verdade' },
+    { id: 'qual-problema', label: 'Qual Ã© o problema que vocÃª resolve?' },
+    { id: 'diferenca-app-saas', label: 'A diferenÃ§a entre app e SaaS' },
+    { id: 'sobre-mvp', label: 'O que Ã© um MVP de verdade' },
     { id: 'quanto-custa', label: 'Quanto custa desenvolver?' },
     { id: 'stack-tecnologica', label: 'Stack: o que saber antes de contratar' },
     { id: 'erro-mais-comum', label: 'O erro que afunda projetos' },
-    { id: 'quando-contratar', label: 'Quando contratar uma agência' },
+    { id: 'quando-contratar', label: 'Quando contratar uma agÃªncia' },
   ];
 
   return (
@@ -45,7 +46,7 @@ export default function ArticlePage() {
           <div className="flex flex-col items-start">
             <AnimatedSection>
               <div className="flex items-center gap-4 text-xs font-bold uppercase tracking-widest mb-6">
-                <span className="bg-[#d75310] text-white px-3 py-1.5 rounded">Criação de produto digital</span>
+                <span className="bg-[#d75310] text-white px-3 py-1.5 rounded">CriaÃ§Ã£o de produto digital</span>
               </div>
             </AnimatedSection>
 
@@ -54,13 +55,13 @@ export default function ArticlePage() {
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 max-w-4xl"
                 style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
               >
-                Quero criar um app ou SaaS: por onde começo?
+                Quero criar um app ou SaaS: por onde comeÃ§o?
               </h1>
             </AnimatedSection>
             
             <AnimatedSection delay={0.2}>
               <p className="text-zinc-400 text-base md:text-base md:text-lg leading-relaxed max-w-2xl">
-                Tem uma ideia de app ou SaaS mas não sabe por onde começar? Veja o que realmente importa antes de escrever uma linha de código ou contratar alguém.
+                Tem uma ideia de app ou SaaS mas nÃ£o sabe por onde comeÃ§ar? Veja o que realmente importa antes de escrever uma linha de cÃ³digo ou contratar alguÃ©m.
               </p>
             </AnimatedSection>
 
@@ -104,87 +105,87 @@ export default function ArticlePage() {
             <div className="mb-12">
               <AudioPlayer 
                 title="Ouvir artigo"
-                text={`A maioria das pessoas que chega com uma ideia de app ou SaaS comete o mesmo erro: começa pela parte errada. Contrata um desenvolvedor antes de validar, gasta meses construindo algo que ninguém pediu ou tenta fazer tudo de uma vez e trava no meio do caminho. Esse artigo é um guia de como pensar antes de agir, não um tutorial de como programar. Antes de qualquer coisa: qual é o problema que você resolve? Produto digital que não resolve um problema específico não vira negócio. Vira projeto de portfolio. A pergunta certa é 'quem paga pra ter esse problema resolvido hoje, de que forma, e quanto esse problema custa pra essa pessoa?' 'Minha ideia é boa?' não leva a lugar nenhum. Se você consegue responder isso com nomes reais de pessoas, conversas que já teve e situações concretas, você tem o começo de um produto. Se a resposta for "todo mundo que usa smartphone", você ainda está no estágio da ideia. Produto nasce de problema. Problema nasce de observação, não de inspiração. A diferença entre app, SaaS e produto digital Os três termos aparecem juntos o tempo todo, mas não significam a mesma coisa. App é qualquer aplicativo, mobile ou web, que o usuário acessa pra realizar alguma tarefa. Pode ser gratuito, pago por download ou por uso. SaaS (Software as a Service) é um modelo de negócio específico: o usuário paga uma assinatura recorrente pra acessar o software pela internet, sem instalar nada. O vendedor hospeda tudo e o cliente paga mensalmente ou anualmente. É o modelo do Spotify, do Notion, do Canva. Produto digital é o termo mais amplo. Cobre apps, SaaS, plataformas, ferramentas internas e qualquer software que entrega valor de forma contínua. Saber em qual categoria sua ideia se encaixa importa porque define o modelo de monetização, o ciclo de vendas e o que precisa ser construído primeiro. O MVP não é o seu produto em miniatura. Ele testa uma hipótese, seu produto entrega o resultado final. MVP é a sigla pra Minimum Viable Product, produto mínimo viável. O erro mais comum é interpretar isso como "meu produto completo com menos features". MVP é a menor versão possível que valida se alguém paga pelo que você está oferecendo. Pode ser uma landing page com formulário de interesse antes de existir qualquer código. Pode ser um processo manual que você executa pra um cliente antes de automatizar. Pode ser um protótipo no Figma que você mostra pra dez pessoas e coleta reação. O objetivo do MVP não é lançar. É aprender rápido e barato se a direção faz sentido. Comece com o básico que traga valor logo de cara, adie recursos secundários. Uma landing page simples descrevendo a proposta já permite captar e-mails e medir interesse antes de investir pesado. Um MVP bem construído leva de 30 a 90 dias. Um produto com todas as features que você imaginou hoje leva de 6 meses a 2 anos, e boa parte dessas features vai ser removida depois que você descobrir o que o usuário realmente usa. Quanto custa desenvolver um produto digital? Depende muito do que você chama de produto. As faixas mais realistas para o mercado brasileiro em 2026: Tipo de projeto Faixa de investimento Prazo estimado MVP simples (web) R\$ 8.000 a R\$ 25.000 30 a 60 dias SaaS com autenticação e pagamento R\$ 20.000 a R\$ 60.000 60 a 120 dias Plataforma com múltiplos perfis R\$ 50.000 a R\$ 150.000 4 a 8 meses App mobile (iOS + Android) R\$ 40.000 a R\$ 120.000 3 a 6 meses Esses valores cobrem desenvolvimento e design. Infraestrutura, APIs de terceiros, domínio e ferramentas de suporte são custos adicionais que variam conforme o produto. Vale dizer: o custo inicial pode ser próximo de zero usando planos gratuitos de Vercel, Supabase e Railway. O gasto real começa quando você tem usuários ativos e começa a chamar APIs pagas, como as de inteligência artificial, envio de e-mail ou processamento de pagamentos. Stack: o que você precisa saber antes de contratar alguém Você não precisa saber programar pra ter um produto digital. Mas precisa entender o suficiente pra não ser enganado ou tomar decisões ruins de arquitetura no começo. Frontend é o que o usuário vê e interage. Backend é a lógica que processa os dados, aplica as regras de negócio e se comunica com o banco de dados. Você precisa dos dois, e eles precisam conversar bem. Banco de dados guarda tudo: usuários, transações, conteúdo. A escolha certa no começo evita reescrever metade do produto mais tarde. Autenticação é o sistema de login. Parece simples, mas é onde a maioria dos produtos tem as vulnerabilidades mais graves se feito sem cuidado. Pagamento recorrente em SaaS não é só "integrar o Pix". Envolve planos, cobranças automáticas, gestão de inadimplência, webhooks pra confirmar pagamento e lógica pra liberar ou bloquear acesso conforme o status da assinatura. A stack mais usada em 2026 pra produtos web é Next.js no frontend, Supabase como banco de dados com autenticação, e Vercel pra deploy. Essa combinação cobre a maioria dos casos de uso com boa performance, segurança razoável e custo inicial baixo. O erro que afunda a maioria dos projetos Construir demais antes de validar. Isso acontece porque a fase de construção parece produtiva. Você tá fazendo algo, o produto vai tomando forma, cada nova feature parece importante. O problema é que você só vai descobrir se acertou na direção quando alguém real usar o produto e pagar por ele. Cada semana construindo uma feature que ninguém pediu é uma semana que você poderia ter usado pra falar com clientes, ajustar o posicionamento ou mudar completamente o que o produto faz. Os produtos que chegam longe erraram mais barato, não necessariamente mais rápido. Quando faz sentido contratar uma agência ou estúdio Depende do momento e do que você precisa. Se você ainda está na fase de validação, o que você precisa não é de código, é de clareza sobre o problema, o público e a proposta de valor. Nessa fase, um designer que sabe construir protótipos e uma conversa honesta sobre viabilidade valem mais que um time de desenvolvimento. Se você já validou a ideia, tem pessoas dispostas a pagar e precisa colocar o produto no ar, aí faz sentido contratar desenvolvimento. O que evitar: contratar alguém pra "desenvolver a ideia" sem ter clareza do que precisa ser construído primeiro. Sem um briefing bem definido, o projeto vira uma conversa sem fim de adicionar features e o prazo estoura antes do produto existir. O que a Viés faz nesse contexto A Viés Studios desenvolve produtos digitais desde a concepção até o lançamento. Já construímos SaaS com autenticação, planos de assinatura, pagamento recorrente e painel administrativo. Sabemos onde a maioria dos projetos trava e como evitar que isso aconteça no seu. Se você tem uma ideia e quer entender o que faz sentido construir primeiro, mande uma mensagem. A conversa inicial é gratuita e já sai com uma direção clara. Falar com especialista Perguntas frequentes Preciso saber programar pra criar um SaaS? Não necessariamente. Mas entender o básico de como um produto digital funciona ajuda muito na hora de tomar decisões, avaliar orçamentos e conversar com quem vai construir. O risco de não entender nada é delegar decisões importantes pra quem não conhece o seu negócio. Dá pra criar um SaaS com IA sem programar? Dá pra criar um MVP funcional. Ferramentas como Lovable, Bolt e Cursor aceleram muito o processo. O problema costuma aparecer quando o produto precisa de segurança real, integrações complexas ou escalar além dos primeiros usuários. Pra isso, desenvolvimento com alguém que sabe o que está fazendo ainda é insubstituível. Qual a diferença entre um app e um SaaS? App é o produto em si. SaaS é o modelo de negócio onde o produto é entregue como serviço por assinatura. Um app pode ser SaaS ou não. Quanto tempo leva pra lançar um produto digital? Um MVP focado leva de 30 a 90 dias. Um produto com todas as features que você imagina hoje pode levar mais de um ano. A recomendação é sempre lançar o menor produto que valida a ideia e crescer a partir do feedback real. Como sei se minha ideia tem mercado? Converse com pessoas que teriam o problema que você resolve. Se elas já pagam por alguma solução hoje, mesmo que ruim, é sinal de que o problema é real. Se ninguém paga por nada parecido, pode ser inovação ou pode ser que o problema não é grande o suficiente pra virar negócio.`}
+                text={`A maioria das pessoas que chega com uma ideia de app ou SaaS comete o mesmo erro: comeÃ§a pela parte errada. Contrata um desenvolvedor antes de validar, gasta meses construindo algo que ninguÃ©m pediu ou tenta fazer tudo de uma vez e trava no meio do caminho. Esse artigo Ã© um guia de como pensar antes de agir, nÃ£o um tutorial de como programar. Antes de qualquer coisa: qual Ã© o problema que vocÃª resolve? Produto digital que nÃ£o resolve um problema especÃ­fico nÃ£o vira negÃ³cio. Vira projeto de portfolio. A pergunta certa Ã© 'quem paga pra ter esse problema resolvido hoje, de que forma, e quanto esse problema custa pra essa pessoa?' 'Minha ideia Ã© boa?' nÃ£o leva a lugar nenhum. Se vocÃª consegue responder isso com nomes reais de pessoas, conversas que jÃ¡ teve e situaÃ§Ãµes concretas, vocÃª tem o comeÃ§o de um produto. Se a resposta for "todo mundo que usa smartphone", vocÃª ainda estÃ¡ no estÃ¡gio da ideia. Produto nasce de problema. Problema nasce de observaÃ§Ã£o, nÃ£o de inspiraÃ§Ã£o. A diferenÃ§a entre app, SaaS e produto digital Os trÃªs termos aparecem juntos o tempo todo, mas nÃ£o significam a mesma coisa. App Ã© qualquer aplicativo, mobile ou web, que o usuÃ¡rio acessa pra realizar alguma tarefa. Pode ser gratuito, pago por download ou por uso. SaaS (Software as a Service) Ã© um modelo de negÃ³cio especÃ­fico: o usuÃ¡rio paga uma assinatura recorrente pra acessar o software pela internet, sem instalar nada. O vendedor hospeda tudo e o cliente paga mensalmente ou anualmente. Ã‰ o modelo do Spotify, do Notion, do Canva. Produto digital Ã© o termo mais amplo. Cobre apps, SaaS, plataformas, ferramentas internas e qualquer software que entrega valor de forma contÃ­nua. Saber em qual categoria sua ideia se encaixa importa porque define o modelo de monetizaÃ§Ã£o, o ciclo de vendas e o que precisa ser construÃ­do primeiro. O MVP nÃ£o Ã© o seu produto em miniatura. Ele testa uma hipÃ³tese, seu produto entrega o resultado final. MVP Ã© a sigla pra Minimum Viable Product, produto mÃ­nimo viÃ¡vel. O erro mais comum Ã© interpretar isso como "meu produto completo com menos features". MVP Ã© a menor versÃ£o possÃ­vel que valida se alguÃ©m paga pelo que vocÃª estÃ¡ oferecendo. Pode ser uma landing page com formulÃ¡rio de interesse antes de existir qualquer cÃ³digo. Pode ser um processo manual que vocÃª executa pra um cliente antes de automatizar. Pode ser um protÃ³tipo no Figma que vocÃª mostra pra dez pessoas e coleta reaÃ§Ã£o. O objetivo do MVP nÃ£o Ã© lanÃ§ar. Ã‰ aprender rÃ¡pido e barato se a direÃ§Ã£o faz sentido. Comece com o bÃ¡sico que traga valor logo de cara, adie recursos secundÃ¡rios. Uma landing page simples descrevendo a proposta jÃ¡ permite captar e-mails e medir interesse antes de investir pesado. Um MVP bem construÃ­do leva de 30 a 90 dias. Um produto com todas as features que vocÃª imaginou hoje leva de 6 meses a 2 anos, e boa parte dessas features vai ser removida depois que vocÃª descobrir o que o usuÃ¡rio realmente usa. Quanto custa desenvolver um produto digital? Depende muito do que vocÃª chama de produto. As faixas mais realistas para o mercado brasileiro em 2026: Tipo de projeto Faixa de investimento Prazo estimado MVP simples (web) R\$ 8.000 a R\$ 25.000 30 a 60 dias SaaS com autenticaÃ§Ã£o e pagamento R\$ 20.000 a R\$ 60.000 60 a 120 dias Plataforma com mÃºltiplos perfis R\$ 50.000 a R\$ 150.000 4 a 8 meses App mobile (iOS + Android) R\$ 40.000 a R\$ 120.000 3 a 6 meses Esses valores cobrem desenvolvimento e design. Infraestrutura, APIs de terceiros, domÃ­nio e ferramentas de suporte sÃ£o custos adicionais que variam conforme o produto. Vale dizer: o custo inicial pode ser prÃ³ximo de zero usando planos gratuitos de Vercel, Supabase e Railway. O gasto real comeÃ§a quando vocÃª tem usuÃ¡rios ativos e comeÃ§a a chamar APIs pagas, como as de inteligÃªncia artificial, envio de e-mail ou processamento de pagamentos. Stack: o que vocÃª precisa saber antes de contratar alguÃ©m VocÃª nÃ£o precisa saber programar pra ter um produto digital. Mas precisa entender o suficiente pra nÃ£o ser enganado ou tomar decisÃµes ruins de arquitetura no comeÃ§o. Frontend Ã© o que o usuÃ¡rio vÃª e interage. Backend Ã© a lÃ³gica que processa os dados, aplica as regras de negÃ³cio e se comunica com o banco de dados. VocÃª precisa dos dois, e eles precisam conversar bem. Banco de dados guarda tudo: usuÃ¡rios, transaÃ§Ãµes, conteÃºdo. A escolha certa no comeÃ§o evita reescrever metade do produto mais tarde. AutenticaÃ§Ã£o Ã© o sistema de login. Parece simples, mas Ã© onde a maioria dos produtos tem as vulnerabilidades mais graves se feito sem cuidado. Pagamento recorrente em SaaS nÃ£o Ã© sÃ³ "integrar o Pix". Envolve planos, cobranÃ§as automÃ¡ticas, gestÃ£o de inadimplÃªncia, webhooks pra confirmar pagamento e lÃ³gica pra liberar ou bloquear acesso conforme o status da assinatura. A stack mais usada em 2026 pra produtos web Ã© Next.js no frontend, Supabase como banco de dados com autenticaÃ§Ã£o, e Vercel pra deploy. Essa combinaÃ§Ã£o cobre a maioria dos casos de uso com boa performance, seguranÃ§a razoÃ¡vel e custo inicial baixo. O erro que afunda a maioria dos projetos Construir demais antes de validar. Isso acontece porque a fase de construÃ§Ã£o parece produtiva. VocÃª tÃ¡ fazendo algo, o produto vai tomando forma, cada nova feature parece importante. O problema Ã© que vocÃª sÃ³ vai descobrir se acertou na direÃ§Ã£o quando alguÃ©m real usar o produto e pagar por ele. Cada semana construindo uma feature que ninguÃ©m pediu Ã© uma semana que vocÃª poderia ter usado pra falar com clientes, ajustar o posicionamento ou mudar completamente o que o produto faz. Os produtos que chegam longe erraram mais barato, nÃ£o necessariamente mais rÃ¡pido. Quando faz sentido contratar uma agÃªncia ou estÃºdio Depende do momento e do que vocÃª precisa. Se vocÃª ainda estÃ¡ na fase de validaÃ§Ã£o, o que vocÃª precisa nÃ£o Ã© de cÃ³digo, Ã© de clareza sobre o problema, o pÃºblico e a proposta de valor. Nessa fase, um designer que sabe construir protÃ³tipos e uma conversa honesta sobre viabilidade valem mais que um time de desenvolvimento. Se vocÃª jÃ¡ validou a ideia, tem pessoas dispostas a pagar e precisa colocar o produto no ar, aÃ­ faz sentido contratar desenvolvimento. O que evitar: contratar alguÃ©m pra "desenvolver a ideia" sem ter clareza do que precisa ser construÃ­do primeiro. Sem um briefing bem definido, o projeto vira uma conversa sem fim de adicionar features e o prazo estoura antes do produto existir. O que a ViÃ©s faz nesse contexto A ViÃ©s Studios desenvolve produtos digitais desde a concepÃ§Ã£o atÃ© o lanÃ§amento. JÃ¡ construÃ­mos SaaS com autenticaÃ§Ã£o, planos de assinatura, pagamento recorrente e painel administrativo. Sabemos onde a maioria dos projetos trava e como evitar que isso aconteÃ§a no seu. Se vocÃª tem uma ideia e quer entender o que faz sentido construir primeiro, mande uma mensagem. A conversa inicial Ã© gratuita e jÃ¡ sai com uma direÃ§Ã£o clara. Falar com especialista Perguntas frequentes Preciso saber programar pra criar um SaaS? NÃ£o necessariamente. Mas entender o bÃ¡sico de como um produto digital funciona ajuda muito na hora de tomar decisÃµes, avaliar orÃ§amentos e conversar com quem vai construir. O risco de nÃ£o entender nada Ã© delegar decisÃµes importantes pra quem nÃ£o conhece o seu negÃ³cio. DÃ¡ pra criar um SaaS com IA sem programar? DÃ¡ pra criar um MVP funcional. Ferramentas como Lovable, Bolt e Cursor aceleram muito o processo. O problema costuma aparecer quando o produto precisa de seguranÃ§a real, integraÃ§Ãµes complexas ou escalar alÃ©m dos primeiros usuÃ¡rios. Pra isso, desenvolvimento com alguÃ©m que sabe o que estÃ¡ fazendo ainda Ã© insubstituÃ­vel. Qual a diferenÃ§a entre um app e um SaaS? App Ã© o produto em si. SaaS Ã© o modelo de negÃ³cio onde o produto Ã© entregue como serviÃ§o por assinatura. Um app pode ser SaaS ou nÃ£o. Quanto tempo leva pra lanÃ§ar um produto digital? Um MVP focado leva de 30 a 90 dias. Um produto com todas as features que vocÃª imagina hoje pode levar mais de um ano. A recomendaÃ§Ã£o Ã© sempre lanÃ§ar o menor produto que valida a ideia e crescer a partir do feedback real. Como sei se minha ideia tem mercado? Converse com pessoas que teriam o problema que vocÃª resolve. Se elas jÃ¡ pagam por alguma soluÃ§Ã£o hoje, mesmo que ruim, Ã© sinal de que o problema Ã© real. Se ninguÃ©m paga por nada parecido, pode ser inovaÃ§Ã£o ou pode ser que o problema nÃ£o Ã© grande o suficiente pra virar negÃ³cio.`}
               />
             </div>
 
             <div className="prose prose-lg prose-zinc max-w-none">
               <p className="text-zinc-800 text-base md:text-lg lg:text-xl leading-relaxed mb-6 font-medium">
-                A maioria das pessoas que chega com uma ideia de app ou SaaS comete o mesmo erro: começa pela parte errada. Contrata um desenvolvedor antes de validar, gasta meses construindo algo que ninguém pediu ou tenta fazer tudo de uma vez e trava no meio do caminho.
+                A maioria das pessoas que chega com uma ideia de app ou SaaS comete o mesmo erro: comeÃ§a pela parte errada. Contrata um desenvolvedor antes de validar, gasta meses construindo algo que ninguÃ©m pediu ou tenta fazer tudo de uma vez e trava no meio do caminho.
               </p>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Esse artigo é um guia de como pensar antes de agir, não um tutorial de como programar.
+                Esse artigo Ã© um guia de como pensar antes de agir, nÃ£o um tutorial de como programar.
               </p>
 
               <h3 id="qual-problema" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                Antes de qualquer coisa: qual é o problema que você resolve?
+                Antes de qualquer coisa: qual Ã© o problema que vocÃª resolve?
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Produto digital que não resolve um problema específico não vira negócio. Vira projeto de portfolio.
+                Produto digital que nÃ£o resolve um problema especÃ­fico nÃ£o vira negÃ³cio. Vira projeto de portfolio.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                A pergunta certa é 'quem paga pra ter esse problema resolvido hoje, de que forma, e quanto esse problema custa pra essa pessoa?' 'Minha ideia é boa?' não leva a lugar nenhum.
+                A pergunta certa Ã© 'quem paga pra ter esse problema resolvido hoje, de que forma, e quanto esse problema custa pra essa pessoa?' 'Minha ideia Ã© boa?' nÃ£o leva a lugar nenhum.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Se você consegue responder isso com nomes reais de pessoas, conversas que já teve e situações concretas, você tem o começo de um produto. Se a resposta for "todo mundo que usa smartphone", você ainda está no estágio da ideia.
+                Se vocÃª consegue responder isso com nomes reais de pessoas, conversas que jÃ¡ teve e situaÃ§Ãµes concretas, vocÃª tem o comeÃ§o de um produto. Se a resposta for "todo mundo que usa smartphone", vocÃª ainda estÃ¡ no estÃ¡gio da ideia.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Produto nasce de problema. Problema nasce de observação, não de inspiração.
+                Produto nasce de problema. Problema nasce de observaÃ§Ã£o, nÃ£o de inspiraÃ§Ã£o.
               </p>
 
               <h3 id="diferenca-app-saas" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                A diferença entre app, SaaS e produto digital
+                A diferenÃ§a entre app, SaaS e produto digital
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Os três termos aparecem juntos o tempo todo, mas não significam a mesma coisa.
+                Os trÃªs termos aparecem juntos o tempo todo, mas nÃ£o significam a mesma coisa.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                <strong>App</strong> é qualquer aplicativo, mobile ou web, que o usuário acessa pra realizar alguma tarefa. Pode ser gratuito, pago por download ou por uso.
+                <strong>App</strong> Ã© qualquer aplicativo, mobile ou web, que o usuÃ¡rio acessa pra realizar alguma tarefa. Pode ser gratuito, pago por download ou por uso.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                <strong>SaaS (Software as a Service)</strong> é um modelo de negócio específico: o usuário paga uma assinatura recorrente pra acessar o software pela internet, sem instalar nada. O vendedor hospeda tudo e o cliente paga mensalmente ou anualmente. É o modelo do Spotify, do Notion, do Canva.
+                <strong>SaaS (Software as a Service)</strong> Ã© um modelo de negÃ³cio especÃ­fico: o usuÃ¡rio paga uma assinatura recorrente pra acessar o software pela internet, sem instalar nada. O vendedor hospeda tudo e o cliente paga mensalmente ou anualmente. Ã‰ o modelo do Spotify, do Notion, do Canva.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                <strong>Produto digital</strong> é o termo mais amplo. Cobre apps, SaaS, plataformas, ferramentas internas e qualquer software que entrega valor de forma contínua.
+                <strong>Produto digital</strong> Ã© o termo mais amplo. Cobre apps, SaaS, plataformas, ferramentas internas e qualquer software que entrega valor de forma contÃ­nua.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Saber em qual categoria sua ideia se encaixa importa porque define o modelo de monetização, o ciclo de vendas e o que precisa ser construído primeiro.
+                Saber em qual categoria sua ideia se encaixa importa porque define o modelo de monetizaÃ§Ã£o, o ciclo de vendas e o que precisa ser construÃ­do primeiro.
               </p>
 
               <h3 id="sobre-mvp" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                O MVP não é o seu produto em miniatura. Ele testa uma hipótese, seu produto entrega o resultado final.
+                O MVP nÃ£o Ã© o seu produto em miniatura. Ele testa uma hipÃ³tese, seu produto entrega o resultado final.
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                MVP é a sigla pra Minimum Viable Product, produto mínimo viável. O erro mais comum é interpretar isso como "meu produto completo com menos features".
+                MVP Ã© a sigla pra Minimum Viable Product, produto mÃ­nimo viÃ¡vel. O erro mais comum Ã© interpretar isso como "meu produto completo com menos features".
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                MVP é a menor versão possível que valida se alguém paga pelo que você está oferecendo. Pode ser uma landing page com formulário de interesse antes de existir qualquer código. Pode ser um processo manual que você executa pra um cliente antes de automatizar. Pode ser um protótipo no Figma que você mostra pra dez pessoas e coleta reação.
+                MVP Ã© a menor versÃ£o possÃ­vel que valida se alguÃ©m paga pelo que vocÃª estÃ¡ oferecendo. Pode ser uma landing page com formulÃ¡rio de interesse antes de existir qualquer cÃ³digo. Pode ser um processo manual que vocÃª executa pra um cliente antes de automatizar. Pode ser um protÃ³tipo no Figma que vocÃª mostra pra dez pessoas e coleta reaÃ§Ã£o.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6 font-bold">
-                O objetivo do MVP não é lançar. É aprender rápido e barato se a direção faz sentido.
+                O objetivo do MVP nÃ£o Ã© lanÃ§ar. Ã‰ aprender rÃ¡pido e barato se a direÃ§Ã£o faz sentido.
               </p>
 
               <div className="bg-zinc-50 border-l-4 border-[#d75310] p-6 my-8 rounded-r-xl">
                 <p className="text-zinc-700 italic text-lg m-0">
-                  Comece com o básico que traga valor logo de cara, adie recursos secundários. Uma landing page simples descrevendo a proposta já permite captar e-mails e medir interesse antes de investir pesado.
+                  Comece com o bÃ¡sico que traga valor logo de cara, adie recursos secundÃ¡rios. Uma landing page simples descrevendo a proposta jÃ¡ permite captar e-mails e medir interesse antes de investir pesado.
                 </p>
               </div>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Um MVP bem construído leva de 30 a 90 dias. Um produto com todas as features que você imaginou hoje leva de 6 meses a 2 anos, e boa parte dessas features vai ser removida depois que você descobrir o que o usuário realmente usa.
+                Um MVP bem construÃ­do leva de 30 a 90 dias. Um produto com todas as features que vocÃª imaginou hoje leva de 6 meses a 2 anos, e boa parte dessas features vai ser removida depois que vocÃª descobrir o que o usuÃ¡rio realmente usa.
               </p>
 
               <h3 id="quanto-custa" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -192,7 +193,7 @@ export default function ArticlePage() {
               </h3>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Depende muito do que você chama de produto. As faixas mais realistas para o mercado brasileiro em 2026:
+                Depende muito do que vocÃª chama de produto. As faixas mais realistas para o mercado brasileiro em 2026:
               </p>
 
               <div className="overflow-x-auto mb-8 bg-zinc-50 rounded-xl">
@@ -211,12 +212,12 @@ export default function ArticlePage() {
                       <td className="py-5 px-6">30 a 60 dias</td>
                     </tr>
                     <tr className="border-b border-zinc-100 hover:bg-zinc-100/30 transition-colors">
-                      <td className="py-5 px-6 font-medium text-zinc-800">SaaS com autenticação e pagamento</td>
+                      <td className="py-5 px-6 font-medium text-zinc-800">SaaS com autenticaÃ§Ã£o e pagamento</td>
                       <td className="py-5 px-6 whitespace-nowrap">R$ 20.000 a R$ 60.000</td>
                       <td className="py-5 px-6">60 a 120 dias</td>
                     </tr>
                     <tr className="border-b border-zinc-100 hover:bg-zinc-100/30 transition-colors">
-                      <td className="py-5 px-6 font-medium text-zinc-800">Plataforma com múltiplos perfis</td>
+                      <td className="py-5 px-6 font-medium text-zinc-800">Plataforma com mÃºltiplos perfis</td>
                       <td className="py-5 px-6 whitespace-nowrap">R$ 50.000 a R$ 150.000</td>
                       <td className="py-5 px-6">4 a 8 meses</td>
                     </tr>
@@ -230,30 +231,30 @@ export default function ArticlePage() {
               </div>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Esses valores cobrem desenvolvimento e design. Infraestrutura, APIs de terceiros, domínio e ferramentas de suporte são custos adicionais que variam conforme o produto.
+                Esses valores cobrem desenvolvimento e design. Infraestrutura, APIs de terceiros, domÃ­nio e ferramentas de suporte sÃ£o custos adicionais que variam conforme o produto.
               </p>
               
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                Vale dizer: o custo inicial pode ser próximo de zero usando planos gratuitos de Vercel, Supabase e Railway. O gasto real começa quando você tem usuários ativos e começa a chamar APIs pagas, como as de inteligência artificial, envio de e-mail ou processamento de pagamentos.
+                Vale dizer: o custo inicial pode ser prÃ³ximo de zero usando planos gratuitos de Vercel, Supabase e Railway. O gasto real comeÃ§a quando vocÃª tem usuÃ¡rios ativos e comeÃ§a a chamar APIs pagas, como as de inteligÃªncia artificial, envio de e-mail ou processamento de pagamentos.
               </p>
 
               <h3 id="stack-tecnologica" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                Stack: o que você precisa saber antes de contratar alguém
+                Stack: o que vocÃª precisa saber antes de contratar alguÃ©m
               </h3>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Você não precisa saber programar pra ter um produto digital. Mas precisa entender o suficiente pra não ser enganado ou tomar decisões ruins de arquitetura no começo.
+                VocÃª nÃ£o precisa saber programar pra ter um produto digital. Mas precisa entender o suficiente pra nÃ£o ser enganado ou tomar decisÃµes ruins de arquitetura no comeÃ§o.
               </p>
 
               <ul className="list-disc pl-6 text-zinc-600 text-base md:text-lg leading-relaxed mb-6 space-y-4">
-                <li><strong>Frontend</strong> é o que o usuário vê e interage. <strong>Backend</strong> é a lógica que processa os dados, aplica as regras de negócio e se comunica com o banco de dados. Você precisa dos dois, e eles precisam conversar bem.</li>
-                <li><strong>Banco de dados</strong> guarda tudo: usuários, transações, conteúdo. A escolha certa no começo evita reescrever metade do produto mais tarde.</li>
-                <li><strong>Autenticação</strong> é o sistema de login. Parece simples, mas é onde a maioria dos produtos tem as vulnerabilidades mais graves se feito sem cuidado.</li>
-                <li><strong>Pagamento recorrente</strong> em SaaS não é só "integrar o Pix". Envolve planos, cobranças automáticas, gestão de inadimplência, webhooks pra confirmar pagamento e lógica pra liberar ou bloquear acesso conforme o status da assinatura.</li>
+                <li><strong>Frontend</strong> Ã© o que o usuÃ¡rio vÃª e interage. <strong>Backend</strong> Ã© a lÃ³gica que processa os dados, aplica as regras de negÃ³cio e se comunica com o banco de dados. VocÃª precisa dos dois, e eles precisam conversar bem.</li>
+                <li><strong>Banco de dados</strong> guarda tudo: usuÃ¡rios, transaÃ§Ãµes, conteÃºdo. A escolha certa no comeÃ§o evita reescrever metade do produto mais tarde.</li>
+                <li><strong>AutenticaÃ§Ã£o</strong> Ã© o sistema de login. Parece simples, mas Ã© onde a maioria dos produtos tem as vulnerabilidades mais graves se feito sem cuidado.</li>
+                <li><strong>Pagamento recorrente</strong> em SaaS nÃ£o Ã© sÃ³ "integrar o Pix". Envolve planos, cobranÃ§as automÃ¡ticas, gestÃ£o de inadimplÃªncia, webhooks pra confirmar pagamento e lÃ³gica pra liberar ou bloquear acesso conforme o status da assinatura.</li>
               </ul>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                A stack mais usada em 2026 pra produtos web é Next.js no frontend, Supabase como banco de dados com autenticação, e Vercel pra deploy. Essa combinação cobre a maioria dos casos de uso com boa performance, segurança razoável e custo inicial baixo.
+                A stack mais usada em 2026 pra produtos web Ã© Next.js no frontend, Supabase como banco de dados com autenticaÃ§Ã£o, e Vercel pra deploy. Essa combinaÃ§Ã£o cobre a maioria dos casos de uso com boa performance, seguranÃ§a razoÃ¡vel e custo inicial baixo.
               </p>
 
               <h3 id="erro-mais-comum" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -265,46 +266,46 @@ export default function ArticlePage() {
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Isso acontece porque a fase de construção parece produtiva. Você tá fazendo algo, o produto vai tomando forma, cada nova feature parece importante. O problema é que você só vai descobrir se acertou na direção quando alguém real usar o produto e pagar por ele.
+                Isso acontece porque a fase de construÃ§Ã£o parece produtiva. VocÃª tÃ¡ fazendo algo, o produto vai tomando forma, cada nova feature parece importante. O problema Ã© que vocÃª sÃ³ vai descobrir se acertou na direÃ§Ã£o quando alguÃ©m real usar o produto e pagar por ele.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Cada semana construindo uma feature que ninguém pediu é uma semana que você poderia ter usado pra falar com clientes, ajustar o posicionamento ou mudar completamente o que o produto faz.
+                Cada semana construindo uma feature que ninguÃ©m pediu Ã© uma semana que vocÃª poderia ter usado pra falar com clientes, ajustar o posicionamento ou mudar completamente o que o produto faz.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12 font-bold">
-                Os produtos que chegam longe erraram mais barato, não necessariamente mais rápido.
+                Os produtos que chegam longe erraram mais barato, nÃ£o necessariamente mais rÃ¡pido.
               </p>
 
               <h3 id="quando-contratar" className="text-xl md:text-2xl lg:text-3xl font-bold text-zinc-900 mb-6 mt-12 scroll-mt-32" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                Quando faz sentido contratar uma agência ou estúdio
+                Quando faz sentido contratar uma agÃªncia ou estÃºdio
               </h3>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Depende do momento e do que você precisa.
+                Depende do momento e do que vocÃª precisa.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Se você ainda está na fase de validação, o que você precisa não é de código, é de clareza sobre o problema, o público e a proposta de valor. Nessa fase, um designer que sabe construir protótipos e uma conversa honesta sobre viabilidade valem mais que um time de desenvolvimento.
+                Se vocÃª ainda estÃ¡ na fase de validaÃ§Ã£o, o que vocÃª precisa nÃ£o Ã© de cÃ³digo, Ã© de clareza sobre o problema, o pÃºblico e a proposta de valor. Nessa fase, um designer que sabe construir protÃ³tipos e uma conversa honesta sobre viabilidade valem mais que um time de desenvolvimento.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-6">
-                Se você já validou a ideia, tem pessoas dispostas a pagar e precisa colocar o produto no ar, aí faz sentido contratar desenvolvimento.
+                Se vocÃª jÃ¡ validou a ideia, tem pessoas dispostas a pagar e precisa colocar o produto no ar, aÃ­ faz sentido contratar desenvolvimento.
               </p>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-12">
-                O que evitar: contratar alguém pra "desenvolver a ideia" sem ter clareza do que precisa ser construído primeiro. Sem um briefing bem definido, o projeto vira uma conversa sem fim de adicionar features e o prazo estoura antes do produto existir.
+                O que evitar: contratar alguÃ©m pra "desenvolver a ideia" sem ter clareza do que precisa ser construÃ­do primeiro. Sem um briefing bem definido, o projeto vira uma conversa sem fim de adicionar features e o prazo estoura antes do produto existir.
               </p>
 
               <div className="bg-zinc-900 text-white rounded-xl p-8 md:p-10 my-12">
                 <h4 className="text-lg md:text-xl lg:text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                  O que a Viés faz nesse contexto
+                  O que a ViÃ©s faz nesse contexto
                 </h4>
                 <p className="text-zinc-300 text-base md:text-lg leading-relaxed mb-6">
-                  A Viés Studios desenvolve produtos digitais desde a concepção até o lançamento. Já construímos SaaS com autenticação, planos de assinatura, pagamento recorrente e painel administrativo. Sabemos onde a maioria dos projetos trava e como evitar que isso aconteça no seu.
+                  A ViÃ©s Studios desenvolve produtos digitais desde a concepÃ§Ã£o atÃ© o lanÃ§amento. JÃ¡ construÃ­mos SaaS com autenticaÃ§Ã£o, planos de assinatura, pagamento recorrente e painel administrativo. Sabemos onde a maioria dos projetos trava e como evitar que isso aconteÃ§a no seu.
                 </p>
                 <p className="text-zinc-300 text-base md:text-lg leading-relaxed mb-8">
-                  Se você tem uma ideia e quer entender o que faz sentido construir primeiro, mande uma mensagem. A conversa inicial é gratuita e já sai com uma direção clara.
+                  Se vocÃª tem uma ideia e quer entender o que faz sentido construir primeiro, mande uma mensagem. A conversa inicial Ã© gratuita e jÃ¡ sai com uma direÃ§Ã£o clara.
                 </p>
                 <Link href="/fale-conosco" className="inline-block bg-[#d75310] hover:bg-[#b5440c] text-white font-bold py-3 px-8 rounded-full transition-colors">
                   Falar com especialista
@@ -318,23 +319,23 @@ export default function ArticlePage() {
               <div className="space-y-8">
                 <div>
                   <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Preciso saber programar pra criar um SaaS?</h5>
-                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Não necessariamente. Mas entender o básico de como um produto digital funciona ajuda muito na hora de tomar decisões, avaliar orçamentos e conversar com quem vai construir. O risco de não entender nada é delegar decisões importantes pra quem não conhece o seu negócio.</p>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">NÃ£o necessariamente. Mas entender o bÃ¡sico de como um produto digital funciona ajuda muito na hora de tomar decisÃµes, avaliar orÃ§amentos e conversar com quem vai construir. O risco de nÃ£o entender nada Ã© delegar decisÃµes importantes pra quem nÃ£o conhece o seu negÃ³cio.</p>
                 </div>
                 <div>
-                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Dá pra criar um SaaS com IA sem programar?</h5>
-                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Dá pra criar um MVP funcional. Ferramentas como Lovable, Bolt e Cursor aceleram muito o processo. O problema costuma aparecer quando o produto precisa de segurança real, integrações complexas ou escalar além dos primeiros usuários. Pra isso, desenvolvimento com alguém que sabe o que está fazendo ainda é insubstituível.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">DÃ¡ pra criar um SaaS com IA sem programar?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">DÃ¡ pra criar um MVP funcional. Ferramentas como Lovable, Bolt e Cursor aceleram muito o processo. O problema costuma aparecer quando o produto precisa de seguranÃ§a real, integraÃ§Ãµes complexas ou escalar alÃ©m dos primeiros usuÃ¡rios. Pra isso, desenvolvimento com alguÃ©m que sabe o que estÃ¡ fazendo ainda Ã© insubstituÃ­vel.</p>
                 </div>
                 <div>
-                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Qual a diferença entre um app e um SaaS?</h5>
-                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">App é o produto em si. SaaS é o modelo de negócio onde o produto é entregue como serviço por assinatura. Um app pode ser SaaS ou não.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Qual a diferenÃ§a entre um app e um SaaS?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">App Ã© o produto em si. SaaS Ã© o modelo de negÃ³cio onde o produto Ã© entregue como serviÃ§o por assinatura. Um app pode ser SaaS ou nÃ£o.</p>
                 </div>
                 <div>
-                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Quanto tempo leva pra lançar um produto digital?</h5>
-                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Um MVP focado leva de 30 a 90 dias. Um produto com todas as features que você imagina hoje pode levar mais de um ano. A recomendação é sempre lançar o menor produto que valida a ideia e crescer a partir do feedback real.</p>
+                  <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Quanto tempo leva pra lanÃ§ar um produto digital?</h5>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Um MVP focado leva de 30 a 90 dias. Um produto com todas as features que vocÃª imagina hoje pode levar mais de um ano. A recomendaÃ§Ã£o Ã© sempre lanÃ§ar o menor produto que valida a ideia e crescer a partir do feedback real.</p>
                 </div>
                 <div>
                   <h5 className="text-lg md:text-xl font-bold text-zinc-900 mb-3">Como sei se minha ideia tem mercado?</h5>
-                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Converse com pessoas que teriam o problema que você resolve. Se elas já pagam por alguma solução hoje, mesmo que ruim, é sinal de que o problema é real. Se ninguém paga por nada parecido, pode ser inovação ou pode ser que o problema não é grande o suficiente pra virar negócio.</p>
+                  <p className="text-zinc-600 text-base md:text-lg leading-relaxed">Converse com pessoas que teriam o problema que vocÃª resolve. Se elas jÃ¡ pagam por alguma soluÃ§Ã£o hoje, mesmo que ruim, Ã© sinal de que o problema Ã© real. Se ninguÃ©m paga por nada parecido, pode ser inovaÃ§Ã£o ou pode ser que o problema nÃ£o Ã© grande o suficiente pra virar negÃ³cio.</p>
                 </div>
               </div>
 
@@ -351,3 +352,5 @@ export default function ArticlePage() {
     </main>
   );
 }
+
+

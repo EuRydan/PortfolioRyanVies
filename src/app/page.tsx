@@ -2,6 +2,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { QuoteButton } from "@/components/ui/QuoteButton";
 import { ScrollArrow } from "@/components/ui/ScrollArrow";
 import Link from "next/link";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const ClientCarousel = dynamic(() => import("@/components/ui/ClientCarousel").then(mod => mod.ClientCarousel));
@@ -85,11 +86,7 @@ export default function Home() {
               
               <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
                 <div className="shrink-0 flex items-center justify-center">
-                  <img 
-                    src="/marketing/ux-badge.png" 
-                    alt="Selo de Certificação em Experiência do Usuário" 
-                    className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl"
-                  />
+                  <Image src="/marketing/ux-badge.png" alt="Selo de Certificação em Experiência do Usuário" width={160} height={160} className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl" />
                 </div>
                 <div className="flex flex-col justify-center h-full pt-2">
                   <h4 className="text-xl sm:text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -126,11 +123,7 @@ export default function Home() {
             <AnimatedSection delay={0.1} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/covers/memvor.webp" 
-                    alt="Capa do projeto Memvor" 
-                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/covers/memvor.webp" alt="Capa do projeto Memvor" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -147,11 +140,7 @@ export default function Home() {
             <AnimatedSection delay={0.2} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/teainter/teainter-2.gif" 
-                    alt="Capa do projeto Teainter" 
-                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/teainter/teainter-2.gif" alt="Capa do projeto Teainter" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -168,11 +157,7 @@ export default function Home() {
             <AnimatedSection delay={0.3} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/covers/banner-korre-club.png" 
-                    alt="Capa do projeto Korre Club" 
-                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/covers/banner-korre-club.png" alt="Capa do projeto Korre Club" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -189,11 +174,7 @@ export default function Home() {
             <AnimatedSection delay={0.4} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/covers/level-up.webp" 
-                    alt="Capa do projeto Level Up" 
-                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/covers/level-up.webp" alt="Capa do projeto Level Up" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -210,11 +191,7 @@ export default function Home() {
             <AnimatedSection delay={0.5} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/voxis/voxis-9.png" 
-                    alt="Capa do projeto Voxis" 
-                    className="absolute inset-0 w-full h-full object-cover scale-[1.15] md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/voxis/voxis-9.png" alt="Capa do projeto Voxis" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover scale-[1.15] md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -231,11 +208,7 @@ export default function Home() {
             <AnimatedSection delay={0.6} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/covers/winners.png" 
-                    alt="Capa do projeto Winners" 
-                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/covers/winners.png" alt="Capa do projeto Winners" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -252,11 +225,7 @@ export default function Home() {
             <AnimatedSection delay={0.7} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/covers/GN.gif" 
-                    alt="Capa do projeto GN" 
-                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/covers/GN.gif" alt="Capa do projeto GN" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -273,11 +242,7 @@ export default function Home() {
             <AnimatedSection delay={0.8} effect="pop">
               <Link href="/portfolio" className="block">
                 <div className="group cursor-crosshair relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
-                  <img 
-                    src="/projects/covers/lic.svg" 
-                    alt="Capa do projeto LIC" 
-                    className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700"
-                  />
+                  <Image src="/projects/covers/lic.svg" alt="Capa do projeto LIC" fill sizes="(max-width: 768px) 100vw, 50vw" className="absolute inset-0 w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700" />
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-start p-6 md:p-8">
                     <div className="flex flex-col transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <h3 className="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
@@ -488,11 +453,7 @@ export default function Home() {
               <AnimatedSection delay={0.1}>
                 <Link href="/blog/conversao-e-landing-page-como-transformar-visitante-em-lead" className="group block h-full flex flex-col">
                   <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
-                    <img 
-                      src="/marketing/pexels-tranmautritam-326514.jpg" 
-                      alt="Conversão e landing pages"
-                      className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                    />
+                    <Image src="/marketing/pexels-tranmautritam-326514.jpg" alt="Conversão e landing pages" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
                   </div>
                   <div className="flex flex-col">
                     <div className="flex items-center gap-3 mb-2">
@@ -517,11 +478,7 @@ export default function Home() {
               <AnimatedSection delay={0.2}>
                 <Link href="/blog/quero-criar-um-app-saas-por-onde-comecar" className="group block h-full flex flex-col">
                   <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
-                    <img 
-                      src="/marketing/capa-produto.jpeg" 
-                      alt="Quero criar um app ou SaaS"
-                      className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                    />
+                    <Image src="/marketing/capa-produto.jpeg" alt="Quero criar um app ou SaaS" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
                   </div>
                   <div className="flex flex-col">
                     <div className="flex items-center gap-3 mb-2">
@@ -546,11 +503,7 @@ export default function Home() {
               <AnimatedSection delay={0.3}>
                 <Link href="/blog/criacao-de-sites-em-duque-de-caxias" className="group block h-full flex flex-col">
                   <div className="w-full aspect-square overflow-hidden mb-5 bg-zinc-100 rounded-none">
-                    <img 
-                      src="/marketing/capa-artigo.jpg" 
-                      alt="Criação de sites em Duque de Caxias"
-                      className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                    />
+                    <Image src="/marketing/capa-artigo.jpg" alt="Criação de sites em Duque de Caxias" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
                   </div>
                   <div className="flex flex-col">
                     <div className="flex items-center gap-3 mb-2">

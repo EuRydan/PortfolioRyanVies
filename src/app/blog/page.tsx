@@ -1,4 +1,4 @@
-import { AnimatedSection } from '@/components/ui/AnimatedSection';
+﻿import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ParallaxBackground } from '@/components/ui/ParallaxBackground';
 import { BlogContent } from './BlogContent';
 
@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Blog | Artigos sobre Design, Tecnologia e SEO',
-  description: 'Fique por dentro das últimas tendências de design estratégico, desenvolvimento web, dicas de performance e estratégias de SEO com os especialistas da Vies Studios.',
+  description: 'Fique por dentro das Ãºltimas tendÃªncias de design estratÃ©gico, desenvolvimento web, dicas de performance e estratÃ©gias de SEO com os especialistas da Vies Studios.',
   alternates: {
     canonical: "https://www.viesstudios.com.br/blog",
   },
@@ -41,13 +41,13 @@ export default function BlogPage() {
                   className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8"
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                 >
-                  Insights, estratégias e as últimas tendências em design e tecnologia.
+                  Insights, estratÃ©gias e as Ãºltimas tendÃªncias em design e tecnologia.
                 </h3>
               </AnimatedSection>
               
               <AnimatedSection delay={0.2}>
                 <p className="text-zinc-400 text-lg leading-relaxed max-w-2xl">
-                  Bem-vindo ao blog da Vies. Aqui compartilhamos nosso conhecimento prático sobre criação de produtos digitais, design focado em conversão e estratégias eficientes para transformar ideias em experiências memoráveis que geram valor para sua marca.
+                  Bem-vindo ao blog da Vies. Aqui compartilhamos nosso conhecimento prÃ¡tico sobre criaÃ§Ã£o de produtos digitais, design focado em conversÃ£o e estratÃ©gias eficientes para transformar ideias em experiÃªncias memorÃ¡veis que geram valor para sua marca.
                 </p>
               </AnimatedSection>
             </div>
@@ -62,3 +62,5 @@ export default function BlogPage() {
     </main>
   );
 }
+
+

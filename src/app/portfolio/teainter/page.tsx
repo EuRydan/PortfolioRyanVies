@@ -1,5 +1,6 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { ProjectSplitLayout } from "@/components/layout/ProjectSplitLayout";
@@ -17,80 +18,35 @@ export default function ProjectPage() {
       {/* Wrapper do Split Layout */}
       <ProjectSplitLayout
         leftImages={[
-          <img 
-            key="1"
-            src="/projects/teainter/teainter-1.png" 
-            alt="Projeto Teainter - Apresentação" 
-            className="w-full h-full object-cover"
-          />,
-          <img 
-            key="2"
-            src="/projects/teainter/teainter-2.gif" 
-            alt="Projeto Teainter - Animação" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="3"
-            src="/projects/teainter/teainter-3.png" 
-            alt="Projeto Teainter - Imagem 9" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="4"
-            src="/projects/teainter/teainter-4.png" 
-            alt="Projeto Teainter - Texto" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="5"
-            src="/projects/teainter/teainter-5.png" 
-            alt="Projeto Teainter - Imagem 4" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="6"
-            src="/projects/teainter/teainter-6.png" 
-            alt="Projeto Teainter - Imagem 5" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="7"
-            src="/projects/teainter/teainter-7.png" 
-            alt="Projeto Teainter - Imagem 6" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="8"
-            src="/projects/teainter/teainter-8.png" 
-            alt="Projeto Teainter - Imagem 7" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="9"
-            src="/projects/teainter/teainter-9.png" 
-            alt="Projeto Teainter - Imagem 8" 
-            className="w-full h-auto block"
-          />,
-          <img key="10" src="/projects/teainter/teainter-10.png" alt="Projeto Teainter - Imagem 10" className="w-full h-auto block" />,
-          <img key="11" src="/projects/teainter/teainter-11.png" alt="Projeto Teainter - Imagem 11" className="w-full h-auto block" />,
-          <img key="12" src="/projects/teainter/teainter-12.png" alt="Projeto Teainter - Imagem 12" className="w-full h-auto block" />,
-          <img key="13" src="/projects/teainter/teainter-13.png" alt="Projeto Teainter - Imagem 13" className="w-full h-auto block" />,
-          <img key="14" src="/projects/teainter/teainter-14.png" alt="Projeto Teainter - Imagem 14" className="w-full h-auto block" />,
-          <img key="15" src="/projects/teainter/teainter-15.png" alt="Projeto Teainter - Imagem 15" className="w-full h-auto block" />,
-          <img key="16" src="/projects/teainter/teainter-16.png" alt="Projeto Teainter - Imagem 16" className="w-full h-auto block" />,
-          <img key="17" src="/projects/teainter/teainter-17.png" alt="Projeto Teainter - Imagem 17" className="w-full h-auto block" />,
-          <img key="18" src="/projects/teainter/teainter-18.png" alt="Projeto Teainter - Imagem 18" className="w-full h-auto block" />,
-          <img key="19" src="/projects/teainter/teainter-19.png" alt="Projeto Teainter - Imagem 19" className="w-full h-auto block" />,
-          <img key="20" src="/projects/teainter/teainter-20.png" alt="Projeto Teainter - Imagem 20" className="w-full h-auto block" />,
-          <img key="21" src="/projects/teainter/teainter-21.png" alt="Projeto Teainter - Imagem 21" className="w-full h-auto block" />,
-          <img key="22" src="/projects/teainter/teainter-22.png" alt="Projeto Teainter - Imagem 22" className="w-full h-auto block" />,
-          <img key="23" src="/projects/teainter/teainter-23.png" alt="Projeto Teainter - Imagem 23" className="w-full h-auto block" />
+          <Image key="1" src="/projects/teainter/teainter-1.png" alt="Projeto Teainter - Apresentação" width={1920} height={1080} className="w-full h-full object-cover" />,
+          <Image key="2" src="/projects/teainter/teainter-2.gif" alt="Projeto Teainter - Animação" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="3" src="/projects/teainter/teainter-3.png" alt="Projeto Teainter - Imagem 9" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="4" src="/projects/teainter/teainter-4.png" alt="Projeto Teainter - Texto" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="5" src="/projects/teainter/teainter-5.png" alt="Projeto Teainter - Imagem 4" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="6" src="/projects/teainter/teainter-6.png" alt="Projeto Teainter - Imagem 5" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="7" src="/projects/teainter/teainter-7.png" alt="Projeto Teainter - Imagem 6" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="8" src="/projects/teainter/teainter-8.png" alt="Projeto Teainter - Imagem 7" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="9" src="/projects/teainter/teainter-9.png" alt="Projeto Teainter - Imagem 8" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="10" src="/projects/teainter/teainter-10.png" alt="Projeto Teainter - Imagem 10" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="11" src="/projects/teainter/teainter-11.png" alt="Projeto Teainter - Imagem 11" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="12" src="/projects/teainter/teainter-12.png" alt="Projeto Teainter - Imagem 12" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="13" src="/projects/teainter/teainter-13.png" alt="Projeto Teainter - Imagem 13" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="14" src="/projects/teainter/teainter-14.png" alt="Projeto Teainter - Imagem 14" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="15" src="/projects/teainter/teainter-15.png" alt="Projeto Teainter - Imagem 15" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="16" src="/projects/teainter/teainter-16.png" alt="Projeto Teainter - Imagem 16" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="17" src="/projects/teainter/teainter-17.png" alt="Projeto Teainter - Imagem 17" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="18" src="/projects/teainter/teainter-18.png" alt="Projeto Teainter - Imagem 18" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="19" src="/projects/teainter/teainter-19.png" alt="Projeto Teainter - Imagem 19" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="20" src="/projects/teainter/teainter-20.png" alt="Projeto Teainter - Imagem 20" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="21" src="/projects/teainter/teainter-21.png" alt="Projeto Teainter - Imagem 21" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="22" src="/projects/teainter/teainter-22.png" alt="Projeto Teainter - Imagem 22" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="23" src="/projects/teainter/teainter-23.png" alt="Projeto Teainter - Imagem 23" width={1920} height={1080} className="w-full h-auto block" />
         ]}
         rightContent={
           <AnimatedSection>
             {/* Logo da Agência */}
             <div className="mb-12">
-              <img src="/brand/icone%20vies%20logo%20branco.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
+              <Image src="/brand/icone%20vies%20logo%20branco.svg" alt="Vies Studios" width={120} height={24} className="h-6 w-auto brightness-0" />
             </div>
 
             {/* Breadcrumbs */}

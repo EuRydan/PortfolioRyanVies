@@ -1,5 +1,6 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { QuoteButton } from "@/components/ui/QuoteButton";
 import dynamic from "next/dynamic";
@@ -18,36 +19,16 @@ export default function ProjectPage() {
       {/* Wrapper do Split Layout */}
       <ProjectSplitLayout
         leftImages={[
-          <img 
-            key="1"
-            src="/memvor%20portfolio1.png" 
-            alt="Capa Projeto Memvor" 
-            className="w-full h-full object-cover"
-          />,
-          <img 
-            key="2"
-            src="/memvor%20portfolio.png" 
-            alt="Detalhes Projeto Memvor" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="3"
-            src="/memvor%20portfolio2.png" 
-            alt="Mais Detalhes Projeto Memvor" 
-            className="w-full h-auto block"
-          />,
-          <img 
-            key="4"
-            src="/memvor%20portfolio3.png" 
-            alt="Final Projeto Memvor" 
-            className="w-full h-auto block"
-          />
+          <Image key="1" src="/memvor%20portfolio1.png" alt="Capa Projeto Memvor" width={1920} height={1080} className="w-full h-full object-cover" />,
+          <Image key="2" src="/memvor%20portfolio.png" alt="Detalhes Projeto Memvor" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="3" src="/memvor%20portfolio2.png" alt="Mais Detalhes Projeto Memvor" width={1920} height={1080} className="w-full h-auto block" />,
+          <Image key="4" src="/memvor%20portfolio3.png" alt="Final Projeto Memvor" width={1920} height={1080} className="w-full h-auto block" />
         ]}
         rightContent={
           <AnimatedSection>
             {/* Logo da Agência */}
             <div className="mb-12">
-              <img src="/brand/icone%20vies%20logo%20branco.svg" alt="Vies Studios" className="h-6 w-auto brightness-0" />
+              <Image src="/brand/icone%20vies%20logo%20branco.svg" alt="Vies Studios" width={120} height={24} className="h-6 w-auto brightness-0" />
             </div>
 
             {/* Breadcrumbs */}

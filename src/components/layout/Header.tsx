@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -89,8 +90,8 @@ export function Header() {
         }`}
       >
         <div className={`${maxWidthClass} mx-auto flex items-center justify-between py-5 px-6 md:px-14 lg:px-24 bg-transparent`}>
-          <Link href="/" className="mix-blend-difference">
-            <img src="/brand/logo%20vies.svg" alt="Vies Studios logo" className="h-[28px] w-[83px] object-contain" />
+          <Link href="/" className="mix-blend-difference relative w-[83px] h-[28px]">
+            <Image src="/brand/logo%20vies.svg" alt="Vies Studios logo" fill className="object-contain" priority={true} />
           </Link>
           
           <button 
