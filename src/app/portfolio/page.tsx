@@ -22,7 +22,7 @@ const projects = [
   { id: 'level-up', title: 'Level Up', tag: 'ID Visual', img: '/projects/covers/level-up.webp' },
   { id: 'voxis', title: 'Voxis', tag: 'Produto, UX e Branding', img: '/projects/voxis/voxis-9.png', customClass: 'scale-[1.15]' },
   { id: 'winners', title: 'Winners', tag: 'ID Visual', img: '/projects/covers/winners.png' },
-  { id: 'gn', title: 'Gigantes de Nazaré', tag: 'Material On/Off', img: '/projects/covers/GN.gif' },
+  { id: 'gigantes-de-nazare', title: 'Gigantes de Nazaré', tag: 'Material On/Off', img: '/projects/covers/GN.gif' },
 ];
 
 import { VideoBanner } from '@/components/ui/VideoBanner';
