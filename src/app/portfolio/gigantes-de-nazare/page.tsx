@@ -18,6 +18,7 @@ export default function ProjectPage() {
       {/* Wrapper do Split Layout */}
       <ProjectSplitLayout
         leftImages={[
+          <img key="preview" src="/projects/covers/GN.gif" alt="Gigantes de Nazaré - Capa" className="w-full h-auto block" />,
           <Image key="0" src="/projects/gigantes de nazare/Banner Youtube.png" alt="Gigantes de Nazaré - Imagem 0" width={1920} height={1080} className="w-full h-auto block" />,
           <Image key="1" src="/projects/gigantes de nazare/570b92202605669.6688a63fe5237.png" alt="Gigantes de Nazaré - Imagem 1" width={1920} height={1080} className="w-full h-auto block" />,
           <Image key="2" src="/projects/gigantes de nazare/266246202605669.67b526b64cd2e.png" alt="Gigantes de Nazaré - Imagem 2" width={1920} height={1080} className="w-full h-auto block" />,
