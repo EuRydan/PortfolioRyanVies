@@ -81,7 +81,7 @@ export default function ProjectPage() {
             {/* Conteúdo do Projeto */}
             <div className="space-y-8 text-zinc-600 text-sm md:text-[15px] leading-relaxed">
               <p>
-                A LIC nasceu dentro da MTR7 com um propósito específico: transformar nostalgia em experiência. Enquanto a MTR7 caminha para se tornar uma holding de entretenimento, a LIC assume o recorte mais afiado desse universo, com eventos e partidas reunindo grandes lendas do futebol, pensados para reconectar gerações de torcedores às suas memórias mais fortes. O projeto foi desenvolvido em parceria com a Brandala Comunicação e Design, com Ryan à frente da direção de design.
+                A LIC nasceu dentro da MTR7 com um propósito específico: transformar nostalgia em experiência. Enquanto a MTR7 caminha para se tornar uma holding de entretenimento, a LIC assume o recorte mais afiado desse universo, com eventos e partidas reunindo grandes lendas do futebol, pensados para reconectar gerações de torcedores às suas memórias mais fortes. O projeto foi desenvolvido em parceria com a <a href="https://brandala.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-[#d75310] font-medium underline underline-offset-2 transition-colors">Brandala Comunicação e Design</a>, com Ryan à frente da direção de design.
               </p>
 
               <div>
