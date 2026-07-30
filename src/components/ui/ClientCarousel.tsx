@@ -50,7 +50,7 @@ export function ClientCarousel() {
             <img 
               src={logo.src} 
               alt="Cliente Logo" 
-              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain shrink-0 ${logo.keepOriginalColor ? '' : 'brightness-0 invert'} ${logo.className || ''}`}
+              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain shrink-0 ${logo.className || ''}`}
             />
           </div>
         ))}
@@ -73,7 +73,7 @@ export function ClientCarousel() {
             <img 
               src={logo.src} 
               alt="Cliente Logo" 
-              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain shrink-0 ${logo.keepOriginalColor ? '' : 'brightness-0 invert'} ${logo.className || ''}`}
+              className={`max-h-8 max-w-[64px] md:max-h-12 md:max-w-[120px] w-auto object-contain shrink-0 ${logo.className || ''}`}
             />
           </div>
         ))}
