@@ -17,7 +17,7 @@ interface PortfolioGridProps {
   projects: Project[];
 }
 
-const CATEGORIES = ["Todos", "Branding", "Design", "Id. Visual", "Produto", "UX"];
+const CATEGORIES = ["Todos", "Branding", "Id. Visual", "Produto", "UX"];
 
 export function PortfolioGrid({ projects }: PortfolioGridProps) {
   const [activeCategory, setActiveCategory] = useState("Todos");
@@ -42,15 +42,15 @@ export function PortfolioGrid({ projects }: PortfolioGridProps) {
     <div className="w-full max-w-[1920px] mx-auto mt-12 md:mt-20">
       
       {/* Filtros */}
-      <div className="px-6 md:px-14 lg:px-24 mb-10 flex flex-wrap gap-3 sm:gap-4 items-center justify-center sm:justify-start">
+      <div className="px-6 md:px-14 lg:px-24 mb-10 flex flex-wrap gap-6 sm:gap-8 items-center justify-end">
         {CATEGORIES.map((category) => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-5 py-2.5 rounded-full text-xs sm:text-sm uppercase tracking-widest font-bold transition-all duration-300 ${
+            className={`text-sm md:text-base transition-colors duration-300 ${
               activeCategory === category 
-                ? 'bg-[#d75310] text-white shadow-[0_0_15px_rgba(215,83,16,0.5)]' 
-                : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700 hover:text-white'
+                ? 'text-white font-semibold' 
+                : 'text-zinc-400 hover:text-white font-normal'
             }`}
             style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
           >
