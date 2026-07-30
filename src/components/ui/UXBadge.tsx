@@ -10,7 +10,7 @@ export function UXBadge() {
       target="_blank" 
       rel="noopener noreferrer"
       className="shrink-0 flex items-center justify-center cursor-pointer"
-      initial={{ rotate: 140, opacity: 0, scale: 0.8 }}
+      initial={{ rotate: -140, opacity: 0, scale: 0.8 }}
       whileInView={{ rotate: 0, opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, margin: "-50px" }}
