@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 
 const ClientCarousel = dynamic(() => import("@/components/ui/ClientCarousel").then(mod => mod.ClientCarousel));
 const ScrollRevealStats = dynamic(() => import("@/components/ui/ScrollRevealStats").then(mod => mod.ScrollRevealStats));
+const UXBadge = dynamic(() => import("@/components/ui/UXBadge").then(mod => mod.UXBadge));
 
 import { Metadata } from "next";
 
@@ -85,9 +86,7 @@ export default function Home() {
               <ScrollRevealStats />
               
               <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
-                <div className="shrink-0 flex items-center justify-center">
-                  <Image src="/marketing/ux-badge.png" alt="Selo de Certificação em Experiência do Usuário" width={160} height={160} className="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl" />
-                </div>
+                <UXBadge />
                 <div className="flex flex-col justify-center h-full pt-2">
                   <h4 className="text-xl sm:text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                     Propriedade em Experiência do Usuário (UX)

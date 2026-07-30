@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 export function ScrollRevealStats() {
   const [hasScrolled, setHasScrolled] = useState(false);
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => Math.round(latest));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +23,16 @@ export function ScrollRevealStats() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (hasScrolled) {
+      const controls = animate(count, 50, {
+        duration: 2,
+        ease: "easeOut",
+      });
+      return controls.stop;
+    }
+  }, [hasScrolled, count]);
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 30 }}
@@ -29,7 +41,9 @@ export function ScrollRevealStats() {
       className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 md:gap-12 lg:gap-16"
     >
       <div className="col-span-2">
-        <h3 className="text-4xl sm:text-5xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>50+</h3>
+        <h3 className="text-4xl sm:text-5xl font-bold text-white mb-2 flex" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+          <motion.span>{rounded}</motion.span>+
+        </h3>
         <p className="text-zinc-400 text-sm sm:text-base">Clientes atendidos</p>
       </div>
       <div className="col-span-2">
