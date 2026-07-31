@@ -104,33 +104,35 @@ export default function Home() {
             </div>
             
             <div className="col-span-4 md:col-span-5 lg:col-span-8">
-              <AnimatedSection delay={0.2} className="mt-0 md:mt-16 w-[348px] max-w-full shrink-0 flex flex-col">
-                <img 
-                  src="/Ryan.png" 
-                  alt="Ryan Ferreira" 
-                  width={348}
-                  height={463}
-                  className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" 
-                />
-                <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                  Ryan Ferreira
-                </span>
-                <span className="text-zinc-400 text-xs font-medium">
-                  Fundador e Designer de Produtos
-                </span>
-              </AnimatedSection>
+              <div className="flex flex-col lg:flex-row gap-8 items-start mt-0 md:mt-16">
+                <AnimatedSection delay={0.2} className="w-[348px] max-w-full shrink-0 flex flex-col">
+                  <img 
+                    src="/Ryan.png" 
+                    alt="Ryan Ferreira" 
+                    width={348}
+                    height={463}
+                    className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" 
+                  />
+                  <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    Ryan Ferreira
+                  </span>
+                  <span className="text-zinc-400 text-xs font-medium">
+                    Fundador e Designer de Produtos
+                  </span>
+                </AnimatedSection>
 
-              <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
-                <UXBadge />
-                <div className="flex flex-col justify-center h-full pt-2">
-                  <h4 className="text-xl sm:text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                    Propriedade em Experiência do Usuário (UX)
-                  </h4>
-                  <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-2xl">
-                    Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
-                  </p>
-                </div>
-              </AnimatedSection>
+                <AnimatedSection delay={0.25} className="flex-1 bg-zinc-800/30 rounded-xl p-6 lg:p-8 flex flex-col items-center sm:items-start xl:flex-row gap-6 lg:gap-8">
+                  <UXBadge />
+                  <div className="flex flex-col justify-center h-full pt-2">
+                    <h4 className="text-xl sm:text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                      Propriedade em Experiência do Usuário (UX)
+                    </h4>
+                    <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl">
+                      Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
+                    </p>
+                  </div>
+                </AnimatedSection>
+              </div>
               
               <AnimatedSection delay={0.3} className="mt-12">
                 <QuoteButton />
