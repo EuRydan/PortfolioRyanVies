@@ -104,8 +104,14 @@ export default function Home() {
             </div>
             
             <div className="col-span-4 md:col-span-5 lg:col-span-8">
-              <AnimatedSection delay={0.2} className="mt-0 md:mt-16 w-full sm:w-[320px] md:w-[280px] lg:w-[320px] shrink-0 flex flex-col">
-                <img src="/Ryan.png" alt="Ryan Ferreira" className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" />
+              <AnimatedSection delay={0.2} className="mt-0 md:mt-16 w-[348px] max-w-full shrink-0 flex flex-col">
+                <img 
+                  src="/Ryan.png" 
+                  alt="Ryan Ferreira" 
+                  width={348}
+                  height={463}
+                  className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" 
+                />
                 <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                   Ryan Ferreira
                 </span>
