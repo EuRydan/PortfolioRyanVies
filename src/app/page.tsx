@@ -86,8 +86,8 @@ export default function Home() {
               <ScrollRevealStats />
               
               <AnimatedSection delay={0.2} className="mt-12 md:mt-16 flex flex-col items-center sm:items-start">
-                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden mb-4 border border-zinc-800/50">
-                  <Image src="/Ryan.png" alt="Ryan Ferreira" fill className="object-cover" />
+                <div className="mb-4">
+                  <img src="/Ryan.png" alt="Ryan Ferreira" className="rounded-2xl border border-zinc-800/50 max-w-full h-auto" />
                 </div>
                 <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                   <span className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Ryan Ferreira</span>
