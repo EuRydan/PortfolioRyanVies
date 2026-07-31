@@ -95,10 +95,10 @@ export default function Home() {
                   Sobre<br/>Mim.
                 </h3>
                 <p className="text-zinc-400 text-[18px] leading-relaxed mb-6">
-                  Cresci em Duque de Caxias e aprendi design na prática, criando identidade pra marcas locais antes de entender que o que me movia era resolver problema, não só fazer bonito.
+                  Cresci em Duque de Caxias e me formei em Design em 2019, criei identidade pra marcas locais e já trabalhei em projetos relevantes nos últimos 7 anos, hoje utilizo Design e tecnologia para resolver problemas reais.
                 </p>
                 <p className="text-zinc-400 text-[18px] leading-relaxed">
-                  Hoje combino design de produto, desenvolvimento web e uma obsessão por performance e segurança num estúdio que entrega projetos do início ao fim, sem terceirizar o que importa.
+                  Combino design de produto, desenvolvimento web e uma obsessão por performance e segurança, entregando projetos do início ao fim, sem terceirizar o que importa.
                 </p>
               </AnimatedSection>
             </div>
