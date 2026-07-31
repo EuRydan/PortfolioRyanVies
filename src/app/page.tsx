@@ -89,15 +89,15 @@ export default function Home() {
             <div className="col-span-4 md:col-span-3 lg:col-span-4">
               <AnimatedSection delay={0.2} className="mt-8 md:mt-16 flex flex-col text-left">
                 <h3 
-                  className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight" 
+                  className="text-[48px] md:text-[65px] font-bold text-white mb-6 leading-[1]" 
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                 >
-                  Sobre Mim.
+                  Sobre<br/>Mim.
                 </h3>
-                <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-6">
+                <p className="text-zinc-400 text-[18px] leading-relaxed mb-6">
                   Cresci em Duque de Caxias e aprendi design na prática, criando identidade pra marcas locais antes de entender que o que me movia era resolver problema, não só fazer bonito.
                 </p>
-                <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
+                <p className="text-zinc-400 text-[18px] leading-relaxed">
                   Hoje combino design de produto, desenvolvimento web e uma obsessão por performance e segurança num estúdio que entrega projetos do início ao fim, sem terceirizar o que importa.
                 </p>
               </AnimatedSection>
