@@ -73,7 +73,7 @@ export default function QuemSomosPage() {
                   Propriedade em Experiência do Usuário (UX)
                 </h4>
                 <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-2xl">
-                  Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação oficial em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
+                  Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
                 </p>
               </div>
             </AnimatedSection>

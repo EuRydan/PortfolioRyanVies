@@ -85,6 +85,16 @@ export default function Home() {
               
               <ScrollRevealStats />
               
+              <AnimatedSection delay={0.2} className="mt-12 md:mt-16 flex flex-col items-center sm:items-start">
+                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden mb-4 border border-zinc-800/50">
+                  <Image src="/Ryan.png" alt="Ryan Ferreira" fill className="object-cover" />
+                </div>
+                <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+                  <span className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>Ryan Ferreira</span>
+                  <span className="text-zinc-400 text-sm md:text-base">Fundador e Designer de Produtos.</span>
+                </div>
+              </AnimatedSection>
+
               <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
                 <UXBadge />
                 <div className="flex flex-col justify-center h-full pt-2">
@@ -92,7 +102,7 @@ export default function Home() {
                     Propriedade em Experiência do Usuário (UX)
                   </h4>
                   <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-2xl">
-                    Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação oficial em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
+                    Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
                   </p>
                 </div>
               </AnimatedSection>
