@@ -84,32 +84,34 @@ export default function Home() {
               </AnimatedSection>
               
               <ScrollRevealStats />
-              
-              <AnimatedSection delay={0.2} className="mt-16 flex flex-col md:flex-row gap-10 md:gap-16 items-start">
-                <div className="flex-1 flex flex-col text-left">
-                  <h3 
-                    className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight" 
-                    style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
-                  >
-                    Sobre Mim.
-                  </h3>
-                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-6">
-                    Cresci em Duque de Caxias e aprendi design na prática, criando identidade pra marcas locais antes de entender que o que me movia era resolver problema, não só fazer bonito.
-                  </p>
-                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
-                    Hoje combino design de produto, desenvolvimento web e uma obsessão por performance e segurança num estúdio que entrega projetos do início ao fim, sem terceirizar o que importa.
-                  </p>
-                </div>
-                
-                <div className="w-full sm:w-[320px] md:w-[280px] lg:w-[320px] shrink-0 flex flex-col">
-                  <img src="/Ryan.png" alt="Ryan Ferreira" className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" />
-                  <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                    Ryan Ferreira
-                  </span>
-                  <span className="text-zinc-400 text-xs font-medium">
-                    Fundador e Designer de Produtos
-                  </span>
-                </div>
+            </div>
+
+            <div className="col-span-4 md:col-span-3 lg:col-span-4">
+              <AnimatedSection delay={0.2} className="mt-8 md:mt-16 flex flex-col text-left">
+                <h3 
+                  className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight" 
+                  style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                >
+                  Sobre Mim.
+                </h3>
+                <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-6">
+                  Cresci em Duque de Caxias e aprendi design na prática, criando identidade pra marcas locais antes de entender que o que me movia era resolver problema, não só fazer bonito.
+                </p>
+                <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
+                  Hoje combino design de produto, desenvolvimento web e uma obsessão por performance e segurança num estúdio que entrega projetos do início ao fim, sem terceirizar o que importa.
+                </p>
+              </AnimatedSection>
+            </div>
+            
+            <div className="col-span-4 md:col-span-5 lg:col-span-8">
+              <AnimatedSection delay={0.2} className="mt-0 md:mt-16 w-full sm:w-[320px] md:w-[280px] lg:w-[320px] shrink-0 flex flex-col">
+                <img src="/Ryan.png" alt="Ryan Ferreira" className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" />
+                <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                  Ryan Ferreira
+                </span>
+                <span className="text-zinc-400 text-xs font-medium">
+                  Fundador e Designer de Produtos
+                </span>
               </AnimatedSection>
 
               <AnimatedSection delay={0.25} className="mt-12 md:mt-16 bg-zinc-800/30 rounded-xl p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
