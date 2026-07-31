@@ -92,7 +92,7 @@ export default function Home() {
                   className="text-[48px] md:text-[65px] font-bold text-white mb-6 leading-[1]" 
                   style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                 >
-                  Sobre<br/>Mim.
+                  Sobre<br/>Mim
                 </h3>
                 <p className="text-zinc-400 text-[18px] leading-relaxed mb-6">
                   Cresci em Duque de Caxias e me formei em Design em 2019, criei identidade pra marcas locais e já trabalhei em projetos relevantes nos últimos 7 anos, hoje utilizo Design e tecnologia para resolver problemas reais.
