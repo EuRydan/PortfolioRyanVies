@@ -85,32 +85,30 @@ export default function Home() {
               
               <ScrollRevealStats />
               
-              <AnimatedSection delay={0.2} className="mt-12 md:mt-20 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16">
-                <div className="flex flex-col flex-1 order-2 md:order-1 text-left">
+              <AnimatedSection delay={0.2} className="mt-16 flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+                <div className="flex-1 flex flex-col text-left">
                   <h3 
-                    className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold mb-2" 
+                    className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight" 
                     style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
                   >
-                    Sobre Mim
+                    Sobre Mim.
                   </h3>
-                  <h4 
-                    className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6"
-                    style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
-                  >
-                    Ryan Ferreira
-                  </h4>
-                  <p className="text-zinc-400 text-base md:text-lg leading-relaxed mb-4">
+                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-6">
                     Cresci em Duque de Caxias e aprendi design na prática, criando identidade pra marcas locais antes de entender que o que me movia era resolver problema, não só fazer bonito.
                   </p>
-                  <p className="text-zinc-400 text-base md:text-lg leading-relaxed mb-8">
+                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
                     Hoje combino design de produto, desenvolvimento web e uma obsessão por performance e segurança num estúdio que entrega projetos do início ao fim, sem terceirizar o que importa.
                   </p>
-                  <span className="text-[#d75310] font-medium text-sm md:text-base uppercase tracking-wider">
-                    Fundador e Designer de Produtos.
-                  </span>
                 </div>
-                <div className="w-full md:w-auto shrink-0 order-1 md:order-2 flex justify-center md:justify-end">
-                  <img src="/Ryan.png" alt="Ryan Ferreira" className="max-w-full h-auto" />
+                
+                <div className="w-full sm:w-[320px] md:w-[280px] lg:w-[320px] shrink-0 flex flex-col">
+                  <img src="/Ryan.png" alt="Ryan Ferreira" className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" />
+                  <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    Ryan Ferreira
+                  </span>
+                  <span className="text-zinc-400 text-xs font-medium">
+                    Fundador e Designer de Produtos
+                  </span>
                 </div>
               </AnimatedSection>
 
