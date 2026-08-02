@@ -51,6 +51,7 @@ const linkVariants: any = {
 
 export function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isServicesExpanded, setIsServicesExpanded] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
@@ -124,9 +125,9 @@ export function Header() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed top-0 right-0 h-full w-[85vw] sm:w-[50vw] md:w-[40vw] bg-zinc-900 shadow-2xl z-[70] flex flex-col"
+              className="fixed top-0 right-0 h-full w-[85vw] sm:w-[50vw] md:w-[40vw] bg-zinc-900 shadow-2xl z-[70] flex flex-col overflow-y-auto"
             >
-              <div className="flex justify-end p-6 md:p-8">
+              <div className="flex justify-end p-6 md:p-8 shrink-0">
                 <button 
                   onClick={() => setIsDrawerOpen(false)}
                   className="p-2 text-zinc-400 hover:text-[#d75310] transition-colors"
@@ -138,7 +139,7 @@ export function Header() {
                 </button>
               </div>
               
-              <div className="flex flex-col flex-1 w-full px-8 sm:px-10 md:px-12">
+              <div className="flex flex-col flex-1 w-full px-8 sm:px-10 md:px-12 pb-8">
                 <motion.nav 
                   variants={linkContainerVariants}
                   initial="initial"
@@ -161,11 +162,79 @@ export function Header() {
                       Portfólio
                     </Link>
                   </motion.div>
-                  <motion.div variants={linkVariants}>
-                    <Link href="/o-que-fazemos" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                      O Que Fazemos
-                    </Link>
+                  
+                  {/* O Que Fazemos com Accordion de Subtítulos */}
+                  <motion.div variants={linkVariants} className="w-full">
+                    <button
+                      type="button"
+                      onClick={() => setIsServicesExpanded(!isServicesExpanded)}
+                      className="flex items-center gap-3.5 uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors text-left w-full group cursor-pointer"
+                      style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                    >
+                      <span>O Que Fazemos</span>
+                      <motion.svg
+                        animate={{ rotate: isServicesExpanded ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-zinc-500 group-hover:text-[#d75310] transition-colors shrink-0"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </motion.svg>
+                    </button>
+
+                    <AnimatePresence>
+                      {isServicesExpanded && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                          className="overflow-hidden flex flex-col items-start gap-2.5 pt-3 pb-1 pl-4 border-l-2 border-[#d75310]/50 mt-2"
+                        >
+                          <Link
+                            href="/hotsite-promocional"
+                            onClick={() => setIsDrawerOpen(false)}
+                            className="uppercase text-lg sm:text-xl md:text-2xl font-semibold text-zinc-400 hover:text-[#d75310] transition-colors"
+                            style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                          >
+                            Hotsite Promocional
+                          </Link>
+                          <Link
+                            href="/o-que-fazemos#web"
+                            onClick={() => setIsDrawerOpen(false)}
+                            className="uppercase text-lg sm:text-xl md:text-2xl font-semibold text-zinc-400 hover:text-[#d75310] transition-colors"
+                            style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                          >
+                            Web
+                          </Link>
+                          <Link
+                            href="/o-que-fazemos#branding"
+                            onClick={() => setIsDrawerOpen(false)}
+                            className="uppercase text-lg sm:text-xl md:text-2xl font-semibold text-zinc-400 hover:text-[#d75310] transition-colors"
+                            style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                          >
+                            Branding
+                          </Link>
+                          <Link
+                            href="/o-que-fazemos#performance"
+                            onClick={() => setIsDrawerOpen(false)}
+                            className="uppercase text-lg sm:text-xl md:text-2xl font-semibold text-zinc-400 hover:text-[#d75310] transition-colors"
+                            style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
+                          >
+                            Performance
+                          </Link>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </motion.div>
+
                   <motion.div variants={linkVariants}>
                     <Link href="/blog" className="uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-300 hover:text-[#d75310] transition-colors block" onClick={() => setIsDrawerOpen(false)} style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                       Blog
