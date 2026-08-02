@@ -294,13 +294,13 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 6. Aviso Legal / Regulatório (White background, no borders, 14.4px font) */}
+      {/* 6. Aviso Legal / Regulatório (White background, no borders, 16px font) */}
       <section className="w-full bg-white text-zinc-500 py-12 sm:py-16">
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
             <div 
-              className="max-w-4xl mx-auto space-y-4 text-zinc-500 leading-relaxed text-left text-[14.4px]"
-              style={{ fontSize: "14.4px" }}
+              className="max-w-4xl mx-auto space-y-4 text-zinc-500 leading-relaxed text-left text-base sm:text-[16px]"
+              style={{ fontSize: "16px" }}
             >
               <p>
                 Não promovemos, organizamos ou realizamos sorteios, concursos ou qualquer tipo de promoção comercial própria. Toda responsabilidade legal, execução e operação das campanhas é de responsabilidade do contratante, que deve cumprir integralmente a legislação vigente.
