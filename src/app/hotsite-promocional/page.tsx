@@ -198,52 +198,6 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 4. Cases Section */}
-      <section className="w-full bg-white border-t border-zinc-200/80 py-20 sm:py-24 md:py-32">
-        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
-          <AnimatedSection>
-            <div className="max-w-3xl mb-10 text-left">
-              <span
-                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 px-3.5 py-1.5 rounded-full mb-4"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                Cases
-              </span>
-              <h2
-                className="text-[28px] sm:text-[34px] md:text-[40px] font-extrabold tracking-tight text-zinc-900 leading-tight"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                Primeiros projetos. Resultados reais.
-              </h2>
-            </div>
-          </AnimatedSection>
-
-          {/* Showcase / Placeholder honesto */}
-          <AnimatedSection delay={0.1}>
-            <div className="bg-zinc-50 border-2 border-dashed border-zinc-300/90 rounded-3xl p-8 sm:p-12 md:p-16 max-w-4xl text-left">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full mb-6">
-                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                Primeiros Projetos em Andamento
-              </div>
-
-              <p className="text-zinc-700 text-base sm:text-lg md:text-xl leading-relaxed mb-8">
-                Estamos nos primeiros projetos e documentando cada número. Se quiser ser um dos primeiros, seu case entra aqui com dados completos de participação e engajamento.
-              </p>
-
-              <Link
-                href="https://wa.me/5521978949944?text=Ol%C3%A1!%20Gostaria%20de%20ser%20um%20dos%20primeiros%20a%20rodar%20um%20case%20de%20Hotsite%20Promocional."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 font-bold text-[#d75310] hover:text-[#b8430a] transition-colors text-base group cursor-pointer"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                <span>Quero ser um dos pioneiros</span>
-                <span className="group-hover:translate-x-1.5 transition-transform duration-200">→</span>
-              </Link>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
 
       {/* 5. CTA Final Section */}
       <section className="w-full bg-zinc-950 text-white py-24 sm:py-28 md:py-36 relative overflow-hidden">
