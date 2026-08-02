@@ -143,19 +143,22 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 3. Nossas Soluções Section */}
-      <section className="w-full bg-zinc-50 border-t border-zinc-200/80 py-20 sm:py-24 md:py-32">
-        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+      {/* 3. Nossas Soluções Section (Black Background & Centered Title) */}
+      <section className="w-full bg-zinc-950 text-white border-t border-zinc-800/80 py-20 sm:py-24 md:py-32 relative overflow-hidden">
+        {/* Subtle ambient glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#d75310]/10 rounded-full blur-[130px] pointer-events-none" />
+
+        <div className="relative z-10 w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
-            <div className="max-w-3xl mb-14 md:mb-20 text-left">
+            <div className="max-w-4xl mx-auto mb-16 md:mb-24 flex flex-col items-center text-center">
               <span 
-                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 px-3.5 py-1.5 rounded-full mb-4"
+                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-5"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 Nossas soluções
               </span>
               <h2
-                className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-[1.2]"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.2]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 <span className="block">Modalidades oferecidas pela Viés</span>
@@ -168,26 +171,26 @@ export default function HotsitePromocionalPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {SOLUTIONS.map((item, index) => (
               <AnimatedSection key={item.title} delay={index * 0.1}>
-                <div className="bg-white border border-zinc-200/90 rounded-2xl p-8 h-full flex flex-col justify-between hover:border-[#d75310] hover:shadow-xl transition-all duration-300 group">
+                <div className="bg-zinc-900/90 border border-zinc-800/90 rounded-2xl p-8 h-full flex flex-col justify-between hover:border-[#d75310]/70 hover:bg-zinc-900 hover:shadow-2xl hover:shadow-[#d75310]/10 transition-all duration-300 group">
                   <div>
-                    <div className="w-14 h-14 rounded-2xl bg-orange-50 text-[#d75310] flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-[#d75310] group-hover:text-white transition-all duration-300">
+                    <div className="w-14 h-14 rounded-2xl bg-[#d75310]/10 text-[#d75310] border border-[#d75310]/20 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-[#d75310] group-hover:text-white transition-all duration-300">
                       {item.icon}
                     </div>
 
                     <h3
-                      className="text-2xl font-bold text-zinc-900 mb-4 tracking-tight"
+                      className="text-2xl font-bold text-white mb-4 tracking-tight"
                       style={{ fontFamily: "var(--font-manrope), sans-serif" }}
                     >
                       {item.title}
                     </h3>
 
-                    <p className="text-zinc-600 text-sm sm:text-base leading-relaxed mb-8">
+                    <p className="text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
                       {item.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-zinc-100">
-                    <p className="text-xs sm:text-sm font-semibold text-[#d75310] bg-orange-50/90 py-2.5 px-3.5 rounded-lg inline-block w-full">
+                  <div className="pt-4 border-t border-zinc-800/80">
+                    <p className="text-xs sm:text-sm font-semibold text-[#d75310] bg-zinc-800/80 border border-zinc-700/50 py-2.5 px-3.5 rounded-lg inline-block w-full">
                       {item.badge}
                     </p>
                   </div>
