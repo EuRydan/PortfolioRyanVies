@@ -11,51 +11,6 @@ export const metadata: Metadata = {
   },
 };
 
-const SOLUTIONS = [
-  {
-    title: "Raspadinha digital",
-    description:
-      "Alta participação porque a experiência é familiar e instantânea. O cliente raspa e descobre o prêmio na hora.",
-    badge: "Ideal pra brindes, descontos e datas comemorativas.",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-        <path d="M7 15h0"></path>
-        <path d="M2 9.5h20"></path>
-      </svg>
-    ),
-  },
-  {
-    title: "Roleta de prêmios",
-    description:
-      "Gera tensão antes de revelar o resultado. Aumenta o tempo de interação com a marca e funciona bem com múltiplos prêmios.",
-    badge: "Ideal pra campanhas com diferentes probabilidades de prêmio.",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <path d="M12 2a10 10 0 0 1 10 10"></path>
-        <path d="M12 12l5-3"></path>
-      </svg>
-    ),
-  },
-  {
-    title: "Sorteio com cadastro",
-    description:
-      "O cliente se cadastra e concorre a um prêmio maior no final. Constrói base de dados e mantém o cliente voltando pra acompanhar o resultado.",
-    badge: "Ideal pra prêmios de alto valor, lançamentos e fidelização.",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-        <path d="M4 22h16"></path>
-        <path d="M10 14.66V17c0 .55-.45 1-1 1H7"></path>
-        <path d="M14 14.66V17c0 .55.45 1 1 1h2"></path>
-        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-      </svg>
-    ),
-  },
-];
-
 export default function HotsitePromocionalPage() {
   return (
     <main className="w-full bg-white text-zinc-900 min-h-screen">
@@ -143,22 +98,19 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 3. Nossas Soluções Section (Black Background & Centered Title) */}
-      <section className="w-full bg-zinc-950 text-white border-t border-zinc-800/80 py-20 sm:py-24 md:py-32 relative overflow-hidden">
-        {/* Subtle ambient glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#d75310]/10 rounded-full blur-[130px] pointer-events-none" />
-
-        <div className="relative z-10 w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+      {/* 3. Nossas Soluções Section (Solid Black Background & 40px Centered Title) */}
+      <section className="w-full bg-black text-white py-20 sm:py-24 md:py-32">
+        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
-            <div className="max-w-4xl mx-auto mb-16 md:mb-24 flex flex-col items-center text-center">
+            <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
               <span 
-                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-5"
+                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] mb-4"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 Nossas soluções
               </span>
               <h2
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.2]"
+                className="text-[28px] sm:text-[34px] md:text-[40px] font-extrabold tracking-tight text-white leading-[1.25]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 <span className="block">Modalidades oferecidas pela Viés</span>
@@ -166,38 +118,6 @@ export default function HotsitePromocionalPage() {
               </h2>
             </div>
           </AnimatedSection>
-
-          {/* Solutions / Mechanics Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {SOLUTIONS.map((item, index) => (
-              <AnimatedSection key={item.title} delay={index * 0.1}>
-                <div className="bg-zinc-900/90 border border-zinc-800/90 rounded-2xl p-8 h-full flex flex-col justify-between hover:border-[#d75310]/70 hover:bg-zinc-900 hover:shadow-2xl hover:shadow-[#d75310]/10 transition-all duration-300 group">
-                  <div>
-                    <div className="w-14 h-14 rounded-2xl bg-[#d75310]/10 text-[#d75310] border border-[#d75310]/20 flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-[#d75310] group-hover:text-white transition-all duration-300">
-                      {item.icon}
-                    </div>
-
-                    <h3
-                      className="text-2xl font-bold text-white mb-4 tracking-tight"
-                      style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-                    >
-                      {item.title}
-                    </h3>
-
-                    <p className="text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
-                      {item.description}
-                    </p>
-                  </div>
-
-                  <div className="pt-4 border-t border-zinc-800/80">
-                    <p className="text-xs sm:text-sm font-semibold text-[#d75310] bg-zinc-800/80 border border-zinc-700/50 py-2.5 px-3.5 rounded-lg inline-block w-full">
-                      {item.badge}
-                    </p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
         </div>
       </section>
 
