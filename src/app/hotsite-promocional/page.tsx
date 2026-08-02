@@ -240,6 +240,13 @@ export default function HotsitePromocionalPage() {
           <div className="bg-black text-white px-6 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-16 sm:py-20 md:py-24 lg:py-32 flex flex-col justify-center relative">
             <AnimatedSection>
               <div className="max-w-xl">
+                <span
+                  className="inline-block text-xs md:text-sm uppercase tracking-[0.2em] text-[#d75310] font-bold mb-4"
+                  style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+                >
+                  Comece Agora
+                </span>
+
                 <h2
                   className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-white leading-[1.25] mb-6"
                   style={{ fontFamily: "var(--font-manrope), sans-serif" }}
