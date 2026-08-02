@@ -48,6 +48,39 @@ const SOLUTION_GROUPS = [
   },
 ];
 
+const BLOG_POSTS = [
+  {
+    id: 5,
+    title: "Conversão e landing page: como transformar visitante em lead com estratégia",
+    category: "Conversão e landing pages",
+    date: "28 Jul 2026",
+    image: "/marketing/pexels-tranmautritam-326514.jpg",
+    slug: "/blog/conversao-e-landing-page-como-transformar-visitante-em-lead",
+    excerpt:
+      "Uma landing page bonita não garante resultado. Entenda o que realmente aumenta conversão e como estruturar uma página pensada para gerar leads de verdade.",
+  },
+  {
+    id: 4,
+    title: "Quantas brechas o seu site esconde sem você saber?",
+    category: "Segurança de sites",
+    date: "28 Jul 2026",
+    image: "/marketing/pexels-pixabay-60504.jpg",
+    slug: "/blog/quantas-brechas-o-seu-site-esconde-sem-voce-saber",
+    excerpt:
+      "Sites feitos às pressas costumam esconder falhas de segurança. Entenda os riscos mais comuns e por que segurança deveria entrar no projeto desde o primeiro dia.",
+  },
+  {
+    id: 3,
+    title: "Velocidade de site afeta o caixa da empresa, não só a nota no PageSpeed",
+    category: "Performance e SEO",
+    date: "27 Jul 2026",
+    image: "/marketing/pexels-cottonbro-6986455.jpg",
+    slug: "/blog/velocidade-de-site-afeta-o-caixa-da-empresa",
+    excerpt:
+      "Um site lento perde cliente antes mesmo de mostrar o produto. Veja como a velocidade de carregamento afeta conversão e faturamento.",
+  },
+];
+
 export default function HotsitePromocionalPage() {
   return (
     <main className="w-full bg-white text-zinc-900 min-h-screen">
@@ -207,13 +240,6 @@ export default function HotsitePromocionalPage() {
           <div className="bg-black text-white px-6 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-16 sm:py-20 md:py-24 lg:py-32 flex flex-col justify-center relative">
             <AnimatedSection>
               <div className="max-w-xl">
-                <span
-                  className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-8"
-                  style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-                >
-                  Comece Agora
-                </span>
-
                 <h2
                   className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-white leading-[1.25] mb-6"
                   style={{ fontFamily: "var(--font-manrope), sans-serif" }}
@@ -223,8 +249,6 @@ export default function HotsitePromocionalPage() {
                   <span className="block">restaurante com promoções</span>
                   <span className="block">gamificadas.</span>
                 </h2>
-
-                <div className="w-12 h-1 bg-[#d75310] mb-8 rounded-full" />
 
                 <p className="text-zinc-400 text-base sm:text-lg leading-relaxed">
                   A gente monta uma proposta no mesmo dia. Preencha o formulário ao lado ou fale direto pelo WhatsApp.
@@ -240,6 +264,108 @@ export default function HotsitePromocionalPage() {
                 <HotsiteContactForm />
               </div>
             </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Blog Previews Section */}
+      <section className="w-full bg-zinc-950 text-white py-20 sm:py-24 md:py-32 border-t border-zinc-900">
+        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+          <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
+            <div className="max-w-2xl text-left">
+              <span
+                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-4"
+                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+              >
+                Blog & Insights
+              </span>
+              <h2
+                className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-white leading-tight"
+                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+              >
+                Confira nossos artigos recentes
+              </h2>
+            </div>
+
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-sm md:text-base font-bold text-[#d75310] hover:text-[#ea580c] transition-colors group self-start md:self-auto"
+              style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+            >
+              <span>Ver todos os artigos</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transform group-hover:translate-x-1.5 transition-transform"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </Link>
+          </AnimatedSection>
+
+          {/* Grid de Artigos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {BLOG_POSTS.map((post, index) => (
+              <AnimatedSection key={post.id} delay={index * 0.1}>
+                <Link
+                  href={post.slug}
+                  className="group flex flex-col h-full bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-[#d75310]/50 rounded-2xl transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-1"
+                >
+                  {/* Imagem de Capa */}
+                  <div className="relative aspect-[3/2] w-full bg-zinc-800 overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-black/80 backdrop-blur-sm text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-white/10 shadow-md">
+                        {post.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Conteúdo do Card */}
+                  <div className="flex flex-col flex-1 p-6 md:p-7">
+                    <span className="text-[#d75310] text-xs font-bold tracking-wider mb-2.5">
+                      {post.date}
+                    </span>
+                    <h3
+                      className="text-lg md:text-xl font-bold text-white mb-3 group-hover:text-[#d75310] transition-colors leading-snug"
+                      style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+                    >
+                      {post.title}
+                    </h3>
+                    <p className="text-zinc-400 text-sm leading-relaxed mb-6 flex-1 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    <div className="mt-auto flex items-center text-white font-bold uppercase tracking-wider text-xs group-hover:text-[#d75310] transition-colors">
+                      <span>Ler artigo</span>
+                      <svg
+                        className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2.5}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
