@@ -47,21 +47,21 @@ export default function HotsitePromocionalPage() {
     <main className="w-full bg-white text-zinc-900 min-h-screen">
       {/* 1. Hero Banner with Orange Background & Geometric Graphic Accents */}
       <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#e05813] via-[#d75310] to-[#b33d05] py-14 sm:py-16 md:py-20 lg:py-24 flex items-center justify-center shadow-lg text-white">
-        
+
         {/* Layer 1: Geometric Angular Graphic Accents */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-          <div 
-            className="absolute -right-20 -top-20 w-[55%] h-[160%] bg-white/[0.08] transform -skew-x-12 origin-top-right backdrop-blur-[1px]" 
+          <div
+            className="absolute -right-20 -top-20 w-[55%] h-[160%] bg-white/[0.08] transform -skew-x-12 origin-top-right backdrop-blur-[1px]"
           />
-          <div 
-            className="absolute right-[22%] -bottom-16 w-[30%] h-[130%] bg-black/[0.1] transform -skew-x-12 origin-bottom-left" 
+          <div
+            className="absolute right-[22%] -bottom-16 w-[30%] h-[130%] bg-black/[0.1] transform -skew-x-12 origin-bottom-left"
           />
           <div className="absolute top-0 right-0 w-80 h-80 bg-amber-300/20 rounded-full blur-[80px]" />
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-black/20 rounded-full blur-[80px]" />
         </div>
 
         {/* Layer 2: Subtle Grid Pattern */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.07] pointer-events-none z-0 mix-blend-overlay"
           style={{
             backgroundImage: `radial-gradient(rgba(255, 255, 255, 0.9) 1.5px, transparent 1.5px)`,
@@ -88,7 +88,7 @@ export default function HotsitePromocionalPage() {
           <AnimatedSection>
             <div className="max-w-4xl flex flex-col items-start text-left">
               <div className="w-12 h-1 bg-[#d75310] mb-8 rounded-full" />
-              
+
               <h2
                 className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-zinc-900 mb-6 leading-[1.2]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
@@ -134,7 +134,7 @@ export default function HotsitePromocionalPage() {
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-              <span 
+              <span
                 className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] mb-4"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
@@ -144,7 +144,7 @@ export default function HotsitePromocionalPage() {
                 className="text-[28px] sm:text-[34px] md:text-[40px] font-extrabold tracking-tight text-white leading-[1.25]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                <span className="block">Modalidades oferecidas pela Viés</span>
+                <span className="block">Modalidades oferecidas pela Vies</span>
                 <span className="block">para o seu restaurante.</span>
               </h2>
             </div>
@@ -156,7 +156,7 @@ export default function HotsitePromocionalPage() {
               <AnimatedSection key={index} delay={index * 0.1}>
                 <div className="bg-zinc-900/90 border border-zinc-800/90 rounded-2xl p-7 sm:p-8 h-full flex flex-col justify-between hover:border-[#d75310]/60 hover:bg-zinc-900 hover:shadow-2xl hover:shadow-[#d75310]/5 transition-all duration-300 group">
                   <div>
-                    <span 
+                    <span
                       className="inline-block text-xs font-bold uppercase tracking-wider text-[#d75310] mb-2"
                       style={{ fontFamily: "var(--font-manrope), sans-serif" }}
                     >
@@ -195,7 +195,7 @@ export default function HotsitePromocionalPage() {
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
             <div className="max-w-3xl mb-10 text-left">
-              <span 
+              <span
                 className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 px-3.5 py-1.5 rounded-full mb-4"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
@@ -217,7 +217,7 @@ export default function HotsitePromocionalPage() {
                 <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
                 Primeiros Projetos em Andamento
               </div>
-              
+
               <p className="text-zinc-700 text-base sm:text-lg md:text-xl leading-relaxed mb-8">
                 Estamos nos primeiros projetos e documentando cada número. Se quiser ser um dos primeiros, seu case entra aqui com dados completos de participação e engajamento.
               </p>
@@ -245,7 +245,7 @@ export default function HotsitePromocionalPage() {
         <div className="relative z-10 w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-              <span 
+              <span
                 className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-6"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
