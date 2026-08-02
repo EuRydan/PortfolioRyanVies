@@ -1,6 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+
+const ClientCarousel = dynamic(() =>
+  import("@/components/ui/ClientCarousel").then((mod) => mod.ClientCarousel)
+);
 
 export const metadata: Metadata = {
   title: "Hotsite Promocional | Vies Studios",
@@ -336,6 +341,25 @@ export default function HotsitePromocionalPage() {
             </div>
           </AnimatedSection>
         </div>
+      </section>
+
+      {/* 7. Clientes Section */}
+      <section className="w-full pt-16 md:pt-24 lg:pt-32 pb-20 md:pb-32 lg:pb-40 overflow-hidden bg-zinc-950">
+        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+          <AnimatedSection className="flex flex-col items-start mb-12">
+            <h2
+              className="text-sm sm:text-base uppercase tracking-[0.2em] text-zinc-400 font-semibold"
+              style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+            >
+              Clientes
+            </h2>
+          </AnimatedSection>
+        </div>
+
+        {/* Carrossel de logos */}
+        <AnimatedSection delay={0.2} className="w-full mt-4">
+          <ClientCarousel />
+        </AnimatedSection>
       </section>
     </main>
   );
