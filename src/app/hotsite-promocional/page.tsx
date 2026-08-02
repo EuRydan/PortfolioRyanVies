@@ -303,10 +303,10 @@ export default function HotsitePromocionalPage() {
               style={{ fontSize: "16px" }}
             >
               <p>
-                Não promovemos, organizamos ou realizamos sorteios, concursos ou qualquer tipo de promoção comercial própria. Toda responsabilidade legal, execução e operação das campanhas é de responsabilidade do contratante, que deve cumprir integralmente a legislação vigente.
+                <strong className="font-bold text-zinc-800">Não promovemos, organizamos ou realizamos sorteios, concursos ou qualquer tipo de promoção comercial própria.</strong> Toda responsabilidade legal, execução e operação das campanhas é de responsabilidade do contratante, que deve cumprir integralmente a legislação vigente.
               </p>
               <p>
-                As promoções comerciais no Brasil são regulamentadas pela Lei nº 5.768/1971, pelo Decreto nº 70.951/1972 e pela Portaria SEAE nº 7.638/2022, e sua autorização e fiscalização são de competência da Secretaria de Prêmios e Apostas (SPA) do Ministério da Fazenda.
+                As promoções comerciais no Brasil são regulamentadas pela <strong className="font-bold text-zinc-800">Lei nº 5.768/1971</strong>, pelo <strong className="font-bold text-zinc-800">Decreto nº 70.951/1972</strong> e pela <strong className="font-bold text-zinc-800">Portaria SEAE nº 7.638/2022</strong>, e sua autorização e fiscalização são de competência da <strong className="font-bold text-zinc-800">Secretaria de Prêmios e Apostas (SPA)</strong> do Ministério da Fazenda.
               </p>
             </div>
           </AnimatedSection>
