@@ -11,62 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-const STEPS = [
-  {
-    step: "01",
-    title: "O cliente compra",
-    description:
-      "Você define o valor mínimo pra participar. Isso já empurra o ticket médio antes da campanha começar.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <path d="M16 10a4 4 0 0 1-8 0"></path>
-      </svg>
-    ),
-  },
-  {
-    step: "02",
-    title: "Escaneia o QR code",
-    description:
-      "Na comanda, na embalagem ou via WhatsApp. Sem app pra baixar. Tudo no navegador, qualquer celular.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="7" height="7"></rect>
-        <rect x="14" y="3" width="7" height="7"></rect>
-        <rect x="14" y="14" width="7" height="7"></rect>
-        <rect x="3" y="14" width="7" height="7"></rect>
-      </svg>
-    ),
-  },
-  {
-    step: "03",
-    title: "Joga e descobre o prêmio",
-    description:
-      "Raspadinha, roleta ou sorteio. A mecânica escolhida aparece com a identidade do seu negócio. O cliente joga e vê o resultado na hora.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-      </svg>
-    ),
-  },
-  {
-    step: "04",
-    title: "Você fica com os dados",
-    description:
-      "Cada participação gera um cadastro real: nome, telefone, CPF. Ao fim da campanha, você tem uma base de clientes qualificada pra usar nas próximas ações.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-        <circle cx="9" cy="7" r="4"></circle>
-        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-      </svg>
-    ),
-  },
-];
-
-const MECHANICS = [
+const SOLUTIONS = [
   {
     title: "Raspadinha digital",
     description:
@@ -198,8 +143,8 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 3. Como Funciona Section */}
-      <section id="como-funciona" className="w-full bg-zinc-50 border-t border-zinc-200/80 py-20 sm:py-24 md:py-32">
+      {/* 3. Nossas Soluções Section */}
+      <section className="w-full bg-zinc-50 border-t border-zinc-200/80 py-20 sm:py-24 md:py-32">
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
             <div className="max-w-3xl mb-14 md:mb-20 text-left">
@@ -207,99 +152,43 @@ export default function HotsitePromocionalPage() {
                 className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 px-3.5 py-1.5 rounded-full mb-4"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Como funciona
+                Nossas soluções
               </span>
               <h2
-                className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-[1.2]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Do QR code ao cadastro do cliente. <br className="hidden sm:inline" />
-                Em poucos passos.
+                <span className="block">Modalidades oferecidas pela Viés</span>
+                <span className="block">para o seu restaurante.</span>
               </h2>
             </div>
           </AnimatedSection>
 
-          {/* Steps Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {STEPS.map((step, index) => (
-              <AnimatedSection key={step.step} delay={index * 0.1}>
-                <div className="bg-white border border-zinc-200/90 rounded-2xl p-7 sm:p-8 h-full flex flex-col justify-between hover:border-[#d75310]/60 hover:shadow-xl transition-all duration-300 group">
-                  <div>
-                    <div className="flex items-center justify-between mb-6">
-                      <span 
-                        className="text-2xl sm:text-3xl font-black text-[#d75310]"
-                        style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-                      >
-                        {step.step}
-                      </span>
-                      <div className="w-10 h-10 rounded-xl bg-orange-50 text-[#d75310] flex items-center justify-center group-hover:bg-[#d75310] group-hover:text-white transition-colors duration-300">
-                        {step.icon}
-                      </div>
-                    </div>
-                    
-                    <h3
-                      className="text-xl sm:text-2xl font-bold text-zinc-900 mb-3 tracking-tight"
-                      style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-                    >
-                      {step.title}
-                    </h3>
-                    
-                    <p className="text-zinc-600 text-sm sm:text-base leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Mecânicas Section */}
-      <section className="w-full bg-white border-t border-zinc-200/80 py-20 sm:py-24 md:py-32">
-        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
-          <AnimatedSection>
-            <div className="max-w-3xl mb-14 md:mb-20 text-left">
-              <span 
-                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 px-3.5 py-1.5 rounded-full mb-4"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                Mecânicas
-              </span>
-              <h2
-                className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-tight"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                Três mecânicas. Cada uma pra um objetivo diferente.
-              </h2>
-            </div>
-          </AnimatedSection>
-
-          {/* Mechanics Cards */}
+          {/* Solutions / Mechanics Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {MECHANICS.map((mech, index) => (
-              <AnimatedSection key={mech.title} delay={index * 0.1}>
-                <div className="bg-zinc-50/80 border border-zinc-200 rounded-2xl p-8 h-full flex flex-col justify-between hover:bg-white hover:border-[#d75310] hover:shadow-xl transition-all duration-300 group">
+            {SOLUTIONS.map((item, index) => (
+              <AnimatedSection key={item.title} delay={index * 0.1}>
+                <div className="bg-white border border-zinc-200/90 rounded-2xl p-8 h-full flex flex-col justify-between hover:border-[#d75310] hover:shadow-xl transition-all duration-300 group">
                   <div>
-                    <div className="w-14 h-14 rounded-2xl bg-orange-100 text-[#d75310] flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
-                      {mech.icon}
+                    <div className="w-14 h-14 rounded-2xl bg-orange-50 text-[#d75310] flex items-center justify-center mb-6 group-hover:scale-105 group-hover:bg-[#d75310] group-hover:text-white transition-all duration-300">
+                      {item.icon}
                     </div>
 
                     <h3
                       className="text-2xl font-bold text-zinc-900 mb-4 tracking-tight"
                       style={{ fontFamily: "var(--font-manrope), sans-serif" }}
                     >
-                      {mech.title}
+                      {item.title}
                     </h3>
 
                     <p className="text-zinc-600 text-sm sm:text-base leading-relaxed mb-8">
-                      {mech.description}
+                      {item.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-zinc-200/80">
+                  <div className="pt-4 border-t border-zinc-100">
                     <p className="text-xs sm:text-sm font-semibold text-[#d75310] bg-orange-50/90 py-2.5 px-3.5 rounded-lg inline-block w-full">
-                      {mech.badge}
+                      {item.badge}
                     </p>
                   </div>
                 </div>
@@ -309,8 +198,8 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 5. Cases Section */}
-      <section className="w-full bg-zinc-50 border-t border-zinc-200/80 py-20 sm:py-24 md:py-32">
+      {/* 4. Cases Section */}
+      <section className="w-full bg-white border-t border-zinc-200/80 py-20 sm:py-24 md:py-32">
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
             <div className="max-w-3xl mb-10 text-left">
@@ -331,7 +220,7 @@ export default function HotsitePromocionalPage() {
 
           {/* Showcase / Placeholder honesto */}
           <AnimatedSection delay={0.1}>
-            <div className="bg-white border-2 border-dashed border-zinc-300/90 rounded-3xl p-8 sm:p-12 md:p-16 max-w-4xl text-left">
+            <div className="bg-zinc-50 border-2 border-dashed border-zinc-300/90 rounded-3xl p-8 sm:p-12 md:p-16 max-w-4xl text-left">
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full mb-6">
                 <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
                 Primeiros Projetos em Andamento
@@ -356,7 +245,7 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 6. CTA Final Section */}
+      {/* 5. CTA Final Section */}
       <section className="w-full bg-zinc-950 text-white py-24 sm:py-28 md:py-36 relative overflow-hidden">
         {/* Glow ambient background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d75310]/15 rounded-full blur-[140px] pointer-events-none" />
