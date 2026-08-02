@@ -159,19 +159,42 @@ export default function HotsitePromocionalPage() {
                   style={{ backgroundColor: "#d75310" }}
                 >
                   <div>
-                    <span 
-                      className="inline-block text-xs font-bold uppercase tracking-wider text-white bg-black/20 px-3 py-1 rounded-full mb-3"
-                      style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-                    >
-                      {group.tag}
-                    </span>
+                    {/* Header Buttons */}
+                    <div className="flex flex-col gap-3 mb-6">
+                      <Link
+                        href={`https://wa.me/5521978949944?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20${encodeURIComponent(group.title)}%20(${encodeURIComponent(group.tag)}).`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="self-start inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-white bg-black/25 hover:bg-black/40 border border-white/20 px-4 py-1.5 rounded-full transition-all duration-200 cursor-pointer shadow-sm hover:scale-105"
+                        style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+                      >
+                        {group.tag}
+                      </Link>
 
-                    <h3
-                      className="text-xl sm:text-2xl font-extrabold text-white mb-6 tracking-tight"
-                      style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-                    >
-                      {group.title}
-                    </h3>
+                      <Link
+                        href={`https://wa.me/5521978949944?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20${encodeURIComponent(group.title)}.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full text-left bg-black/20 hover:bg-black/35 border border-white/25 text-white font-extrabold text-lg sm:text-xl py-3.5 px-5 rounded-xl transition-all duration-200 flex items-center justify-between group/btn cursor-pointer shadow-sm hover:translate-x-0.5"
+                        style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+                      >
+                        <span>{group.title}</span>
+                        <svg 
+                          width="18" 
+                          height="18" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2.5" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
+                          className="transform group-hover/btn:translate-x-1.5 transition-transform"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                      </Link>
+                    </div>
 
                     <ul className="space-y-3.5">
                       {group.items.map((item) => (
