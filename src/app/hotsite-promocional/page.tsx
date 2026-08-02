@@ -42,7 +42,7 @@ export default function HotsitePromocionalPage() {
         <div className="relative z-10 w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24 flex items-center justify-center text-center">
           <AnimatedSection>
             <h1
-              className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
+              className="text-[28px] sm:text-[34px] md:text-[40px] font-extrabold tracking-tight text-white uppercase drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
               style={{ fontFamily: "var(--font-manrope), sans-serif" }}
             >
               Hotsite Promocional
@@ -59,10 +59,11 @@ export default function HotsitePromocionalPage() {
               <div className="w-12 h-1 bg-[#d75310] mb-8 rounded-full" />
               
               <h2
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 mb-6 leading-[1.15]"
+                className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-zinc-900 mb-6 leading-[1.2]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                <span className="block">Sua campanha promocional no ar.</span>
+                <span className="block">Sua campanha promocional </span>
+                <span className="block">no ar.</span>
                 <span className="block">Com a cara do seu negócio.</span>
               </h2>
 
@@ -133,7 +134,7 @@ export default function HotsitePromocionalPage() {
                 Cases
               </span>
               <h2
-                className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-tight"
+                className="text-[28px] sm:text-[34px] md:text-[40px] font-extrabold tracking-tight text-zinc-900 leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 Primeiros projetos. Resultados reais.
@@ -184,7 +185,7 @@ export default function HotsitePromocionalPage() {
               </span>
 
               <h2
-                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight"
+                className="text-[28px] sm:text-[34px] md:text-[40px] font-extrabold tracking-tight text-white mb-6 leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 Conta o que você tem em mente.
