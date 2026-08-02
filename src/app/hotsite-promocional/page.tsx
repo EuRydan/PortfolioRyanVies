@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { HotsiteContactForm } from "@/components/ui/HotsiteContactForm";
 
 const ClientCarousel = dynamic(() =>
   import("@/components/ui/ClientCarousel").then((mod) => mod.ClientCarousel)
@@ -199,57 +200,47 @@ export default function HotsitePromocionalPage() {
       </section>
 
 
-      {/* 5. CTA Final Section */}
-      <section className="w-full bg-zinc-950 text-white py-24 sm:py-28 md:py-36 relative overflow-hidden">
-        {/* Glow ambient background */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d75310]/15 rounded-full blur-[140px] pointer-events-none" />
-
-        <div className="relative z-10 w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
-          <AnimatedSection>
-            <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-              <span
-                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-6"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                Comece Agora
-              </span>
-
-              <h2
-                className="text-[28px] sm:text-[34px] md:text-[40px] font-extrabold tracking-tight text-white mb-6 leading-tight"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                Conta o que você tem em mente.
-              </h2>
-
-              <p className="text-zinc-400 text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mb-10">
-                A gente monta uma proposta no mesmo dia. Sem formulário longo, sem reunião de apresentação. Direto no WhatsApp.
-              </p>
-
-              <Link
-                href="https://wa.me/5521978949944?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Vi%C3%A9s%20sobre%20o%20Hotsite%20Promocional."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3.5 bg-[#d75310] hover:bg-[#ea580c] text-white font-bold px-10 py-5 rounded-full transition-all duration-300 transform hover:-translate-y-1 shadow-xl shadow-[#d75310]/25 text-lg sm:text-xl cursor-pointer group"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                <span>Falar com a Viés</span>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="transform group-hover:translate-x-1.5 transition-transform"
+      {/* 5. Seção Dividida: Contato & Formulário */}
+      <section className="w-full relative overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          {/* Lado Esquerdo: Fundo Preto com Texto */}
+          <div className="bg-black text-white px-6 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-16 sm:py-20 md:py-24 lg:py-32 flex flex-col justify-center relative">
+            <AnimatedSection>
+              <div className="max-w-xl">
+                <span
+                  className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-8"
+                  style={{ fontFamily: "var(--font-manrope), sans-serif" }}
                 >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </Link>
-            </div>
-          </AnimatedSection>
+                  Comece Agora
+                </span>
+
+                <h2
+                  className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-white leading-[1.25] mb-6"
+                  style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+                >
+                  <span className="block">Entra em contato conosco</span>
+                  <span className="block">e saiba como elevar seu</span>
+                  <span className="block">restaurante com promoções</span>
+                  <span className="block">gamificadas.</span>
+                </h2>
+
+                <div className="w-12 h-1 bg-[#d75310] mb-8 rounded-full" />
+
+                <p className="text-zinc-400 text-base sm:text-lg leading-relaxed">
+                  A gente monta uma proposta no mesmo dia. Preencha o formulário ao lado ou fale direto pelo WhatsApp.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* Lado Direito: Fundo Branco com Formulário */}
+          <div className="bg-white text-zinc-900 px-6 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-16 sm:py-20 md:py-24 lg:py-32 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-zinc-100">
+            <AnimatedSection delay={0.15}>
+              <div className="max-w-xl w-full mx-auto">
+                <HotsiteContactForm />
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
