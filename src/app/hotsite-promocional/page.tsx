@@ -275,13 +275,13 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 6. Blog Previews Section */}
-      <section className="w-full bg-zinc-950 text-white py-14 sm:py-16 md:py-20 border-t border-zinc-900">
+      {/* 6. Blog Previews Section (White background) */}
+      <section className="w-full bg-white text-zinc-900 py-14 sm:py-16 md:py-20 border-t border-zinc-100">
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
             <div className="max-w-2xl text-left">
               <h2
-                className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-white leading-tight"
+                className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-zinc-900 leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 Confira nossos artigos recentes
@@ -317,17 +317,17 @@ export default function HotsitePromocionalPage() {
               <AnimatedSection key={post.id} delay={index * 0.1}>
                 <Link
                   href={post.slug}
-                  className="group flex flex-col h-full bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-[#d75310]/50 rounded-xl transition-all duration-300 overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1"
+                  className="group flex flex-col h-full bg-zinc-50 hover:bg-white border border-zinc-200/80 hover:border-[#d75310]/50 rounded-xl transition-all duration-300 overflow-hidden hover:shadow-xl hover:shadow-zinc-200/80 hover:-translate-y-1"
                 >
                   {/* Imagem de Capa */}
-                  <div className="relative aspect-[16/10] w-full bg-zinc-800 overflow-hidden">
+                  <div className="relative aspect-[16/10] w-full bg-zinc-100 overflow-hidden">
                     <img
                       src={post.image}
                       alt={post.title}
                       className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 left-3">
-                      <span className="bg-black/80 backdrop-blur-sm text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-white/10 shadow-sm">
+                      <span className="bg-black/80 backdrop-blur-sm text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-sm">
                         {post.category}
                       </span>
                     </div>
@@ -339,15 +339,15 @@ export default function HotsitePromocionalPage() {
                       {post.date}
                     </span>
                     <h3
-                      className="text-sm sm:text-base font-bold text-white mb-2 group-hover:text-[#d75310] transition-colors leading-snug line-clamp-2"
+                      className="text-sm sm:text-base font-bold text-zinc-900 group-hover:text-[#d75310] transition-colors leading-snug line-clamp-2"
                       style={{ fontFamily: "var(--font-manrope), sans-serif" }}
                     >
                       {post.title}
                     </h3>
-                    <p className="text-zinc-400 text-xs leading-relaxed mb-4 flex-1 line-clamp-2">
+                    <p className="text-zinc-600 text-xs leading-relaxed mb-4 flex-1 line-clamp-2">
                       {post.excerpt}
                     </p>
-                    <div className="mt-auto flex items-center text-white font-bold uppercase tracking-wider text-[11px] group-hover:text-[#d75310] transition-colors">
+                    <div className="mt-auto flex items-center text-zinc-900 group-hover:text-[#d75310] font-bold uppercase tracking-wider text-[11px] transition-colors">
                       <span>Ler artigo</span>
                       <svg
                         className="w-3.5 h-3.5 ml-1 transform group-hover:translate-x-1 transition-transform"
