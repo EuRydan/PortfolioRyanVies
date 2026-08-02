@@ -293,6 +293,22 @@ export default function HotsitePromocionalPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* 6. Aviso Legal / Regulatório */}
+      <section className="w-full bg-zinc-950 text-zinc-400 border-t border-zinc-900/90 py-12 sm:py-14 md:py-16">
+        <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
+          <AnimatedSection>
+            <div className="max-w-4xl mx-auto bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 sm:p-8 md:p-10 text-xs sm:text-sm leading-relaxed space-y-4 text-zinc-400">
+              <p>
+                Não promovemos, organizamos ou realizamos sorteios, concursos ou qualquer tipo de promoção comercial própria. Toda responsabilidade legal, execução e operação das campanhas é de responsabilidade do contratante, que deve cumprir integralmente a legislação vigente.
+              </p>
+              <p>
+                As promoções comerciais no Brasil são regulamentadas pela Lei nº 5.768/1971, pelo Decreto nº 70.951/1972 e pela Portaria SEAE nº 7.638/2022, e sua autorização e fiscalização são de competência da Secretaria de Prêmios e Apostas (SPA) do Ministério da Fazenda.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
     </main>
   );
 }
