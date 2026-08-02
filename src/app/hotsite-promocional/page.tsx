@@ -269,16 +269,10 @@ export default function HotsitePromocionalPage() {
       </section>
 
       {/* 6. Blog Previews Section */}
-      <section className="w-full bg-zinc-950 text-white py-20 sm:py-24 md:py-32 border-t border-zinc-900">
+      <section className="w-full bg-zinc-950 text-white py-14 sm:py-16 md:py-20 border-t border-zinc-900">
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
-          <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
+          <AnimatedSection className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
             <div className="max-w-2xl text-left">
-              <span
-                className="inline-block text-xs md:text-sm font-bold uppercase tracking-wider text-[#d75310] bg-[#d75310]/10 border border-[#d75310]/20 px-4 py-1.5 rounded-full mb-4"
-                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-              >
-                Blog & Insights
-              </span>
               <h2
                 className="text-[28px] sm:text-[34px] md:text-[40px] font-bold tracking-tight text-white leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
@@ -289,20 +283,20 @@ export default function HotsitePromocionalPage() {
 
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-sm md:text-base font-bold text-[#d75310] hover:text-[#ea580c] transition-colors group self-start md:self-auto"
+              className="inline-flex items-center gap-2 text-xs md:text-sm font-bold text-[#d75310] hover:text-[#ea580c] transition-colors group self-start md:self-auto"
               style={{ fontFamily: "var(--font-manrope), sans-serif" }}
             >
               <span>Ver todos os artigos</span>
               <svg
-                width="18"
-                height="18"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="transform group-hover:translate-x-1.5 transition-transform"
+                className="transform group-hover:translate-x-1 transition-transform"
               >
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -310,46 +304,46 @@ export default function HotsitePromocionalPage() {
             </Link>
           </AnimatedSection>
 
-          {/* Grid de Artigos */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          {/* Grid de Artigos Compactos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:gap-6 max-w-6xl">
             {BLOG_POSTS.map((post, index) => (
               <AnimatedSection key={post.id} delay={index * 0.1}>
                 <Link
                   href={post.slug}
-                  className="group flex flex-col h-full bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-[#d75310]/50 rounded-2xl transition-all duration-300 overflow-hidden hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-1"
+                  className="group flex flex-col h-full bg-zinc-900/60 hover:bg-zinc-900 border border-zinc-800 hover:border-[#d75310]/50 rounded-xl transition-all duration-300 overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1"
                 >
                   {/* Imagem de Capa */}
-                  <div className="relative aspect-[3/2] w-full bg-zinc-800 overflow-hidden">
+                  <div className="relative aspect-[16/10] w-full bg-zinc-800 overflow-hidden">
                     <img
                       src={post.image}
                       alt={post.title}
                       className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-black/80 backdrop-blur-sm text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-white/10 shadow-md">
+                    <div className="absolute top-3 left-3">
+                      <span className="bg-black/80 backdrop-blur-sm text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-white/10 shadow-sm">
                         {post.category}
                       </span>
                     </div>
                   </div>
 
                   {/* Conteúdo do Card */}
-                  <div className="flex flex-col flex-1 p-6 md:p-7">
-                    <span className="text-[#d75310] text-xs font-bold tracking-wider mb-2.5">
+                  <div className="flex flex-col flex-1 p-4 sm:p-5">
+                    <span className="text-[#d75310] text-[11px] font-bold tracking-wider mb-1.5">
                       {post.date}
                     </span>
                     <h3
-                      className="text-lg md:text-xl font-bold text-white mb-3 group-hover:text-[#d75310] transition-colors leading-snug"
+                      className="text-sm sm:text-base font-bold text-white mb-2 group-hover:text-[#d75310] transition-colors leading-snug line-clamp-2"
                       style={{ fontFamily: "var(--font-manrope), sans-serif" }}
                     >
                       {post.title}
                     </h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed mb-6 flex-1 line-clamp-3">
+                    <p className="text-zinc-400 text-xs leading-relaxed mb-4 flex-1 line-clamp-2">
                       {post.excerpt}
                     </p>
-                    <div className="mt-auto flex items-center text-white font-bold uppercase tracking-wider text-xs group-hover:text-[#d75310] transition-colors">
+                    <div className="mt-auto flex items-center text-white font-bold uppercase tracking-wider text-[11px] group-hover:text-[#d75310] transition-colors">
                       <span>Ler artigo</span>
                       <svg
-                        className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1.5 transition-transform"
+                        className="w-3.5 h-3.5 ml-1 transform group-hover:translate-x-1 transition-transform"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
