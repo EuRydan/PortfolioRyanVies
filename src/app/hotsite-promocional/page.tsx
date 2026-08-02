@@ -11,6 +11,37 @@ export const metadata: Metadata = {
   },
 };
 
+const SOLUTION_GROUPS = [
+  {
+    tag: "Mais Completos",
+    title: "Coração da Campanha",
+    items: [
+      "Promoção Comercial",
+      "Hotsite Promocional",
+      "Registro de Regulamento",
+    ],
+  },
+  {
+    tag: "Mais Completos",
+    title: "Coração da Campanha",
+    items: [
+      "Sorteio",
+      "Vale-Brinde",
+      "Assemelhada a Sorteio",
+      "Assemelhada a Vale-Brinde",
+    ],
+  },
+  {
+    tag: "Mais Completos",
+    title: "Coração da Campanha",
+    items: [
+      "Concurso Comercial",
+      "Promoção Redes Sociais",
+      "Campanha de Incentivo",
+    ],
+  },
+];
+
 export default function HotsitePromocionalPage() {
   return (
     <main className="w-full bg-white text-zinc-900 min-h-screen">
@@ -63,8 +94,7 @@ export default function HotsitePromocionalPage() {
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
                 <span className="block">Sua campanha promocional </span>
-                <span className="block">no ar.</span>
-                <span className="block">Com a cara do seu negócio.</span>
+                <span className="block">com a cara do seu negócio.</span>
               </h2>
 
               <p className="text-zinc-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mb-10">
@@ -119,6 +149,44 @@ export default function HotsitePromocionalPage() {
               </h2>
             </div>
           </AnimatedSection>
+
+          {/* Solutions / Modalities Groups Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-14 md:mt-20">
+            {SOLUTION_GROUPS.map((group, index) => (
+              <AnimatedSection key={index} delay={index * 0.1}>
+                <div className="bg-zinc-900/90 border border-zinc-800/90 rounded-2xl p-7 sm:p-8 h-full flex flex-col justify-between hover:border-[#d75310]/60 hover:bg-zinc-900 hover:shadow-2xl hover:shadow-[#d75310]/5 transition-all duration-300 group">
+                  <div>
+                    <span 
+                      className="inline-block text-xs font-bold uppercase tracking-wider text-[#d75310] mb-2"
+                      style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+                    >
+                      {group.tag}
+                    </span>
+
+                    <h3
+                      className="text-xl sm:text-2xl font-bold text-white mb-6 tracking-tight"
+                      style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+                    >
+                      {group.title}
+                    </h3>
+
+                    <ul className="space-y-3.5">
+                      {group.items.map((item) => (
+                        <li key={item} className="flex items-center gap-3 text-zinc-300 text-sm sm:text-base font-medium">
+                          <div className="w-5 h-5 rounded-full bg-[#d75310]/15 text-[#d75310] flex items-center justify-center shrink-0">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                          </div>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
         </div>
       </section>
 
