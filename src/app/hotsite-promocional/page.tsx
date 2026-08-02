@@ -178,40 +178,15 @@ export default function HotsitePromocionalPage() {
                       {group.title}
                     </h3>
 
-                    {/* Checked Items as Interactive Buttons */}
-                    <ul className="space-y-3">
+                    <ul className="space-y-3.5">
                       {group.items.map((item) => (
-                        <li key={item}>
-                          <Link
-                            href={`https://wa.me/5521978949944?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20${encodeURIComponent(item)}.`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full bg-black/20 hover:bg-black/35 border border-white/20 hover:border-white/40 text-white font-bold text-sm sm:text-base py-3 px-4 rounded-xl flex items-center justify-between transition-all duration-200 group/item cursor-pointer shadow-sm hover:scale-[1.02]"
-                            style={{ fontFamily: "var(--font-manrope), sans-serif" }}
-                          >
-                            <div className="flex items-center gap-3">
-                              <div className="w-6 h-6 rounded-full bg-white text-[#d75310] flex items-center justify-center shrink-0 shadow-sm">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
-                                  <polyline points="20 6 9 17 4 12" />
-                                </svg>
-                              </div>
-                              <span className="text-left leading-tight">{item}</span>
-                            </div>
-                            <svg 
-                              width="16" 
-                              height="16" 
-                              viewBox="0 0 24 24" 
-                              fill="none" 
-                              stroke="currentColor" 
-                              strokeWidth="2.5" 
-                              strokeLinecap="round" 
-                              strokeLinejoin="round" 
-                              className="text-white/70 group-hover/item:text-white group-hover/item:translate-x-1 transition-all shrink-0 ml-2"
-                            >
-                              <line x1="5" y1="12" x2="19" y2="12"></line>
-                              <polyline points="12 5 19 12 12 19"></polyline>
+                        <li key={item} className="flex items-center gap-3 text-white text-sm sm:text-base font-semibold">
+                          <div className="w-5 h-5 rounded-full bg-white text-[#d75310] flex items-center justify-center shrink-0 shadow-sm">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
                             </svg>
-                          </Link>
+                          </div>
+                          <span>{item}</span>
                         </li>
                       ))}
                     </ul>
