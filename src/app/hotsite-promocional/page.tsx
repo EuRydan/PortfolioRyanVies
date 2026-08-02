@@ -380,7 +380,7 @@ export default function HotsitePromocionalPage() {
               style={{ fontSize: "16px" }}
             >
               <p>
-                A Viés Studios é um estúdio de design e tecnologia especializado no desenvolvimento de hotsites promocionais gamificados. Criamos a estrutura técnica, o design e a experiência do usuário pra campanhas de engajamento e relacionamento com clientes, com foco no mercado gastronômico.
+                A Viés Studios é um estúdio de design e tecnologia com umas das especializações sendo desenvolvimento de hotsites promocionais. Criamos a estrutura técnica, o design e a experiência do usuário pra campanhas de engajamento e relacionamento com clientes, com foco no mercado gastronômico.
               </p>
               <p>
                 <strong className="font-bold text-zinc-800">Não promovemos, organizamos ou realizamos sorteios, concursos ou qualquer tipo de promoção comercial própria.</strong> Toda responsabilidade legal, execução e operação das campanhas é de responsabilidade do contratante, que deve cumprir integralmente a legislação vigente.
