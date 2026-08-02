@@ -162,8 +162,8 @@ export default function HotsitePromocionalPage() {
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 mb-6 leading-[1.15]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Sua campanha promocional no ar. <br />
-                Com a cara do seu negócio.
+                <span className="block">Sua campanha promocional no ar.</span>
+                <span className="block">Com a cara do seu negócio.</span>
               </h2>
 
               <p className="text-zinc-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mb-10">
