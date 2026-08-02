@@ -146,32 +146,34 @@ export function HotsiteContactForm() {
       </div>
 
       {/* Botão Fale Conosco */}
-      <button
-        type="submit"
-        className="w-full bg-[#d75310] hover:bg-[#b8430a] text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-[#d75310]/25 flex items-center justify-center gap-3 group cursor-pointer text-base sm:text-lg"
-      >
-        <span>Fale conosco</span>
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="transform group-hover:translate-x-1.5 transition-transform"
+      <div className="flex flex-col items-start pt-1">
+        <button
+          type="submit"
+          className="inline-flex items-center justify-center gap-2.5 bg-[#d75310] hover:bg-[#b8430a] text-white font-bold py-2.5 sm:py-3 px-6 sm:px-7 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-[#d75310]/20 group cursor-pointer text-sm sm:text-base"
         >
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </button>
+          <span>Fale conosco</span>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="transform group-hover:translate-x-1.5 transition-transform"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
 
-      {submitted && (
-        <p className="text-center text-xs text-emerald-600 font-semibold pt-1">
-          ✓ Abrindo WhatsApp para envio da mensagem...
-        </p>
-      )}
+        {submitted && (
+          <p className="text-left text-xs text-emerald-600 font-semibold pt-2">
+            ✓ Abrindo WhatsApp para envio da mensagem...
+          </p>
+        )}
+      </div>
     </form>
   );
 }
