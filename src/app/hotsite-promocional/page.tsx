@@ -5,7 +5,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 export const metadata: Metadata = {
   title: "Hotsite Promocional | Vies Studios",
   description:
-    "Hotsites gamificados pra restaurantes, clínicas e marcas que querem engajar clientes de verdade. Raspadinha digital, roleta de prêmios e sorteios com a cara do seu negócio.",
+    "Hotsites gamificados pra restaurantes e marcas que querem engajar clientes de verdade. Raspadinha, roleta, sorteio. Tudo com identidade visual sob medida e dados reais ao final.",
   alternates: {
     canonical: "https://www.viesstudios.com.br/hotsite-promocional",
   },
@@ -16,7 +16,7 @@ const STEPS = [
     step: "01",
     title: "O cliente compra",
     description:
-      "Você define o valor mínimo de compra pra participar. Isso já aumenta o ticket médio antes da campanha começar.",
+      "Você define o valor mínimo pra participar. Isso já empurra o ticket médio antes da campanha começar.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
@@ -29,7 +29,7 @@ const STEPS = [
     step: "02",
     title: "Escaneia o QR code",
     description:
-      "Na comanda, na embalagem ou via WhatsApp. Sem app pra baixar, tudo no navegador.",
+      "Na comanda, na embalagem ou via WhatsApp. Sem app pra baixar. Tudo no navegador, qualquer celular.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="3" width="7" height="7"></rect>
@@ -41,9 +41,9 @@ const STEPS = [
   },
   {
     step: "03",
-    title: "Raspa, gira ou concorre",
+    title: "Joga e descobre o prêmio",
     description:
-      "A mecânica escolhida aparece com a identidade visual do seu negócio. O cliente joga e descobre na hora se ganhou.",
+      "Raspadinha, roleta ou sorteio. A mecânica escolhida aparece com a identidade do seu negócio. O cliente joga e vê o resultado na hora.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -54,7 +54,7 @@ const STEPS = [
     step: "04",
     title: "Você fica com os dados",
     description:
-      "Cada participação gera um cadastro real: nome, telefone, CPF. Ao fim da campanha, você tem uma base de clientes pra usar nas próximas ações.",
+      "Cada participação gera um cadastro real: nome, telefone, CPF. Ao fim da campanha, você tem uma base de clientes qualificada pra usar nas próximas ações.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -70,8 +70,8 @@ const MECHANICS = [
   {
     title: "Raspadinha digital",
     description:
-      "O clássico que todo mundo conhece. O cliente raspa a tela e descobre o prêmio na hora. Alta taxa de participação porque a experiência é familiar e instantânea.",
-    badge: "Melhor pra: brindes, descontos e experiências rápidas.",
+      "Alta participação porque a experiência é familiar e instantânea. O cliente raspa e descobre o prêmio na hora.",
+    badge: "Ideal pra brindes, descontos e datas comemorativas.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="4" width="20" height="16" rx="2"></rect>
@@ -83,8 +83,8 @@ const MECHANICS = [
   {
     title: "Roleta de prêmios",
     description:
-      "O cliente gira e aguarda o resultado. Gera tensão e expectativa antes de revelar o prêmio, o que aumenta o tempo de interação com a marca.",
-    badge: "Melhor pra: campanhas com múltiplos prêmios e diferentes probabilidades.",
+      "Gera tensão antes de revelar o resultado. Aumenta o tempo de interação com a marca e funciona bem com múltiplos prêmios.",
+    badge: "Ideal pra campanhas com diferentes probabilidades de prêmio.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10"></circle>
@@ -96,8 +96,8 @@ const MECHANICS = [
   {
     title: "Sorteio com cadastro",
     description:
-      "O cliente se cadastra e concorre a um prêmio maior no final da campanha. Ideal pra construir base de dados e gerar expectativa ao longo de semanas.",
-    badge: "Melhor pra: prêmios de alto valor, lançamentos e datas comemorativas.",
+      "O cliente se cadastra e concorre a um prêmio maior no final. Constrói base de dados e mantém o cliente voltando pra acompanhar o resultado.",
+    badge: "Ideal pra prêmios de alto valor, lançamentos e fidelização.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
@@ -151,7 +151,7 @@ export default function HotsitePromocionalPage() {
         </div>
       </section>
 
-      {/* 2. Intro Section (White) */}
+      {/* 2. Hero Content Section (White) */}
       <section className="w-full bg-white text-zinc-900 py-16 sm:py-20 md:py-28">
         <div className="w-full max-w-[1920px] mx-auto px-6 md:px-14 lg:px-24">
           <AnimatedSection>
@@ -159,29 +159,32 @@ export default function HotsitePromocionalPage() {
               <div className="w-12 h-1 bg-[#d75310] mb-8 rounded-full" />
               
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-900 mb-6 leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 mb-6 leading-[1.15]"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Sorteios, prêmios, gamificação <br />
-                e marketing promocional.
+                Sua campanha promocional no ar. <br className="hidden sm:inline" />
+                Com a cara do seu negócio.
               </h2>
 
               <p className="text-zinc-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mb-10">
-                Hotsites gamificados pra restaurantes, clínicas e marcas que querem engajar clientes de verdade. Raspadinha digital, roleta de prêmios e sorteios com a cara do seu negócio.
+                Hotsites gamificados pra restaurantes e marcas que querem engajar clientes de verdade. Raspadinha, roleta, sorteio. Tudo com identidade visual sob medida e dados reais ao final.
               </p>
 
               <Link
-                href="#como-funciona"
-                className="inline-flex items-center gap-3 bg-[#d75310] hover:bg-[#b8430a] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-[#d75310]/20 group text-base md:text-lg cursor-pointer"
+                href="https://wa.me/5521978949944?text=Ol%C3%A1!%20Quero%20minha%20campanha%20de%20Hotsite%20Promocional."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#d75310] hover:bg-[#b8430a] text-white font-bold px-8 py-4.5 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-[#d75310]/20 group text-base md:text-lg cursor-pointer"
+                style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                <span>Saiba mais</span>
+                <span>Quero minha campanha</span>
                 <svg
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2.2"
+                  strokeWidth="2.4"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className="transform group-hover:translate-x-1.5 transition-transform"
@@ -210,8 +213,8 @@ export default function HotsitePromocionalPage() {
                 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Simples pra quem participa. <br className="hidden sm:inline" />
-                Poderoso pra quem vende.
+                Do QR code ao cadastro do cliente. <br className="hidden sm:inline" />
+                Em poucos passos.
               </h2>
             </div>
           </AnimatedSection>
@@ -267,7 +270,7 @@ export default function HotsitePromocionalPage() {
                 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Escolha a mecânica certa pra sua campanha.
+                Três mecânicas. Cada uma pra um objetivo diferente.
               </h2>
             </div>
           </AnimatedSection>
@@ -321,7 +324,7 @@ export default function HotsitePromocionalPage() {
                 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Campanhas que já saíram do papel.
+                Primeiros projetos. Resultados reais.
               </h2>
             </div>
           </AnimatedSection>
@@ -335,7 +338,7 @@ export default function HotsitePromocionalPage() {
               </div>
               
               <p className="text-zinc-700 text-base sm:text-lg md:text-xl leading-relaxed mb-8">
-                Estamos nos primeiros projetos e documentando cada resultado. Se quiser ser um dos primeiros clientes, seu case entra aqui com todos os dados de participação e engajamento.
+                Estamos nos primeiros projetos e documentando cada número. Se quiser ser um dos primeiros, seu case entra aqui com dados completos de participação e engajamento.
               </p>
 
               <Link
@@ -372,11 +375,11 @@ export default function HotsitePromocionalPage() {
                 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight"
                 style={{ fontFamily: "var(--font-manrope), sans-serif" }}
               >
-                Sua próxima campanha começa com uma conversa.
+                Conta o que você tem em mente.
               </h2>
 
               <p className="text-zinc-400 text-lg sm:text-xl md:text-2xl leading-relaxed max-w-2xl mb-10">
-                Conta o que você tem em mente e a gente monta uma proposta no mesmo dia.
+                A gente monta uma proposta no mesmo dia. Sem formulário longo, sem reunião de apresentação. Direto no WhatsApp.
               </p>
 
               <Link
@@ -402,10 +405,6 @@ export default function HotsitePromocionalPage() {
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </Link>
-
-              <p className="text-zinc-500 text-xs sm:text-sm mt-5 font-medium">
-                Sem formulário longo. Sem espera. Direto no WhatsApp.
-              </p>
             </div>
           </AnimatedSection>
         </div>
