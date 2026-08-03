@@ -141,7 +141,7 @@ export default function Home() {
 
             {/* Coluna 4: Certificação UX */}
             <AnimatedSection delay={0.3} className="flex flex-col">
-              <div className="relative aspect-[348/463] w-full bg-zinc-800/30 rounded-xl p-6 xl:p-7 flex flex-col justify-start gap-3 sm:gap-4 border border-zinc-800/40 mb-4">
+              <div className="relative aspect-[348/463] w-full bg-zinc-800/30 rounded-xl p-6 xl:p-7 flex flex-col justify-start gap-3 sm:gap-4 mb-4">
                 <div className="shrink-0 flex items-center justify-start">
                   <UXBadge />
                 </div>
