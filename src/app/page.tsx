@@ -86,58 +86,73 @@ export default function Home() {
               <ScrollRevealStats />
             </div>
 
-            <div className="col-span-4 md:col-span-3 lg:col-span-4">
-              <AnimatedSection delay={0.2} className="mt-8 md:mt-16 flex flex-col text-left">
-                <h3 
-                  className="text-[48px] md:text-[65px] font-bold text-white mb-6 leading-[1]" 
-                  style={{ fontFamily: 'var(--font-manrope), sans-serif' }}
-                >
-                  Sobre<br/>Mim
-                </h3>
-                <p className="text-zinc-400 text-[18px] leading-relaxed mb-6">
-                  Cresci em Duque de Caxias e me formei em Design em 2019, criei identidade pra marcas locais e já trabalhei em projetos relevantes nos últimos 7 anos, hoje utilizo Design e tecnologia para resolver problemas reais.
-                </p>
-                <p className="text-zinc-400 text-[18px] leading-relaxed">
-                  Combino design de produto, desenvolvimento web e uma obsessão por performance e segurança, entregando projetos do início ao fim, sem terceirizar o que importa.
-                </p>
-              </AnimatedSection>
-            </div>
-            
-            <div className="col-span-4 md:col-span-5 lg:col-span-8">
-              <div className="flex flex-col lg:flex-row gap-8 items-start mt-0 md:mt-16">
-                <AnimatedSection delay={0.2} className="w-[348px] max-w-full shrink-0 flex flex-col">
-                  <img 
-                    src="/Ryan.png" 
-                    alt="Ryan Ferreira" 
-                    width={348}
-                    height={463}
-                    className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 mb-4" 
-                  />
-                  <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                    Ryan Ferreira
-                  </span>
-                  <span className="text-zinc-400 text-xs font-medium">
-                    Fundador e Designer de Produtos
-                  </span>
-                </AnimatedSection>
+          </div>
 
-                <AnimatedSection delay={0.25} className="flex-1 bg-zinc-800/30 rounded-xl p-6 lg:p-8 flex flex-col items-center sm:items-start xl:flex-row gap-6 lg:gap-8">
-                  <UXBadge />
-                  <div className="flex flex-col justify-center h-full pt-2">
-                    <h4 className="text-xl sm:text-2xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                      Propriedade em Experiência do Usuário (UX)
-                    </h4>
-                    <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl">
-                      Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
-                    </p>
-                  </div>
-                </AnimatedSection>
+          {/* 4 Columns Row: Text/CTA, Ryan, Ismael, Certification */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6 xl:gap-8 mt-12 md:mt-20 items-stretch">
+            {/* Coluna 1: Texto Institucional & CTA */}
+            <AnimatedSection delay={0.15} className="flex flex-col justify-between text-left h-full">
+              <div>
+                <p className="text-zinc-400 text-base md:text-lg leading-relaxed mb-6">
+                  Vies é uma empresa 100% carioca da gema, mas atendendo o Brasil inteiro utilizando Design e tecnologia para resolver problemas.
+                </p>
+                <p className="text-zinc-400 text-base md:text-lg leading-relaxed mb-8">
+                  Combinamos design de produto, desenvolvimento web e uma obsessão por performance e segurança, entregando projetos do início ao fim, sem terceirizar o que importa.
+                </p>
               </div>
-              
-              <AnimatedSection delay={0.3} className="mt-12">
+              <div className="mt-auto pt-2">
                 <QuoteButton />
-              </AnimatedSection>
-            </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Coluna 2: Ryan Ferreira */}
+            <AnimatedSection delay={0.2} className="flex flex-col">
+              <div className="relative aspect-[348/463] w-full bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <img 
+                  src="/Ryan.png" 
+                  alt="Ryan Ferreira" 
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" 
+                />
+              </div>
+              <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                Ryan Ferreira
+              </span>
+              <span className="text-zinc-400 text-xs font-medium">
+                Fundador e Designer de Produtos
+              </span>
+            </AnimatedSection>
+
+            {/* Coluna 3: Ismael */}
+            <AnimatedSection delay={0.25} className="flex flex-col">
+              <div className="relative aspect-[348/463] w-full bg-zinc-800 rounded-lg overflow-hidden mb-4">
+                <img 
+                  src="/Ismael.png" 
+                  alt="Ismael" 
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" 
+                />
+              </div>
+              <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                Ismael
+              </span>
+              <span className="text-zinc-400 text-xs font-medium">
+                Co-fundador e Desenvolvedor
+              </span>
+            </AnimatedSection>
+
+            {/* Coluna 4: Certificação UX */}
+            <AnimatedSection delay={0.3} className="bg-zinc-800/30 rounded-xl p-6 xl:p-8 flex flex-col justify-between h-full border border-zinc-800/40">
+              <div className="shrink-0 flex items-center justify-start mb-4">
+                <UXBadge />
+              </div>
+              <div className="flex flex-col justify-end">
+                <h4 className="text-lg xl:text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                  Propriedade em Experiência do Usuário (UX)
+                </h4>
+                <p className="text-zinc-400 text-xs xl:text-sm leading-relaxed">
+                  Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
+                </p>
+              </div>
+            </AnimatedSection>
           </div>
         </section>
 
