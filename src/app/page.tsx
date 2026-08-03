@@ -135,20 +135,20 @@ export default function Home() {
                 Ismael
               </span>
               <span className="text-zinc-400 text-xs font-medium">
-                Co-fundador e Desenvolvedor
+                Engenheiro de Software
               </span>
             </AnimatedSection>
 
             {/* Coluna 4: Certificação UX */}
-            <AnimatedSection delay={0.3} className="bg-zinc-800/30 rounded-xl p-6 xl:p-8 flex flex-col justify-between h-full border border-zinc-800/40">
-              <div className="shrink-0 flex items-center justify-start mb-4">
+            <AnimatedSection delay={0.3} className="bg-zinc-800/30 rounded-xl p-6 lg:p-7 flex flex-col justify-center gap-4 h-full border border-zinc-800/40">
+              <div className="shrink-0 flex items-center justify-start">
                 <UXBadge />
               </div>
-              <div className="flex flex-col justify-end">
-                <h4 className="text-lg xl:text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+              <div className="flex flex-col">
+                <h4 className="text-lg sm:text-xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
                   Propriedade em Experiência do Usuário (UX)
                 </h4>
-                <p className="text-zinc-400 text-xs xl:text-sm leading-relaxed">
+                <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
                   Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
                 </p>
               </div>
