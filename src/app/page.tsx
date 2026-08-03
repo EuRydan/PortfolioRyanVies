@@ -140,17 +140,19 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Coluna 4: Certificação UX */}
-            <AnimatedSection delay={0.3} className="bg-zinc-800/30 rounded-xl p-6 lg:p-7 flex flex-col justify-center gap-4 h-full border border-zinc-800/40">
-              <div className="shrink-0 flex items-center justify-start">
-                <UXBadge />
-              </div>
-              <div className="flex flex-col">
-                <h4 className="text-lg sm:text-xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                  Propriedade em Experiência do Usuário (UX)
-                </h4>
-                <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                  Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
-                </p>
+            <AnimatedSection delay={0.3} className="flex flex-col">
+              <div className="relative aspect-[348/463] w-full bg-zinc-800/30 rounded-xl p-6 xl:p-7 flex flex-col justify-start gap-3 sm:gap-4 border border-zinc-800/40 mb-4">
+                <div className="shrink-0 flex items-center justify-start">
+                  <UXBadge />
+                </div>
+                <div className="flex flex-col">
+                  <h4 className="text-base sm:text-lg xl:text-xl font-bold text-white mb-2" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
+                    Propriedade em Experiência do Usuário (UX)
+                  </h4>
+                  <p className="text-zinc-400 text-xs xl:text-sm leading-relaxed">
+                    Para nós, não basta criar interfaces bonitas. Temos propriedade técnica e certificação internacional em UX para projetar jornadas que engajam, retêm e convertem de verdade. Cada decisão de design é baseada em dados e comportamento humano, garantindo que o seu produto digital resolva o problema certo.
+                  </p>
+                </div>
               </div>
             </AnimatedSection>
           </div>

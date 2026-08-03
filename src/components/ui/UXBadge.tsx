@@ -20,7 +20,7 @@ export function UXBadge({ className }: { className?: string } = {}) {
         alt="Selo de Certificação em Experiência do Usuário" 
         width={160} 
         height={160} 
-        className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain drop-shadow-xl hover:scale-105 transition-transform" 
+        className="w-20 h-20 sm:w-22 sm:h-22 xl:w-24 xl:h-24 object-contain drop-shadow-xl hover:scale-105 transition-transform" 
       />
     </motion.a>
   );
