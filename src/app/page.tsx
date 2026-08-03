@@ -122,17 +122,17 @@ export default function Home() {
               </span>
             </AnimatedSection>
 
-            {/* Coluna 3: Ismael */}
+            {/* Coluna 3: Ismael Borba */}
             <AnimatedSection delay={0.25} className="flex flex-col">
               <div className="relative aspect-[348/463] w-full bg-zinc-800 rounded-lg overflow-hidden mb-4">
                 <img 
                   src="/Ismael.png" 
-                  alt="Ismael" 
+                  alt="Ismael Borba" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" 
                 />
               </div>
               <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                Ismael
+                Ismael Borba
               </span>
               <span className="text-zinc-400 text-xs font-medium">
                 Engenheiro de Software
