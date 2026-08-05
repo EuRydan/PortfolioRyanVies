@@ -88,8 +88,8 @@ export default function Home() {
 
           </div>
 
-          {/* 4 Columns Row: Text/CTA, Ryan, Ismael, Certification */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6 xl:gap-8 mt-12 md:mt-20 items-stretch">
+          {/* 3 Columns Row: Text/CTA, Ryan, Certification */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-6 xl:gap-8 mt-12 md:mt-20 items-stretch">
             {/* Coluna 1: Texto Institucional & CTA */}
             <AnimatedSection delay={0.15} className="flex flex-col justify-between text-left h-full">
               <div>
@@ -122,25 +122,8 @@ export default function Home() {
               </span>
             </AnimatedSection>
 
-            {/* Coluna 3: Ismael Borba */}
+            {/* Coluna 3: Certificação UX */}
             <AnimatedSection delay={0.25} className="flex flex-col">
-              <div className="relative aspect-[348/463] w-full bg-zinc-800 rounded-lg overflow-hidden mb-4">
-                <img 
-                  src="/Ismael.png" 
-                  alt="Ismael Borba" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" 
-                />
-              </div>
-              <span className="text-white font-bold uppercase tracking-wider text-sm mb-1" style={{ fontFamily: 'var(--font-manrope), sans-serif' }}>
-                Ismael Borba
-              </span>
-              <span className="text-zinc-400 text-xs font-medium">
-                Engenheiro de Software
-              </span>
-            </AnimatedSection>
-
-            {/* Coluna 4: Certificação UX */}
-            <AnimatedSection delay={0.3} className="flex flex-col">
               <div className="relative aspect-[348/463] w-full bg-zinc-800/30 rounded-xl p-6 xl:p-7 flex flex-col justify-start gap-3 sm:gap-4 mb-4">
                 <div className="shrink-0 flex items-center justify-start">
                   <UXBadge />
